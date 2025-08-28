@@ -5,7 +5,8 @@ if (!isset($_SESSION['usuario_id'])) {
   exit;
 }
 require_once '../config/db.php';
-
+include '../templates/includes/header.php';
+require_once '../templates/includes/verifica_login.php';
 
 $id = $_SESSION['usuario_id'];
 $stmt = $pdo->prepare("SELECT alertas_config, modo_escuro FROM usuarios WHERE id = ?");
@@ -27,12 +28,9 @@ $intervalos = [120, 90, 75, 60, 45, 30, 20, 10, 5];
 </head>
 
 <body class="<?= $modo_escuro ? 'dark' : '' ?>">
-  <header>
-    <h1>Configurações</h1>
-    <a href="../index.php">Voltar</a>
-  </header>
   <main style="padding:2rem; max-width:600px; margin:auto">
     <form action="../api/usuarios/salvar_configuracoes.php" method="post" enctype="multipart/form-data">
+      <h1>Configurações do Usuário</h1>
       <h2>Modo Escuro</h2>
       <label><input type="checkbox" name="modo_escuro" <?= $modo_escuro ? 'checked' : '' ?>> Ativar</label>
 
@@ -50,7 +48,7 @@ $intervalos = [120, 90, 75, 60, 45, 30, 20, 10, 5];
       <input type="password" name="nova_senha" placeholder="Nova senha"><br>
 
       <h2>Avatar</h2>
-      <input type="file" name="avatar"><br>
+      <input type="file" name="avatar"><br><br>
 
       <button type="submit">Salvar Configurações</button>
     </form>

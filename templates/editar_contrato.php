@@ -6,7 +6,7 @@ if (!isset($_SESSION['usuario_id'])) {
 }
 require_once '../config/db.php';
 include 'includes/header.php';
-
+require_once '../templates/includes/verifica_login.php';
 
 $id = $_GET['id'] ?? null;
 if (!$id) {
@@ -34,31 +34,61 @@ if (!$contrato) {
 
 <body class="<?= $_SESSION['modo_escuro'] ? 'dark' : '' ?>">
   <main style="padding:2rem; max-width:700px; margin:auto;">
+
     <h2>Editar Contrato</h2>
-    <form action="../api/contratos/atualizar.php" method="post">
+    <form action="../api/contratos/atualizar.php" method="post" class="form-box">
       <input type="hidden" name="id" value="<?= $contrato['id'] ?>">
 
-
-      <label>Número:<br><input type="text" name="numero" value="<?= $contrato['numero'] ?>" required></label><br><br>
-      <label>Processo:<br><input type="text" name="processo" value="<?= $contrato['processo'] ?>" required></label><br><br>
-      <label>Órgão:<br><input type="text" name="orgao" value="<?= $contrato['orgao'] ?>" required></label><br><br>
-      <label>Valor Total:<br><input type="number" step="0.01" name="valor_total" value="<?= $contrato['valor_total'] ?>" required></label><br><br>
-      <label>Data Início:<br><input type="date" name="data_inicio" value="<?= $contrato['data_inicio'] ?>" required></label><br><br>
-      <label>Data Fim:<br><input type="date" name="data_fim" value="<?= $contrato['data_fim'] ?>" required></label><br><br>
-      <label>Local Arquivo:<br>
-        <select name="local_arquivo">
-          <option value="1Doc" <?= $contrato['local_arquivo'] === '1Doc' ? 'selected' : '' ?>>1Doc</option>
-          <option value="Papel" <?= $contrato['local_arquivo'] === 'Papel' ? 'selected' : '' ?>>Papel</option>
-        </select>
-      </label><br><br>
-      <label>Observações:<br>
-        <textarea name="observacoes"><?= $contrato['observacoes'] ?></textarea>
-      </label><br><br>
-
+      <div class="form-row">
+        <label>Número:<br><input type="text" name="numero" value="<?= $contrato['numero'] ?>" required></label><br><br>
+        <label>Processo:<br><input type="text" name="processo" value="<?= $contrato['processo'] ?>" required></label><br><br>
+        <label>Fornecedor:<br><input type="text" name="fornecedor" value="<?= $contrato['fornecedor'] ?>" required></label><br><br>
+        <label>Valor Total:<br>
+          <input type="text" name="valor_total" id="valor_total" value="<?= number_format($contrato['valor_total'], 2, ',', '.') ?>" required>
+        </label><br><br>
+        <label>Data Início:<br><input type="date" name="data_inicio" value="<?= $contrato['data_inicio'] ?>" required></label><br><br>
+        <label>Data Fim:<br><input type="date" name="data_fim" value="<?= $contrato['data_fim'] ?>" required></label><br><br>
+        <label>Data Assinatura:<br><input type="date" name="data_assinatura" value="<?= $contrato['data_assinatura'] ?>" required></label><br><br>
+        <label>Local Arquivo:<br>
+          <select name="local_arquivo">
+            <option value="1Doc" <?= $contrato['local_arquivo'] === '1Doc' ? 'selected' : '' ?>>1Doc</option>
+            <option value="Papel" <?= $contrato['local_arquivo'] === 'Papel' ? 'selected' : '' ?>>Papel</option>
+          </select>
+        </label><br>
+      </div>
+      <div class="form-row">
+        <label>Observações:<br>
+          <textarea name="observacoes"><?= $contrato['observacoes'] ?></textarea>
+      </div></label>
+      <div class="form-row">
+        <label>Objeto:<br>
+          <textarea name="objeto"><?= $contrato['objeto'] ?></textarea>
+      </div></label>
 
       <button type="submit">Salvar Alterações</button>
     </form>
   </main>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const input = document.getElementById('valor_total');
+
+      input.addEventListener('input', function() {
+        let v = input.value.replace(/[\\.]/g, '').replace(',', '');
+        v = (parseFloat(v) / 100).toFixed(2);
+        v = v.replace('.', ',');
+        v = v.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+        input.value = v;
+      });
+
+      // Evita erro se o valor estiver vazio
+      if (input.value && !input.value.includes(',')) {
+        let raw = parseFloat(input.value).toFixed(2);
+        raw = raw.replace('.', ',');
+        input.value = raw.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+      }
+    });
+  </script>
+
 </body>
 
 </html>

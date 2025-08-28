@@ -1,4 +1,7 @@
-<?php session_start(); ?>
+<?php session_start();
+
+require_once '../templates/includes/verifica_login.php';
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 

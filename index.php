@@ -6,7 +6,7 @@ if (!isset($_SESSION['usuario_id'])) {
 }
 require_once 'config/db.php';
 include 'templates/includes/header.php';
-
+require_once 'templates/includes/verifica_login.php';
 
 $contratosStmt = $pdo->query("SELECT COUNT(*) as total,
 SUM(CASE WHEN data_fim >= CURDATE() THEN 1 ELSE 0 END) AS ativos,

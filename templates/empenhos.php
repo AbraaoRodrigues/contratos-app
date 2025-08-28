@@ -6,6 +6,7 @@ if (!isset($_SESSION['usuario_id'])) {
 }
 require_once '../config/db.php';
 include 'includes/header.php';
+require_once '../templates/includes/verifica_login.php';
 
 // Lista de contratos para seleção
 $contratos = $pdo->query("SELECT id, numero, valor_total FROM contratos ORDER BY numero ASC")->fetchAll(PDO::FETCH_ASSOC);

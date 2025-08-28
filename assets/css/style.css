@@ -29,3 +29,92 @@ body.dark .login-box { background: #1e1e1e; color: #eee; }
 .menu a { color: white; text-decoration: none; font-weight: bold; }
 
 .menu a:hover {text-decoration: underline; }
+
+.form-box {background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.08); display: flex; flex-direction: column; gap: 1rem; margin-top: 2rem; }
+
+.form-row { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; }
+
+.form-row label, .form-box > label { flex: 1; min-width: 200px; display: flex; flex-direction: column; font-size: 0.95rem; }
+
+input, select, textarea { padding: 0.5rem; border: 1px solid #ccc; border-radius: 5px; font-size: 1rem; }
+
+button { align-self: flex-start; padding: 0.7rem 1.5rem; background: #004aad; color: white; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; transition: background 0.2s; }
+
+button:hover { background: #00388f;}
+
+body.dark .form-box {background: #1c1c1c;}
+
+body.dark input, body.dark textarea, body.dark select {background-color: #2a2a2a; color: #eee; border: 1px solid #444;}
+
+/* Links de ação (Editar, Excluir, Limpar etc.) */
+a.link-acao {
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+a.link-editar {
+  color: #1976d2;
+}
+
+a.link-editar:hover {
+  background-color: #1976d2;
+  color: #fff;
+}
+
+a.link-excluir {
+  color: #d32f2f;
+}
+
+a.link-excluir:hover {
+  background-color: #d32f2f;
+  color: #fff;
+}
+
+a.link-limpar {
+  color: #6a1b9a;
+}
+
+a.link-limpar:hover {
+  background-color: #6a1b9a;
+  color: #fff;
+}
+
+.menu-principal {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.menu-principal li {
+  position: relative;
+}
+
+.menu-principal a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0.5rem 0.75rem;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--bg-color, #fff);
+  border: 1px solid #ccc;
+  min-width: 150px;
+  z-index: 999;
+}
+
+.dropdown-menu li {
+  display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}

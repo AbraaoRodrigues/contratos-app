@@ -6,7 +6,7 @@ if (!isset($_SESSION['usuario_id'])) {
 }
 require_once '../config/db.php';
 include 'includes/header.php';
-
+require_once '../templates/includes/verifica_login.php';
 
 $filtro = $_GET['filtro'] ?? '';
 $data_de = $_GET['de'] ?? '';
@@ -55,8 +55,8 @@ $contratos = $stmt->fetchAll(PDO::FETCH_ASSOC);
       <input type="date" name="de" value="<?= $data_de ?>">
       <input type="date" name="ate" value="<?= $data_ate ?>">
       <button type="submit">Filtrar</button>
-      <a href="relatorios.php">Limpar</a>
-      <a href="../api/relatorios/gerar_pdf.php?<?= http_build_query($_GET) ?>" target="_blank">Exportar PDF</a>
+      <a href="relatorios.php" class="link-acao link-editar">Limpar</a>
+      <a href="../api/relatorios/gerar_pdf.php?<?= http_build_query($_GET) ?>" target="_blank" class="link-acao link-editar">Exportar PDF</a>
     </form>
 
 

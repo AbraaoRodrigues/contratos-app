@@ -5,10 +5,10 @@ if (!isset($_SESSION['usuario_id'])) {
   exit;
 }
 
-
 require_once __DIR__ . '/../../config/db.php';
 $modoEscuro = $_SESSION['modo_escuro'] ?? false;
-$nomeUsuario = $_SESSION['usuario_nome'] ?? 'Usuário';
+$nomeUsuario = $_SESSION['nome'] ?? 'Usuário';
+$nivelAcesso = $_SESSION['nivel_acesso'] ?? null;
 $avatar = 'default-avatar.png';
 
 
@@ -20,7 +20,6 @@ if ($usuario && !empty($usuario['avatar'])) {
 }
 ?>
 
-
 <header class="topo">
 
   <nav class="menu">
@@ -28,11 +27,16 @@ if ($usuario && !empty($usuario['avatar'])) {
     <a href="/contratos-app/templates/contratos.php">Contratos</a>
     <a href="/contratos-app/templates/empenhos.php">Empenhos</a>
     <a href="/contratos-app/templates/relatorios.php">Relatórios</a>
-    <?php if ($_SESSION['nivel_acesso'] ?? '' === 'admin') : ?>
-      <a href="/templates/usuarios.php">Usuários</a>
+    <?php if (!empty($_SESSION['nivel_acesso']) && $_SESSION['nivel_acesso'] === 'admin'): ?>
+      <li class="dropdown">
+        <a href="#">Usuários ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="/contratos-app/templates/usuarios.php">Cadastrar</a></li>
+          <li><a href="/contratos-app/templates/lista_usuarios.php">Listar</a></li>
+        </ul>
+      </li>
     <?php endif; ?>
-    <a href="/contratos-app/templates/configuracoes.php">Configurações</a>
-    <a href="/api/auth/logout.php">Sair</a>
+    <a href="/contratos-app/api/auth/logout.php">Sair</a>
   </nav>
   <div class="usuario-logado">
     <span><?= htmlspecialchars($nomeUsuario) ?></span>
