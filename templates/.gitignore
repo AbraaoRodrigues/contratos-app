@@ -1,0 +1,28 @@
+# Ignorar pasta de dependências do Composer
+/vendor/
+
+# Ignorar arquivos de cache e logs temporários
+*.log
+*.cache
+
+# Ignorar configurações locais do VSCode e sistema
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos de upload (se tiver)
+uploads/
+assets/avatars/
+
+# Ignorar credenciais e configs sensíveis (caso use)
+.env
+*.bak
+*.old
+*.tmp
+
+# Ignorar banco de dados SQLite local (se for o caso)
+*.sqlite
+*.db
