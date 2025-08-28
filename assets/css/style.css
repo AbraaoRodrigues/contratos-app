@@ -9,10 +9,7 @@ header { background-color: #004aad; color: white; padding: 1rem; display: flex; 
 button {background: #004aad; color: white; padding: 0.6rem; border: none; border-radius: 5px; cursor: pointer; }
 
 /* Dark mode */
-body.dark {
-background-color: #121212;
-color: #eee;
-}
+body.dark {background-color: #121212;color: #eee;}
 
 body.dark header { background-color: #0d47a1; }
 
@@ -55,32 +52,17 @@ a.link-acao {
   transition: all 0.2s ease-in-out;
 }
 
-a.link-editar {
-  color: #1976d2;
-}
+a.link-editar {  color: #1976d2;}
 
-a.link-editar:hover {
-  background-color: #1976d2;
-  color: #fff;
-}
+a.link-editar:hover {  background-color: #1976d2;  color: #fff;}
 
-a.link-excluir {
-  color: #d32f2f;
-}
+a.link-excluir {  color: #d32f2f;}
 
-a.link-excluir:hover {
-  background-color: #d32f2f;
-  color: #fff;
-}
+a.link-excluir:hover {  background-color: #d32f2f;  color: #fff;}
 
-a.link-limpar {
-  color: #6a1b9a;
-}
+a.link-limpar {  color: #6a1b9a;}
 
-a.link-limpar:hover {
-  background-color: #6a1b9a;
-  color: #fff;
-}
+a.link-limpar:hover {  background-color: #6a1b9a;  color: #fff;}
 
 .menu-principal {
   list-style: none;
@@ -89,9 +71,7 @@ a.link-limpar:hover {
   align-items: center;
 }
 
-.menu-principal li {
-  position: relative;
-}
+.menu-principal li {  position: relative;}
 
 .menu-principal a {
   text-decoration: none;
@@ -105,16 +85,101 @@ a.link-limpar:hover {
   position: absolute;
   top: 100%;
   left: 0;
-  background: var(--bg-color, #fff);
+  background: #004aad;
+  color: white;
   border: 1px solid #ccc;
   min-width: 150px;
   z-index: 999;
 }
 
-.dropdown-menu li {
-  display: block;
+body[data-tema="escuro"] .dropdown-menu {
+  background: #1e1e1e;
+  border: 1px solid #444;
 }
 
-.dropdown:hover .dropdown-menu {
-  display: block;
+.dropdown-menu li {  display: block;}
+
+.dropdown:hover .dropdown-menu {  display: block;}
+
+.mensagem-erro {
+  color: #fff;
+  background-color: #d9534f;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+/* Tabela bonita */
+.tabela-usuarios {
+  width: 100%;
+  max-width: 850px;
+  margin: 2rem auto 5rem auto; /* cima, direita/esquerda, baixo */
+  border-collapse: collapse;
+}
+
+.tabela-usuarios th,
+.tabela-usuarios td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
+
+.tabela-usuarios th {  background-color: #eee; color: #222;}
+
+.status-ativo {  color: green;  font-weight: bold;}
+
+.status-inativo {  color: red;  font-weight: bold;}
+
+/* Botões de ação */
+.btn-editar {  color: #007bff;  text-decoration: none;}
+.btn-editar:hover {  text-decoration: underline;}
+
+.btn-desativar {  color: #d9534f;  text-decoration: none;}
+.btn-desativar:hover {  text-decoration: underline;}
+
+.btn-ativar {  color: #28a745;  text-decoration: none;}
+.btn-ativar:hover {  text-decoration: underline;}
+
+/* Rodapé */
+.rodape {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #999;
+  background-color: #f4f4f4;
+  border-top: 1px solid #ddd;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Modo escuro para o rodapé e tabela */
+body[data-tema="escuro"] .tabela-usuarios th {
+  background-color: #222;
+  color: #ccc;
+}
+
+body[data-tema="escuro"] .tabela-usuarios td {
+  border-color: #444;
+  color: #eee;
+}
+
+body[data-tema="escuro"] .rodape {
+  background-color: #111;
+  color: #888;
+  border-top: 1px solid #333;
+}
+
+@media (max-width: 600px) {.form-row { flex-direction: column; }
+  .tabela-usuarios { font-size: 0.9rem;}
+
+  .menu { flex-direction: column; gap: 0.5rem;}
+}
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark, body[data-tema="escuro"] {
+  transition: background-color 0.3s, color 0.3s;
 }

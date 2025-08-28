@@ -30,14 +30,12 @@ $msg = $_GET['msg'] ?? '';
 
 <body class="<?= $_SESSION['modo_escuro'] ? 'dark' : '' ?>">
   <main style="padding:2rem; max-width:1000px; margin:auto">
-    <h2>Empenhos</h2>
-
-    <?php if ($msg): ?><p style="color:green;"><?= htmlspecialchars($msg) ?></p><?php endif; ?>
-
     <h3>Cadastrar novo empenho</h3>
-    <form action="../api/empenhos/salvar.php" method="post">
-      <label>Contrato:<br>
-        <select name="contrato_id" required>
+
+    <form action="../api/empenhos/salvar.php" method="post" class="form-box" style="max-width: 600px; margin: 0 auto;">
+      <label>Contrato:
+        <select name="contrato_id">
+          <option value="">-- Sem contrato vinculado --</option>
           <?php foreach ($contratos as $c):
             $stmt = $pdo->prepare("SELECT SUM(valor_empenhado) FROM empenhos WHERE contrato_id = ?");
             $stmt->execute([$c['id']]);
@@ -48,23 +46,28 @@ $msg = $_GET['msg'] ?? '';
               <?= htmlspecialchars($c['numero']) ?> - Saldo: R$ <?= number_format($saldo, 2, ',', '.') ?>
             </option>
           <?php endforeach; ?>
-        </select></label><br><br>
+        </select>
+      </label>
 
-      <label>Valor Empenhado:<br>
-        <input type="number" step="0.01" name="valor_empenhado" required></label><br><br>
+      <label>Valor Empenhado:
+        <input type="text" name="valor_empenhado" required>
+      </label>
 
-      <label>Data do Empenho:<br>
-        <input type="date" name="data_empenho" required></label><br><br>
+      <label>Data do Empenho:
+        <input type="date" name="data_empenho" required>
+      </label>
 
-      <label>Fim Previsto:<br>
-        <input type="date" name="data_fim_previsto" required></label><br><br>
+      <label>Fim Previsto:
+        <input type="date" name="data_fim_previsto" required>
+      </label>
 
       <button type="submit">Salvar Empenho</button>
     </form>
 
     <hr>
-    <h3>Lista de Empenhos</h3>
-    <table border="1" cellpadding="5" cellspacing="0" style="width:100%;">
+    <h3 style="margin-top: 3rem;">Lista de Empenhos</h3>
+
+    <table class="tabela-usuarios"> <!-- ou use tabela-empenhos -->
       <thead>
         <tr>
           <th>Contrato</th>
@@ -84,7 +87,21 @@ $msg = $_GET['msg'] ?? '';
         <?php endforeach; ?>
       </tbody>
     </table>
+
   </main>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const valorInput = document.querySelector('input[name="valor_empenhado"]');
+
+      valorInput.addEventListener('input', function() {
+        let valor = this.value.replace(/\D/g, '');
+        valor = (parseFloat(valor) / 100).toFixed(2);
+        valor = valor.replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+        this.value = valor;
+      });
+    });
+  </script>
+
 </body>
 
 </html>

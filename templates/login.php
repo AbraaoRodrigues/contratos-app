@@ -1,3 +1,9 @@
+<?php
+session_start();
+$erro = $_SESSION['erro_login'] ?? null;
+unset($_SESSION['erro_login']);
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -15,6 +21,11 @@
       <input type="password" name="senha" placeholder="Senha" required><br>
       <button type="submit">Entrar</button>
     </form>
+    <?php if ($erro): ?>
+      <div class="mensagem-erro">
+        <?= htmlspecialchars($erro) ?>
+      </div>
+    <?php endif; ?>
   </div>
 </body>
 

@@ -51,7 +51,7 @@ $contratos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
     <form method="get" style="margin-bottom: 2rem;">
-      <input type="text" name="filtro" placeholder="Contrato ou órgão" value="<?= htmlspecialchars($filtro) ?>">
+      <input type="text" name="filtro" placeholder="Contrato ou fornecedor" value="<?= htmlspecialchars($filtro) ?>">
       <input type="date" name="de" value="<?= $data_de ?>">
       <input type="date" name="ate" value="<?= $data_ate ?>">
       <button type="submit">Filtrar</button>
@@ -81,7 +81,7 @@ $contratos = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <tr>
               <td><?= $c['numero'] ?></td>
               <td><?= $c['processo'] ?></td>
-              <td><?= $c['orgao'] ?></td>
+              <td><?= $c['fornecedor'] ?></td>
               <td><?= date('d/m/Y', strtotime($c['data_inicio'])) ?></td>
               <td><?= date('d/m/Y', strtotime($c['data_fim'])) ?></td>
               <td>R$ <?= number_format($c['valor_total'], 2, ',', '.') ?></td>
