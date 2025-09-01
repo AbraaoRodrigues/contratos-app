@@ -7,32 +7,45 @@ if (!isset($_SESSION['usuario_id'])) {
   exit;
 }
 
-// Função para tratar valores em reais
+// Função para converter valor com máscara (R$)
 function parseValorReal($valor)
 {
   return str_replace(',', '.', str_replace('.', '', $valor));
 }
 
 // Dados do formulário
-$contratoId = !empty($_POST['contrato_id']) ? $_POST['contrato_id'] : null;
-$valor = parseValorReal($_POST['valor_empenhado']);
-$dataEmpenho = $_POST['data_empenho'];
-$dataFimPrevisto = $_POST['data_fim_previsto'];
+$contrato_id       = $_POST['contrato_id'] !== '0' ? (int) $_POST['contrato_id'] : null;
+$numero_empenho    = $_POST['numero_empenho'];
+$valor_empenhado   = parseValorReal($_POST['valor_empenhado']);
+$data_empenho      = $_POST['data_empenho'];
+$data_fim_previsto = $_POST['data_fim_previsto'];
+$objeto            = $_POST['objeto'] ?? null;
+$fornecedor        = $_POST['fornecedor'] ?? null;
+$observacoes       = $_POST['observacoes'] ?? null;
 
-// Inserir novo empenho
-$stmt = $pdo->prepare("INSERT INTO empenhos (contrato_id, valor_empenhado, data_empenho, data_fim_previsto)
-                       VALUES (?, ?, ?, ?)");
-$stmt->execute([$contratoId, $valor, $dataEmpenho, $dataFimPrevisto]);
+// Inserir no banco
+$stmt = $pdo->prepare("
+  INSERT INTO empenhos
+    (contrato_id, numero_empenho, valor_empenhado, data_empenho, data_fim_previsto, objeto, fornecedor, observacoes)
+  VALUES
+    (?, ?, ?, ?, ?, ?, ?, ?)
+");
 
-// Registrar log simples
-$acao = "Novo empenho cadastrado - valor R$ " . number_format($valor, 2, ',', '.') .
-  ", data: $dataEmpenho, fim previsto: $dataFimPrevisto" .
-  ($contratoId ? ", contrato ID: $contratoId" : ", sem contrato vinculado");
+$stmt->execute([
+  $contrato_id,
+  $numero_empenho,
+  $valor_empenhado,
+  $data_empenho,
+  $data_fim_previsto,
+  $objeto,
+  $fornecedor,
+  $observacoes
+]);
 
-$log = $pdo->prepare("INSERT INTO logs (usuario_id, acao, ip, criado_em)
-                      VALUES (?, ?, ?, NOW())");
-$log->execute([$_SESSION['usuario_id'], $acao, $_SERVER['REMOTE_ADDR']]);
+// Registrar log
+$acao = $contrato_id ? 'cadastrar_empenho_contrato' : 'cadastrar_empenho_direto';
+$pdo->prepare("INSERT INTO logs (usuario_id, acao, ip) VALUES (?, ?, ?)")
+  ->execute([$_SESSION['usuario_id'], $acao, $_SERVER['REMOTE_ADDR']]);
 
-// Redirecionar com mensagem
 header('Location: ../../templates/empenhos.php?msg=Empenho salvo com sucesso');
 exit;
