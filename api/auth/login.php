@@ -1,5 +1,7 @@
 <?php
 require_once '../../config/db.php';
+$pdo = Conexao::getInstance();
+
 session_start();
 
 $email = $_POST['email'] ?? '';

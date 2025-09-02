@@ -1,6 +1,7 @@
 <?php
 session_start();
 require_once '../config/db.php';
+$pdo = Conexao::getInstance();
 require_once './includes/verifica_login.php';
 
 if ($_SESSION['nivel_acesso'] !== 'admin') {

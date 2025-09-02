@@ -1,6 +1,8 @@
 <?php
 session_start();
 require_once '../../config/db.php';
+$pdo = Conexao::getInstance();
+
 
 
 if ($_SESSION['nivel_acesso'] !== 'admin') exit('Acesso negado');

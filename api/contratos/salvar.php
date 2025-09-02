@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once '../../config/db.php';
-
+$pdo = Conexao::getInstance();
 
 if (!isset($_SESSION['usuario_id'])) {
   header('Location: ../../templates/login.php');

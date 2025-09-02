@@ -5,6 +5,7 @@ if (!isset($_SESSION['usuario_id'])) {
   exit;
 }
 require_once 'config/db.php';
+$pdo = Conexao::getInstance();
 require_once 'templates/includes/verifica_login.php';
 
 $modoEscuro = $_SESSION['modo_escuro'] ?? false;

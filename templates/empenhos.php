@@ -1,6 +1,8 @@
 <?php
 session_start();
 require_once '../config/db.php';
+$pdo = Conexao::getInstance();
+
 require_once 'includes/verifica_login.php';
 
 // Pega os contratos

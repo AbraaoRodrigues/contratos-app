@@ -5,6 +5,7 @@ if (!isset($_SESSION['usuario_id'])) {
   exit;
 }
 require_once '../config/db.php';
+$pdo = Conexao::getInstance();
 include 'includes/header.php';
 require_once '../templates/includes/verifica_login.php';
 

@@ -5,6 +5,8 @@ if (!isset($_SESSION['usuario_id'])) {
 }
 
 require_once __DIR__ . '/../../config/db.php';
+$pdo = Conexao::getInstance();
+
 
 $modoEscuro = $_SESSION['modo_escuro'] ?? false;
 $nomeUsuario = $_SESSION['nome'] ?? 'Usuário';

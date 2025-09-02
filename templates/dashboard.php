@@ -1,5 +1,7 @@
 <?php
-require_once './config/db.php';
+require_once '../config/db.php';
+$pdo = Conexao::getInstance();
+
 require_once './templates/includes/verifica_login.php';
 
 function diasRestantes($data)
