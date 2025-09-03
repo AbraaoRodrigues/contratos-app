@@ -71,15 +71,16 @@ $msg = $_GET['msg'] ?? '';
         <label>Fim Previsto:
           <input type="date" name="data_fim_previsto" required>
         </label>
-
-        <label>Objeto:
-          <textarea name="objeto" id="objeto" rows="2" readonly></textarea>
-        </label>
-
         <label>Fornecedor:
           <input type="text" name="fornecedor" id="fornecedor" readonly>
         </label>
-
+      </div>
+      <div class="form-row">
+        <label>Objeto:
+          <textarea name="objeto" id="objeto" rows="2" readonly></textarea>
+        </label>
+      </div>
+      <div class="form-row">
         <label>Observações:
           <textarea name="observacoes" id="observacoes" rows="2" readonly></textarea>
         </label>

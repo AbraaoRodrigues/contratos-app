@@ -27,31 +27,11 @@ if ($id) {
 
   if (!$original) exit('Usuário não encontrado.');
 
-  if (!empty($senha)) {
-    // Atualiza também a senha
-    $hash = password_hash($senha, PASSWORD_DEFAULT);
-    $stmt = $pdo->prepare("UPDATE usuarios SET nome = ?, email = ?, nivel_acesso = ?, senha_hash = ? WHERE id = ?");
-    $stmt->execute([$nome, $email, $nivel, $hash, $id]);
-
-    $detalhes = gerarLogAlteracoes($original, [
-      'nome' => $nome,
-      'email' => $email,
-      'nivel_acesso' => $nivel,
-      'senha_hash' => '********'
-    ]);
-  } else {
-    // Não atualiza a senha
-    $stmt = $pdo->prepare("UPDATE usuarios SET nome = ?, email = ?, nivel_acesso = ? WHERE id = ?");
-    $stmt->execute([$nome, $email, $nivel, $id]);
-
-    $detalhes = gerarLogAlteracoes($original, [
-      'nome' => $nome,
-      'email' => $email,
-      'nivel_acesso' => $nivel
-    ]);
-  }
+  $stmt = $pdo->prepare("UPDATE usuarios SET nome = ?, email = ?, nivel_acesso = ? WHERE id = ?");
+  $stmt->execute([$nome, $email, $nivel, $id]);
 
   // Registrar log de alterações
+  $detalhes = gerarLogAlteracoes($original, ['nome' => $nome, 'email' => $email, 'nivel_acesso' => $nivel]);
   if (!empty($detalhes)) {
     $acao = "editar_usuario: $detalhes";
     $pdo->prepare("INSERT INTO logs (usuario_id, acao, ip) VALUES (?, ?, ?)")

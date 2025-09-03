@@ -12,46 +12,43 @@ if ($_SESSION['nivel_acesso'] !== 'admin') {
 // Se vier com ?id= na URL, está editando
 $usuario = null;
 if (isset($_GET['id'])) {
-  $id = (int)$_GET['id']; // segurança
   $stmt = $pdo->prepare("SELECT * FROM usuarios WHERE id = ?");
-  $stmt->execute([$id]);
-
+  $stmt->execute([$_GET['id']]);
   $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
 
+  // Corrige possível retorno falso
   if (!$usuario) {
-    echo "Usuário com ID $id não encontrado.";
-    exit;
+    $usuario = [];
   }
 }
-
 ?>
 
 <?php include '../templates/includes/header.php'; ?>
+
+<head>
+  <link rel="stylesheet" href="/contratos-app/assets/css/style.css">
+</head>
 
 <body class="<?= $_SESSION['modo_escuro'] ? 'dark' : '' ?>">
   <div class="container">
     <h2><?= $usuario ? 'Editar Usuário' : 'Cadastrar Novo Usuário' ?></h2>
 
     <form action="../api/usuarios/salvar_usuario.php" method="post" class="form-box" style="max-width: 500px; margin: 0 auto;">
-
-      <?php if ($usuario): ?>
-        <input type="hidden" name="id" value="<?= $usuario['id'] ?>">
-      <?php endif; ?>
-
       <label>Nome:
-        <input type="text" name="nome" required value="<?= htmlspecialchars($usuario['nome'] ?? '') ?>">
+        <?php if ($usuario): ?>
+          <input type="text" name="nome" required value="<?= htmlspecialchars($usuario['nome'] ?? '') ?>">
+        <?php endif; ?>
       </label>
 
       <label>Email:
         <input type="email" name="email" required value="<?= htmlspecialchars($usuario['email'] ?? '') ?>">
       </label>
 
-      <label>Senha:
-        <input type="password" name="senha" <?= !$usuario ? 'required' : '' ?>>
-        <?php if ($usuario): ?>
-          <small>Deixe em branco para manter a senha atual.</small>
-        <?php endif; ?>
-      </label>
+      <?php if (!$usuario): ?>
+        <label>Senha:
+          <input type="password" name="senha" required>
+        </label>
+      <?php endif; ?>
 
       <label>Nível de Acesso:
         <select name="nivel_acesso" required>
@@ -63,6 +60,7 @@ if (isset($_GET['id'])) {
       <button type="submit">Salvar</button>
     </form>
   </div>
+
 
   <?php include '../templates/includes/footer.php'; ?>
 </body>

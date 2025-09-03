@@ -4,6 +4,6 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 if (!isset($_SESSION['usuario_id'])) {
-  header('Location: /contratos-app/login.php');
+  header('Location: /api/auth/login.php');
   exit;
 }

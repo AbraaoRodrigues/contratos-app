@@ -16,9 +16,9 @@ $avatar = 'default-avatar.png';
 // Carrega avatar do usuário
 $stmt = $pdo->prepare("SELECT avatar FROM usuarios WHERE id = ?");
 $stmt->execute([$_SESSION['usuario_id']]);
-$dadosAvatar = $stmt->fetch(PDO::FETCH_ASSOC);
-if ($dadosAvatar && !empty($dadosAvatar['avatar'])) {
-  $avatar = $dadosAvatar['avatar'];
+$usuario = $stmt->fetch(PDO::FETCH_ASSOC);
+if ($usuario && !empty($usuario['avatar'])) {
+  $avatar = $usuario['avatar'];
 }
 ?>
 <!DOCTYPE html>
@@ -29,7 +29,7 @@ if ($dadosAvatar && !empty($dadosAvatar['avatar'])) {
   <title>Contratos - Prefeitura de Agudos</title>
 
   <!-- Estilo padrão -->
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/contratos-app/assets/css/style.css">
 
 </head>
 
@@ -38,29 +38,29 @@ if ($dadosAvatar && !empty($dadosAvatar['avatar'])) {
 
     <nav class="menu">
       <ul class="menu-principal">
-        <li><a href="/index.php">Dashboard</a></li>
-        <li><a href="/templates/contratos.php">Contratos</a></li>
-        <li><a href="/templates/empenhos.php">Empenhos</a></li>
-        <li><a href="/templates/relatorios.php">Relatórios</a></li>
+        <li><a href="/contratos-app/index.php">Dashboard</a></li>
+        <li><a href="/contratos-app/templates/contratos.php">Contratos</a></li>
+        <li><a href="/contratos-app/templates/empenhos.php">Empenhos</a></li>
+        <li><a href="/contratos-app/templates/relatorios.php">Relatórios</a></li>
 
         <?php if (!empty($_SESSION['nivel_acesso']) && $_SESSION['nivel_acesso'] === 'admin'): ?>
           <li class="dropdown">
             <a href="#">Usuários ▾</a>
             <ul class="dropdown-menu">
-              <li><a href="/templates/usuarios.php">Cadastrar</a></li>
-              <li><a href="/templates/lista_usuarios.php">Listar</a></li>
+              <li><a href="/contratos-app/templates/usuarios.php">Cadastrar</a></li>
+              <li><a href="/contratos-app/templates/lista_usuarios.php">Listar</a></li>
             </ul>
           </li>
         <?php endif; ?>
 
-        <li><a href="/api/auth/logout.php">Sair</a></li>
+        <li><a href="/contratos-app/api/auth/logout.php">Sair</a></li>
       </ul>
     </nav>
 
     <div class="usuario-logado">
       <span><?= htmlspecialchars($nomeUsuario) ?></span>
-      <a href="/templates/configuracoes.php">
-        <img src="/assets/avatars/<?= htmlspecialchars($avatar) ?>" alt="Avatar" class="avatar">
+      <a href="/contratos-app/templates/configuracoes.php">
+        <img src="/contratos-app/assets/avatars/<?= htmlspecialchars($avatar) ?>" alt="Avatar" class="avatar">
       </a>
     </div>
   </header>

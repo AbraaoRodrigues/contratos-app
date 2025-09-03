@@ -38,7 +38,7 @@ if (!$contrato) {
   <main style="padding:2rem; max-width:700px; margin:auto;">
 
     <h2>Editar Contrato</h2>
-    <form action="../api/contratos/atualizar.php" method="post" class="form-box">
+    <form action="../api/contratos/atualizar.php" method="post" class="form-box" enctype="multipart/form-data">
       <input type="hidden" name="id" value="<?= $contrato['id'] ?>">
 
       <div class="form-row">
@@ -66,7 +66,15 @@ if (!$contrato) {
         <label>Objeto:<br>
           <textarea name="objeto"><?= $contrato['objeto'] ?></textarea>
       </div></label>
+      <?php if (!empty($contrato['arquivo_pdf'])): ?>
+        <p>Contrato atual:
+          <a href="/<?= htmlspecialchars($contrato['arquivo_pdf']) ?>" target="_blank">📎 Ver contrato</a>
+        </p>
+      <?php endif; ?>
 
+      <label>Substituir contrato (PDF):
+        <input type="file" name="contrato_pdf" accept="application/pdf">
+      </label>
       <button type="submit">Salvar Alterações</button>
     </form>
   </main>

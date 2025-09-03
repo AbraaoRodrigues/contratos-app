@@ -15,7 +15,7 @@ $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <?php include './includes/header.php'; ?>
 
 <head>
-  <link rel="stylesheet" href="/contratos-app/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body class="<?= $_SESSION['modo_escuro'] ? 'dark' : '' ?>">
