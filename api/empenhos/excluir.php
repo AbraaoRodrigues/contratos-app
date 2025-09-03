@@ -10,13 +10,13 @@ if (!$id || !$justificativa) {
   exit('ID e justificativa são obrigatórios.');
 }
 
-$stmt = $pdo->prepare("UPDATE contratos SET status = 'excluido', justificativa_exclusao = ? WHERE id = ?");
+$stmt = $pdo->prepare("UPDATE empenhos SET status = 'excluido', justificativa_exclusao = ? WHERE id = ?");
 $stmt->execute([$justificativa, $id]);
 
-// (Opcional) registrar no log
+// Log
 $stmtLog = $pdo->prepare("INSERT INTO logs (usuario_id, acao, detalhes, data_hora)
-                          VALUES (?, 'excluir_contrato', ?, NOW())");
-$detalhes = "Contrato ID $id marcado como excluído. Justificativa: $justificativa";
+                          VALUES (?, 'excluir_empenho', ?, NOW())");
+$detalhes = "Empenho ID $id marcado como excluído. Justificativa: $justificativa";
 $stmtLog->execute([$_SESSION['usuario_id'], $detalhes]);
 
-echo "Contrato excluído com sucesso.";
+echo "Empenho excluído com sucesso.";

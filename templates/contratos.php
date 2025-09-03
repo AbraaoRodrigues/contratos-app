@@ -9,6 +9,7 @@ $pdo = Conexao::getInstance();
 
 include 'includes/header.php';
 require_once '../templates/includes/verifica_login.php';
+include './includes/modal_exclusao.php';
 
 // Filtros
 $filtro = $_GET['filtro'] ?? '';
@@ -86,8 +87,8 @@ $msg = $_GET['msg'] ?? '';
 
         <label>Local Arquivo:
           <select name="local_arquivo">
-            <option value="1Doc">1Doc</option>
-            <option value="Papel">Papel</option>
+            <option value="Digital">Digital</option>
+            <option value="Físico">Físico</option>
           </select></label>
       </div>
 
@@ -119,63 +120,6 @@ $msg = $_GET['msg'] ?? '';
 
       <button type="submit">Salvar Contrato</button>
     </form>
-
-    <form method="get">
-      <input type="text" name="filtro" placeholder="Buscar por número ou fornecedor" value="<?= htmlspecialchars($filtro) ?>">
-      <button type="submit">Filtrar</button>
-      <a href="contratos.php" class="link-acao link-editar">Limpar</a>
-    </form>
-
-    <table border="1" cellpadding="5" cellspacing="0" style="margin-top: 1rem; width: 100%;">
-      <thead>
-        <tr>
-          <th>Número</th>
-          <th>Processo</th>
-          <th>Fornecedor</th>
-          <th>Valor</th>
-          <th>Saldo Atual</th>
-          <th>Início</th>
-          <th>Fim</th>
-          <th>Arquivo</th>
-          <th>Ações</th>
-          <th>Extra</th>
-        </tr>
-      </thead>
-      <tbody>
-        <?php if (count($contratos) === 0): ?>
-          <tr>
-            <td colspan="8">Nenhum contrato encontrado.</td>
-          </tr>
-        <?php else: ?>
-          <?php foreach ($contratos as $c): ?>
-            <tr>
-              <td><?= htmlspecialchars($c['numero']) ?></td>
-              <td><?= htmlspecialchars($c['processo']) ?></td>
-              <td><?= htmlspecialchars($c['fornecedor']) ?></td>
-              <td>R$ <?= number_format($c['valor_total'], 2, ',', '.') ?></td>
-              <?php
-              $stmt = $pdo->prepare("SELECT SUM(valor_empenhado) FROM empenhos WHERE contrato_id = ?");
-              $stmt->execute([$c['id']]);
-              $empenhado = $stmt->fetchColumn() ?: 0;
-              $saldo = $c['valor_total'] - $empenhado;
-              ?>
-              <td>R$ <?= number_format($saldo, 2, ',', '.') ?></td>
-              <td><?= date('d/m/Y', strtotime($c['data_inicio'])) ?></td>
-              <td><?= date('d/m/Y', strtotime($c['data_fim'])) ?></td>
-              <td><?= $c['local_arquivo'] ?></td>
-              <td>
-                <a href="editar_contrato.php?id=<?= $c['id'] ?>" class="link-acao link-editar">Editar</a> |
-                <a href="../api/contratos/excluir.php?id=<?= $c['id'] ?>" onclick="return confirm('Tem certeza que deseja excluir este contrato?')" class="link-acao link-editar">Excluir</a>
-              </td>
-              <td>
-                <a href="detalhes_contrato.php?id=<?= $c['id'] ?>" title="Ver detalhes do contrato">🔍 Detalhes</a>
-              </td>
-
-            </tr>
-          <?php endforeach; ?>
-        <?php endif; ?>
-      </tbody>
-    </table>
 
   </main>
   <script>
@@ -272,7 +216,7 @@ $msg = $_GET['msg'] ?? '';
       });
     });
   </script>
-
+  <?php include 'includes/footer.php'; ?>
 </body>
 
 </html>

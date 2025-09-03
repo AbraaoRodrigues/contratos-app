@@ -89,30 +89,6 @@ $msg = $_GET['msg'] ?? '';
       <button type="submit">Salvar Empenho</button>
     </form>
 
-    <hr>
-    <h3>Lista de Empenhos</h3>
-    <table class="tabela-usuarios">
-      <thead>
-        <tr>
-          <th>Contrato</th>
-          <th>Número</th>
-          <th>Valor Empenhado</th>
-          <th>Data Empenho</th>
-          <th>Fim Previsto</th>
-        </tr>
-      </thead>
-      <tbody>
-        <?php foreach ($empenhos as $e): ?>
-          <tr>
-            <td><?= $e['contrato_numero'] ?? 'Sem vínculo' ?></td>
-            <td><?= htmlspecialchars($e['numero_empenho'] ?? '-') ?></td>
-            <td>R$ <?= number_format($e['valor_empenhado'], 2, ',', '.') ?></td>
-            <td><?= date('d/m/Y', strtotime($e['data_empenho'])) ?></td>
-            <td><?= date('d/m/Y', strtotime($e['data_fim_previsto'])) ?></td>
-          </tr>
-        <?php endforeach; ?>
-      </tbody>
-    </table>
   </main>
 
   <!-- JSON com dados dos contratos -->
@@ -163,7 +139,7 @@ $msg = $_GET['msg'] ?? '';
       inputValor.value = v;
     });
   </script>
-
+  <?php include 'includes/footer.php'; ?>
 </body>
 
 </html>

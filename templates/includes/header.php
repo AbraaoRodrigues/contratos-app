@@ -41,7 +41,13 @@ if ($dadosAvatar && !empty($dadosAvatar['avatar'])) {
         <li><a href="/index.php">Dashboard</a></li>
         <li><a href="/templates/contratos.php">Contratos</a></li>
         <li><a href="/templates/empenhos.php">Empenhos</a></li>
-        <li><a href="/templates/relatorios.php">Relatórios</a></li>
+        <li class="dropdown">
+          <a href="#">Relatórios ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="/templates/relatorios.php">Contratos</a></li>
+            <li><a href="/templates/relatorios_empenhos.php">Empenhos</a></li>
+          </ul>
+        </li>
 
         <?php if (!empty($_SESSION['nivel_acesso']) && $_SESSION['nivel_acesso'] === 'admin'): ?>
           <li class="dropdown">

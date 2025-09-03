@@ -215,3 +215,23 @@ body.dark, body[data-tema="escuro"] {
 body.dark .card-dashboard {
   background: #1e1e1e;
 }
+
+.tabela-relatorio {   width: 100%;   border-collapse: collapse;   font-size: 0.9rem;}
+
+.tabela-relatorio thead {   background-color: #222;}
+
+.tabela-relatorio th,
+.tabela-relatorio td { padding: 8px; text-align: left; white-space: nowrap;}
+
+@media (max-width: 768px) {
+  .tabela-relatorio td,
+  .tabela-relatorio th { font-size: 0.75rem; padding: 6px; }
+
+  .acoes { display: flex; flex-direction: column; gap: 4px;}
+}
+
+@media (max-width: 600px) {
+  .btn-exportar {
+    display: none;
+  }
+}

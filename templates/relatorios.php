@@ -8,18 +8,19 @@ require_once '../config/db.php';
 $pdo = Conexao::getInstance();
 include 'includes/header.php';
 require_once '../templates/includes/verifica_login.php';
+include './includes/modal_exclusao.php';
 
 $filtro = $_GET['filtro'] ?? '';
 $data_de = $_GET['de'] ?? '';
 $data_ate = $_GET['ate'] ?? '';
 
 
-$query = "SELECT * FROM contratos WHERE 1=1";
+$query = "SELECT * FROM contratos WHERE status != 'excluido'";
 $params = [];
 
 
 if ($filtro) {
-  $query .= " AND (numero LIKE ? OR orgao LIKE ?)";
+  $query .= " AND (numero LIKE ? OR fornecedor LIKE ?)";
   $params[] = "%$filtro%";
   $params[] = "%$filtro%";
 }
@@ -61,37 +62,47 @@ $contratos = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </form>
 
 
-    <table border="1" cellpadding="5" cellspacing="0" width="100%">
+    <table class="tabela-relatorio">
       <thead>
         <tr>
           <th>Número</th>
-          <th>Processo</th>
-          <th>Órgão</th>
+          <th>Fornecedor</th>
           <th>Início</th>
           <th>Fim</th>
-          <th>Valor</th>
+          <th>Ações</th>
         </tr>
       </thead>
       <tbody>
-        <?php if (empty($contratos)): ?>
+        <?php foreach ($contratos as $c): ?>
+          <?php
+          $stmt = $pdo->prepare("SELECT COUNT(*) FROM empenhos WHERE contrato_id = ?");
+          $stmt->execute([$c['id']]);
+          $temEmpenhos = $stmt->fetchColumn() > 0;
+          ?>
           <tr>
-            <td colspan="6">Nenhum contrato encontrado.</td>
+            <td><?= htmlspecialchars($c['numero']) ?></td>
+            <td><?= htmlspecialchars($c['fornecedor']) ?></td>
+            <td><?= date('d/m/Y', strtotime($c['data_inicio'])) ?></td>
+            <td><?= date('d/m/Y', strtotime($c['data_fim'])) ?></td>
+            <td>
+              <a href="editar_contrato.php?id=<?= $c['id'] ?>">✏️Editar</a> |
+              <a href="detalhes_contrato.php?id=<?= $c['id'] ?>" target="_blank">🔍Detalhes</a> |
+
+              <?php if ($temEmpenhos): ?>
+                <a href="empenhos_vinculados.php?contrato_id=<?= $c['id'] ?>">📄empenhos</a>
+              <?php else: ?>
+                <span style="color: #ccc;" title="Nenhum empenho vinculado">📄empenhos</span>
+              <?php endif; ?>
+              |
+              <a href="#" onclick="abrirModalExclusao(<?= $c['id'] ?>, '../api/contratos/excluir.php', 'Excluir Contrato'); return false;" class="link-acao link-excluir">🗑️Excluir</a>
+            </td>
           </tr>
-        <?php else: ?>
-          <?php foreach ($contratos as $c): ?>
-            <tr>
-              <td><?= $c['numero'] ?></td>
-              <td><?= $c['processo'] ?></td>
-              <td><?= $c['fornecedor'] ?></td>
-              <td><?= date('d/m/Y', strtotime($c['data_inicio'])) ?></td>
-              <td><?= date('d/m/Y', strtotime($c['data_fim'])) ?></td>
-              <td>R$ <?= number_format($c['valor_total'], 2, ',', '.') ?></td>
-            </tr>
-          <?php endforeach; ?>
-        <?php endif; ?>
+        <?php endforeach; ?>
       </tbody>
     </table>
+
   </main>
+  <?php include 'includes/footer.php'; ?>
 </body>
 
 </html>
