@@ -85,7 +85,7 @@ $stmt = $pdo->prepare("UPDATE contratos SET
   data_assinatura = ?,
   prorrogavel = ?,
   responsavel = ?,
-  prazo_maximo = ?,
+  prorrogavel_max_anos = ?,
   data_ultimo_aditivo = ?
 WHERE id = ?");
 $stmt->execute([
@@ -101,7 +101,6 @@ $stmt->execute([
   $data_assinatura,
   $prorrogavel,
   $responsavel,
-  $arquivo_path,
   $prazo_maximo,
   $dt_ultimo_adt,
   $id
@@ -134,7 +133,7 @@ function gerarLogAlteracoes(array $original, array $novos): string
 $detalhes = gerarLogAlteracoes($contrato_antigo, $_POST);
 
 if (!empty($detalhes)) {
-  $stmtLog = $pdo->prepare("INSERT INTO logs (usuario_id, acao, detalhes, data_hora)
+  $stmtLog = $pdo->prepare("INSERT INTO logs (usuario_id, acao, ip, criado_em)
                             VALUES (?, 'editar_contrato', ?, NOW())");
   $stmtLog->execute([$_SESSION['usuario_id'], $detalhes]);
 }

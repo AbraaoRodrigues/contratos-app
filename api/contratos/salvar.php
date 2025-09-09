@@ -45,7 +45,7 @@ if (!empty($_FILES['arquivos']['name'])) {
 $valor = isset($_POST['valor_total']) ? parseValorReal($_POST['valor_total']) : 0.00;
 
 $stmt = $pdo->prepare("INSERT INTO contratos (numero, processo, fornecedor, data_inicio, data_fim, valor_total, local_arquivo, observacoes,
- objeto, data_assinatura, prorrogavel, responsavel, prazo_maximo, data_ultimo_aditivo)
+ objeto, data_assinatura, prorrogavel, responsavel, prorrogavel_max_anos, data_ultimo_aditivo)
 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
 $stmt->execute([
@@ -61,14 +61,13 @@ $stmt->execute([
   $_POST['data_assinatura'],
   $_POST['prorrogavel'] ?? 'nao',
   $_POST['responsavel'],
-  $_POST['prazo_maximo'] ?? 10,
+  $_POST['prorrogavel_max_anos'] ?? 10,
   $_POST['data_ultimo_aditivo'] ?? null
 ]);
 $contratoId = $pdo->lastInsertId();
 
 // log
-$pdo->prepare("INSERT INTO logs (usuario_id, acao, ip) VALUES (?, 'cadastrou contrato', ?)")
+$pdo->prepare("INSERT INTO logs (usuario_id, acao, ip, criado_em) VALUES (?, 'cadastrou contrato', ?, NOW()))")
   ->execute([$_SESSION['usuario_id'], $_SERVER['REMOTE_ADDR']]);
-
 
 header('Location: ../../templates/contratos.php?msg=Contrato salvo com sucesso');

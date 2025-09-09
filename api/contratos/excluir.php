@@ -14,7 +14,7 @@ $stmt = $pdo->prepare("UPDATE contratos SET status = 'excluido', justificativa_e
 $stmt->execute([$justificativa, $id]);
 
 // (Opcional) registrar no log
-$stmtLog = $pdo->prepare("INSERT INTO logs (usuario_id, acao, detalhes, data_hora)
+$stmtLog = $pdo->prepare("INSERT INTO logs (usuario_id, acao, ip, criado_em)
                           VALUES (?, 'excluir_contrato', ?, NOW())");
 $detalhes = "Contrato ID $id marcado como excluído. Justificativa: $justificativa";
 $stmtLog->execute([$_SESSION['usuario_id'], $detalhes]);

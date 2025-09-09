@@ -53,8 +53,8 @@ if (!$contrato) {
         <label>Data Assinatura:<br><input type="date" name="data_assinatura" value="<?= $contrato['data_assinatura'] ?>" required></label><br><br>
         <label>Local Arquivo:<br>
           <select name="local_arquivo">
-            <option value="1Doc" <?= $contrato['local_arquivo'] === '1Doc' ? 'selected' : '' ?>>1Doc</option>
-            <option value="Papel" <?= $contrato['local_arquivo'] === 'Papel' ? 'selected' : '' ?>>Papel</option>
+            <option value="Digital" <?= $contrato['local_arquivo'] === 'Digital' ? 'selected' : '' ?>>Digital</option>
+            <option value="Físico" <?= $contrato['local_arquivo'] === 'Físico' ? 'selected' : '' ?>>Físico</option>
           </select>
         </label><br>
       </div>
