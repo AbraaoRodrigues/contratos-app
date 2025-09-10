@@ -13,6 +13,12 @@ if (!$id || !$justificativa) {
 $stmt = $pdo->prepare("UPDATE contratos SET status = 'excluido', justificativa_exclusao = ? WHERE id = ?");
 $stmt->execute([$justificativa, $id]);
 
+// Marca todos os arquivos vinculados como excluídos
+$stmt = $pdo->prepare("UPDATE contrato_arquivos
+                      SET status = 'excluido', justificativa_exclusao = 'Contrato excluído.', excluido_em = NOW()
+                      WHERE contrato_id = ?");
+$stmt->execute([$id]);
+
 // (Opcional) registrar no log
 $stmtLog = $pdo->prepare("INSERT INTO logs (usuario_id, acao, ip, criado_em)
                           VALUES (?, 'excluir_contrato', ?, NOW())");

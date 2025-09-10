@@ -75,7 +75,7 @@ $contratos = $stmt->fetchAll(PDO::FETCH_ASSOC);
       <tbody>
         <?php foreach ($contratos as $c): ?>
           <?php
-          $stmt = $pdo->prepare("SELECT COUNT(*) FROM empenhos WHERE contrato_id = ?");
+          $stmt = $pdo->prepare("SELECT COUNT(*) FROM empenhos WHERE contrato_id = ? AND status ='ativo'");
           $stmt->execute([$c['id']]);
           $temEmpenhos = $stmt->fetchColumn() > 0;
           ?>
@@ -85,16 +85,16 @@ $contratos = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <td><?= date('d/m/Y', strtotime($c['data_inicio'])) ?></td>
             <td><?= date('d/m/Y', strtotime($c['data_fim'])) ?></td>
             <td>
-              <a href="editar_contrato.php?id=<?= $c['id'] ?>">✏️Editar</a> |
-              <a href="detalhes_contrato.php?id=<?= $c['id'] ?>" target="_blank">🔍Detalhes</a> |
+              <a href="editar_contrato.php?id=<?= $c['id'] ?>" class="btn-link editar">✏️Editar</a> |
+              <a href="detalhes_contrato.php?id=<?= $c['id'] ?>" target="_blank" class="btn-link detalhes">🔍Detalhes</a> |
 
               <?php if ($temEmpenhos): ?>
-                <a href="empenhos_vinculados.php?contrato_id=<?= $c['id'] ?>">📄empenhos</a>
+                <a href="visualizar_empenhos.php?contrato_id=<?= $c['id'] ?>" class="btn-link empenhos">📄Empenhos</a>
               <?php else: ?>
-                <span style="color: #ccc;" title="Nenhum empenho vinculado">📄empenhos</span>
+                <span style="color: #ccc;" title="Nenhum empenho vinculado">📄Empenhos</span>
               <?php endif; ?>
               |
-              <a href="#" onclick="abrirModalExclusao(<?= $c['id'] ?>, '../api/contratos/excluir.php', 'Excluir Contrato'); return false;" class="link-acao link-excluir">🗑️Excluir</a>
+              <a href="#" onclick="abrirModalExclusao(<?= $c['id'] ?>, '../api/contratos/excluir.php', 'Excluir Contrato'); return false;" class="btn-link excluir">🗑️Excluir</a>
             </td>
           </tr>
         <?php endforeach; ?>

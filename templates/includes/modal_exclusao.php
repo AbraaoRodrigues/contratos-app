@@ -79,12 +79,12 @@
         return;
       }
 
-      fetch(`${endpointExclusao}?id=${id}`, {
+      fetch(endpointExclusao, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/x-www-form-urlencoded'
           },
-          body: `justificativa=${encodeURIComponent(justificativa)}`
+          body: `id=${encodeURIComponent(id)}&justificativa=${encodeURIComponent(justificativa)}`
         })
         .then(res => res.text())
         .then(msg => {

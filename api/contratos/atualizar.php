@@ -27,8 +27,8 @@ if (!$contrato_antigo) {
   exit("Contrato com ID $id não encontrado.");
 }
 
-// Verifica e processa upload
-if (!empty($_FILES['arquivos']['name'])) {
+// Upload de novos arquivos enviados
+if (!empty($_FILES['arquivos']['name'][0])) {
   foreach ($_FILES['arquivos']['tmp_name'] as $index => $tmp) {
     $nomeOriginal = $_FILES['arquivos']['name'][$index];
     $tipo = $_POST['tipos'][$index] ?? 'outro';
@@ -42,10 +42,9 @@ if (!empty($_FILES['arquivos']['name'])) {
     $destino = $pasta . $nomeFinal;
 
     if (move_uploaded_file($tmp, $destino)) {
-      $stmt = $pdo->prepare("INSERT INTO contrato_arquivos (contrato_id, nome_arquivo, caminho_arquivo, tipo)
-                             VALUES (?, ?, ?, ?)");
+      $stmt = $pdo->prepare("INSERT INTO contrato_arquivos (contrato_id, nome_arquivo, caminho_arquivo, tipo) VALUES (?, ?, ?, ?)");
       $stmt->execute([
-        $contratoId, // id do contrato salvo
+        $id, // já está definido no começo do script como $_POST['id']
         $nomeOriginal,
         'uploads/contratos/' . $nomeFinal,
         $tipo
@@ -53,7 +52,6 @@ if (!empty($_FILES['arquivos']['name'])) {
     }
   }
 }
-
 
 // Coleta os campos do formulário
 $numero = $_POST['numero'] ?? '';

@@ -36,7 +36,7 @@ $msg = $_GET['msg'] ?? '';
 
     <hr>
     <h3>Cadastrar novo contrato</h3>
-    <form action="../api/contratos/salvar.php" method="post" class="form-box" enctype="multipart/form-data" id="form-contrato">
+    <form action="../api/contratos/salvar.php" method="post" class="form-box" enctype="multipart/form-data">
       <div class="form-row">
         <label>Número do Contrato:
           <input type="text" name="numero" required></label>
@@ -95,17 +95,15 @@ $msg = $_GET['msg'] ?? '';
       <label>Observações:
         <textarea name="observacoes" rows="2"></textarea></label>
 
-      <label>Anexar arquivos:</label>
-      <div class="custom-file-wrapper">
-        <input type="file" id="arquivo_pdf" class="input-arquivo" accept="application/pdf">
-        <label for="arquivo_pdf" class="btn-custom-file">📎 Escolher Arquivo</label>
-        <span id="nome-arquivo" class="nome-arquivo">Nenhum arquivo selecionado</span>
+      <label>Anexar arquivos do contrato:</label>
+      <div id="file-upload-area">
+        <input type="file" id="arquivo_pdf" accept="application/pdf">
         <select id="tipo_arquivo">
-          <option value="Contrato">Contrato</option>
-          <option value="Aditivo">Aditivo</option>
-          <option value="Outro">Outro</option>
+          <option value="contrato">Contrato</option>
+          <option value="aditivo">Aditivo</option>
+          <option value="outro">Outro</option>
         </select>
-        <button type="button" onclick="adicionarArquivo()" style="background: blue">Adicionar</button>
+        <button type="button" onclick="adicionarArquivo()">Adicionar</button>
       </div>
 
       <!-- Lista de arquivos adicionados -->
@@ -120,7 +118,7 @@ $msg = $_GET['msg'] ?? '';
         <tbody></tbody>
       </table>
 
-      <button type="submit" class="btn-link editar">Salvar Contrato</button>
+      <button type="submit">Salvar Contrato</button>
     </form>
 
   </main>
@@ -216,12 +214,6 @@ $msg = $_GET['msg'] ?? '';
         console.error(err);
         alert("Erro ao salvar contrato.");
       });
-    });
-
-    //estilo para o adicionar arquivos
-    document.getElementById('arquivo_pdf').addEventListener('change', function() {
-      const nome = this.files.length > 0 ? this.files[0].name : 'Nenhum arquivo selecionado';
-      document.getElementById('nome-arquivo').textContent = nome;
     });
   </script>
   <?php include 'includes/footer.php'; ?>

@@ -20,7 +20,7 @@ if (!$contrato) {
 }
 
 // Busca arquivos vinculados
-$stmtArquivos = $pdo->prepare("SELECT * FROM contrato_arquivos WHERE contrato_id = ?");
+$stmtArquivos = $pdo->prepare("SELECT * FROM contrato_arquivos WHERE contrato_id = ? AND status='ativo'");
 $stmtArquivos->execute([$id]);
 $arquivos = $stmtArquivos->fetchAll(PDO::FETCH_ASSOC);
 
@@ -54,11 +54,17 @@ if (isset($_POST['confirmar_exclusao'])) {
 
 <?php include './includes/header.php'; ?>
 
+<head>
+  <meta charset="UTF-8">
+  <title>Detalhes Contratos</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
 <body class="<?= $_SESSION['modo_escuro'] ? 'dark' : '' ?>">
   <div class="container">
     <h2>📄 Detalhes do Contrato</h2>
-
-    <div class="form-box" style="max-width: 800px; margin: auto;">
+    <div class="empenho-card">
+      <!--<div class="form-box" style="max-width: 800px; margin: auto;">-->
       <p><strong>Número:</strong> <?= htmlspecialchars($contrato['numero']) ?></p>
       <p><strong>Processo:</strong> <?= htmlspecialchars($contrato['processo']) ?></p>
       <p><strong>Fornecedor:</strong> <?= htmlspecialchars($contrato['fornecedor']) ?></p>
@@ -70,8 +76,17 @@ if (isset($_POST['confirmar_exclusao'])) {
       <p><strong>Prorrogável:</strong> <?= $contrato['prorrogavel'] === 'Sim' ? 'Sim' : 'Não' ?></p>
 
       <?php if ($contrato['prorrogavel'] === 'Sim'): ?>
-        <p><strong>Prazo Máximo:</strong> <?= htmlspecialchars($contrato['prazo_maximo']) ?> anos</p>
-        <p><strong>Data do Aditivo (se houver):</strong> <?= $contrato['data_aditivo'] ? date('d/m/Y', strtotime($contrato['data_aditivo'])) : '—' ?></p>
+        <p><strong>Prazo Máximo:</strong> <?= htmlspecialchars($contrato['prorrogavel_max_anos']) ?> anos</p>
+        <p><strong>Data do Aditivo (se houver):</strong>
+          <?php
+          if (!empty($contrato['data_ultimo_aditivo']) && $contrato['data_ultimo_aditivo'] !== '0000-00-00') {
+            echo date('d/m/Y', strtotime($contrato['data_ultimo_aditivo']));
+          } else {
+            echo '—';
+          }
+          ?>
+        </p>
+
       <?php endif; ?>
 
       <p><strong>Responsável:</strong> <?= nl2br(htmlspecialchars($contrato['responsavel'] ?? '')) ?></p>
@@ -84,8 +99,8 @@ if (isset($_POST['confirmar_exclusao'])) {
           <?php foreach ($arquivos as $arquivo): ?>
             <li>
               <?= htmlspecialchars($arquivo['nome_arquivo']) ?> —
-              <a href="/<?= htmlspecialchars($arquivo['caminho_arquivo']) ?>" target="_blank">👁 Visualizar</a>
-              <button type="button" onclick="abrirModalExclusao(<?= $arq['id'] ?>)" style="color: red;">🗑</button>
+              <a href="/<?= htmlspecialchars($arquivo['caminho_arquivo']) ?>" target="_blank" class="btn-link editar">👁 Visualizar</a>
+              <button type="button" onclick="abrirModalExclusao(<?= $arq['id'] ?>)" class="btn-link excluir">🗑Excluir</button>
             </li>
           <?php endforeach; ?>
         </ul>
@@ -93,7 +108,7 @@ if (isset($_POST['confirmar_exclusao'])) {
         <p>Nenhum arquivo anexado.</p>
       <?php endif; ?>
 
-      <a href="contratos.php" class="botao-voltar">← Voltar</a>
+      <a href="relatorios.php" class="btn-link voltar">← Voltar</a>
     </div>
   </div>
   <!-- Modal de exclusão -->

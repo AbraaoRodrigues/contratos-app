@@ -34,8 +34,10 @@ $msg = $_GET['msg'] ?? '';
   <main style="padding:2rem; max-width:900px; margin:auto;">
     <h2>Empenhos</h2>
 
-    <?php if ($msg): ?>
-      <p style="color:green; font-weight:bold;"><?= htmlspecialchars($msg) ?></p>
+    <?php if (isset($_GET['msg'])): ?>
+      <p style="color:green;">
+      <div class="alerta-sucesso"><?= htmlspecialchars($_GET['msg']) ?></div>
+      </p>
     <?php endif; ?>
 
     <form action="../api/empenhos/salvar.php" method="post" class="form-box">
@@ -44,7 +46,7 @@ $msg = $_GET['msg'] ?? '';
           <select name="contrato_id" id="contrato_id" required>
             <option value="0">Sem vínculo</option>
             <?php foreach ($contratos as $c):
-              $stmt = $pdo->prepare("SELECT SUM(valor_empenhado) FROM empenhos WHERE contrato_id = ?");
+              $stmt = $pdo->prepare("SELECT SUM(valor_empenhado) FROM empenhos WHERE contrato_id = ? AND status='ativo'");
               $stmt->execute([$c['id']]);
               $totalEmp = $stmt->fetchColumn() ?: 0;
               $saldo = $c['valor_total'] - $totalEmp;
@@ -86,7 +88,7 @@ $msg = $_GET['msg'] ?? '';
         </label>
       </div>
 
-      <button type="submit">Salvar Empenho</button>
+      <button type="submit" class="btn-link editar">Salvar Empenho</button>
     </form>
 
   </main>

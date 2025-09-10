@@ -12,15 +12,15 @@ function diasRestantes($data)
 }
 
 // Contratos
-$stmt = $pdo->query("SELECT * FROM contratos ORDER BY data_fim ASC");
+$stmt = $pdo->query("SELECT * FROM contratos WHERE status != 'excluido' ORDER BY data_fim ASC");
 $contratos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 // Empenhos com contrato
-$stmt = $pdo->query("SELECT e.*, c.numero AS numero_empenho FROM empenhos e JOIN contratos c ON e.contrato_id = c.id ORDER BY e.data_fim_previsto ASC");
+$stmt = $pdo->query("SELECT e.*, c.numero AS numero_empenho FROM empenhos e JOIN contratos c ON e.contrato_id = c.id WHERE e.status != 'excluido' ORDER BY e.data_fim_previsto ASC");
 $empenhos_com_contrato = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 // Empenhos sem contrato
-$stmt = $pdo->query("SELECT * FROM empenhos WHERE contrato_id IS NULL OR contrato_id = 0 ORDER BY data_fim_previsto ASC");
+$stmt = $pdo->query("SELECT * FROM empenhos WHERE contrato_id AND status='ativo' IS NULL OR contrato_id = 0 ORDER BY data_fim_previsto ASC");
 $empenhos_sem_contrato = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 if (!empty($contrato['data_fim'])) {

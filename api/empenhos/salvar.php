@@ -45,8 +45,23 @@ $stmt->execute([
 
 // Registrar log
 $acao = $contrato_id ? 'cadastrar_empenho_contrato' : 'cadastrar_empenho_direto';
-$pdo->prepare("INSERT INTO logs (usuario_id, acao, ip) VALUES (?, ?, ?)")
-  ->execute([$_SESSION['usuario_id'], $acao, $_SERVER['REMOTE_ADDR']]);
+
+$detalhes = "Número: $numero_empenho | Valor: R$ " . number_format($valor_empenhado, 2, ',', '.') .
+  " | Data: $data_empenho | Fim Previsto: $data_fim_previsto" .
+  ($contrato_id ? " | Contrato ID: $contrato_id" : "") .
+  ($fornecedor ? " | Fornecedor: $fornecedor" : "") .
+  ($objeto ? " | Objeto: $objeto" : "") .
+  ($observacoes ? " | Obs: $observacoes" : "");
+
+$stmtLog = $pdo->prepare("INSERT INTO logs (usuario_id, acao, ip, criado_em)
+                          VALUES (?, ?, ?, NOW())");
+
+$stmtLog->execute([
+  $_SESSION['usuario_id'],
+  $detalhes, // entra aqui como 'acao'
+  $_SERVER['REMOTE_ADDR']
+]);
+
 
 header('Location: ../../templates/empenhos.php?msg=Empenho salvo com sucesso');
 exit;

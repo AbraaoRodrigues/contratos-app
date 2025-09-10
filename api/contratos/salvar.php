@@ -16,26 +16,28 @@ function parseValorReal($valor)
 $arquivo_path = null;
 
 // Verifica se foi enviado um arquivo
-if (!empty($_FILES['arquivos']['name'])) {
+// Salvar arquivos vinculados
+if (!empty($_FILES['arquivos']['name'][0])) {
   foreach ($_FILES['arquivos']['tmp_name'] as $index => $tmp) {
     $nomeOriginal = $_FILES['arquivos']['name'][$index];
     $tipo = $_POST['tipos'][$index] ?? 'outro';
 
-    $extensao = pathinfo($nomeOriginal, PATHINFO_EXTENSION);
-    if (strtolower($extensao) !== 'pdf') continue;
+    $extensao = strtolower(pathinfo($nomeOriginal, PATHINFO_EXTENSION));
+    if ($extensao !== 'pdf') continue;
 
     $nomeFinal = uniqid("arquivo_") . ".pdf";
-    $pasta = __DIR__ . '/../../uploads/contratos/';
-    if (!is_dir($pasta)) mkdir($pasta, 0777, true);
-    $destino = $pasta . $nomeFinal;
+    $caminhoRelativo = 'uploads/contratos/' . $nomeFinal;
+    $caminhoAbsoluto = __DIR__ . '/../../' . $caminhoRelativo;
 
-    if (move_uploaded_file($tmp, $destino)) {
+    if (!is_dir(dirname($caminhoAbsoluto))) mkdir(dirname($caminhoAbsoluto), 0777, true);
+
+    if (move_uploaded_file($tmp, $caminhoAbsoluto)) {
       $stmt = $pdo->prepare("INSERT INTO contrato_arquivos (contrato_id, nome_arquivo, caminho_arquivo, tipo)
                              VALUES (?, ?, ?, ?)");
       $stmt->execute([
-        $contratoId, // id do contrato salvo
+        $contratoId, // Defina este ID após salvar o contrato
         $nomeOriginal,
-        'uploads/contratos/' . $nomeFinal,
+        $caminhoRelativo,
         $tipo
       ]);
     }
