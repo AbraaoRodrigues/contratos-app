@@ -4,7 +4,8 @@ if (!isset($_SESSION['usuario_id'])) {
   exit;
 }
 
-require_once __DIR__ . '/../../config/db.php';
+require_once __DIR__ . '/../../../config/db.php';
+
 $pdo = Conexao::getInstance();
 
 
@@ -26,7 +27,7 @@ if ($dadosAvatar && !empty($dadosAvatar['avatar'])) {
 
 <head>
   <meta charset="UTF-8">
-  <title>Contratos - Prefeitura de Agudos</title>
+  <title>Pesquisa PNCP - Prefeitura de Agudos</title>
 
   <!-- Estilo padrão -->
   <link rel="stylesheet" href="/assets/css/style.css">
@@ -39,26 +40,9 @@ if ($dadosAvatar && !empty($dadosAvatar['avatar'])) {
     <nav class="menu">
       <ul class="menu-principal">
         <li><a href="/index.php">Dashboard</a></li>
-        <li class="dropdown">
-          <a href="#">Cadastrar ▾</a>
-          <ul class="dropdown-menu">
-            <li><a href="/templates/contratos.php">Contratos</a></li>
-            <li><a href="/templates/empenhos.php">Empenhos</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#">Relatórios ▾</a>
-          <ul class="dropdown-menu">
-            <li><a href="/templates/relatorios.php">Contratos</a></li>
-            <li><a href="/templates/relatorios_empenhos.php">Empenhos</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#">Módulos ▾</a>
-          <ul class="dropdown-menu">
-            <li><a href="/../../modulos/pncp/index.php">📊 Pesquisa PNCP</a></li>
-          </ul>
-        </li>
+        <li><a href="/modulos/pncp/index.php">📊 Pesquisa</a></li>
+        <li><a href="/modulos/pncp/listas.php">Registros</a></li>
+
         <?php if (!empty($_SESSION['nivel_acesso']) && $_SESSION['nivel_acesso'] === 'admin'): ?>
           <li class="dropdown">
             <a href="#">Usuários ▾</a>
