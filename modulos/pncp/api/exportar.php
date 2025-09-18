@@ -37,6 +37,10 @@ if ($formato === 'pdf') {
     $html .= '</tr>';
   }
   $html .= '</tbody></table>';
+  $html .= "</tbody></table>";
+  $html .= "<p style='margin-top:20px;font-size:12px;color:#555'>
+Esse documento foi gerado após consulta via API Pública PNCP.
+</p>";
 
   $mpdf = new Mpdf(['mode' => 'utf-8', 'format' => 'A4']);
   $mpdf->WriteHTML($html);
@@ -68,6 +72,8 @@ if ($formato === 'word') {
     $table->addCell(2000)->addText('R$ ' . number_format((float)$row['valor_total'], 2, ',', '.'));
     $table->addCell(3000)->addText($row['referencias']);
   }
+  $section->addTextBreak(2);
+  $section->addText("Esse documento foi gerado após consulta via API Pública PNCP.", ['italic' => true, 'size' => 10]);
 
   header("Content-Description: File Transfer");
   header('Content-Disposition: attachment; filename="tabela_final.docx"');
@@ -100,6 +106,10 @@ if ($formato === 'excel') {
     $sheet->setCellValueByColumnAndRow(5, $rowNum, $row['referencias']);
     $rowNum++;
   }
+  $row++;
+  $sheet->setCellValue("A{$row}", "Esse documento foi gerado após consulta via API Pública PNCP.");
+  $sheet->mergeCells("A{$row}:E{$row}");
+  $sheet->getStyle("A{$row}")->getFont()->setItalic(true)->setSize(10);
 
   header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
   header('Content-Disposition: attachment; filename="tabela_final.xlsx"');

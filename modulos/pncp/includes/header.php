@@ -39,8 +39,9 @@ if ($dadosAvatar && !empty($dadosAvatar['avatar'])) {
 
     <nav class="menu">
       <ul class="menu-principal">
-        <li><a href="/index.php">Dashboard</a></li>
-        <li><a href="/modulos/pncp/index.php">📊 Pesquisa</a></li>
+        <li><a href="/index.php">Sistema</a></li>
+        <li><a href="/modulos/pncp/index.php">Dashboard</a></li>
+        <li><a href="/modulos/pncp/busca.php">📊 Pesquisa</a></li>
         <li><a href="/modulos/pncp/listas.php">Registros</a></li>
 
         <?php if (!empty($_SESSION['nivel_acesso']) && $_SESSION['nivel_acesso'] === 'admin'): ?>

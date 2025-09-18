@@ -1,79 +1,9 @@
 <?php
-// Sempre JSON:
-header('Content-Type: application/json; charset=UTF-8');
-
-// Transformar *qualquer* erro/aviso em JSON (evita "<br /><b>Warning...")
-ini_set('display_errors', '0');
-set_error_handler(function ($severity, $message, $file, $line) {
-  http_response_code(500);
-  echo json_encode(['error' => [
-    'code' => 'PHP_WARNING',
-    'message' => $message,
-    'file' => basename($file),
-    'line' => $line
-  ]]);
-  exit;
-});
-set_exception_handler(function ($ex) {
-  http_response_code(500);
-  echo json_encode(['error' => [
-    'code' => 'PHP_EXCEPTION',
-    'message' => $ex->getMessage()
-  ]]);
-  exit;
-});
-register_shutdown_function(function () {
-  $e = error_get_last();
-  if ($e && in_array($e['type'], [E_ERROR, E_PARSE, E_CORE_ERROR, E_COMPILE_ERROR])) {
-    http_response_code(500);
-    echo json_encode(['error' => [
-      'code' => 'PHP_FATAL',
-      'message' => $e['message'],
-      'file' => basename($e['file']),
-      'line' => $e['line']
-    ]]);
-  }
-});
-
-function httpGetAny($url)
-{
-  // cURL se disponível, senão stream
-  if (function_exists('curl_init')) {
-    $ch = curl_init($url);
-    curl_setopt_array($ch, [
-      CURLOPT_RETURNTRANSFER => true,
-      CURLOPT_CONNECTTIMEOUT => 10,
-      CURLOPT_TIMEOUT => 30,
-      CURLOPT_HTTPHEADER => ['accept: application/json, */*']
-    ]);
-    $body = curl_exec($ch);
-    $err  = curl_error($ch);
-    $code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-    curl_close($ch);
-    return [$body, $code, $err];
-  } else {
-    $ctx = stream_context_create([
-      'http' => ['method' => 'GET', 'timeout' => 30, 'header' => "accept: application/json\r\n"],
-      'ssl'  => ['verify_peer' => true, 'verify_peer_name' => true]
-    ]);
-    $body = @file_get_contents($url, false, $ctx);
-    $code = 0;
-    if (isset($http_response_header[0]) && preg_match('/\s(\d{3})\s/', $http_response_header[0], $m)) $code = (int)$m[1];
-    $err = $body === false ? 'stream_context error' : null;
-    return [$body, $code, $err];
-  }
-}
-
-function isoToBr($iso)
-{
-  if (!$iso) return '';
-  $d = substr($iso, 0, 10);
-  $p = explode('-', $d);
-  return count($p) === 3 ? "{$p[2]}/{$p[1]}/{$p[0]}" : $iso;
-}
+header('Content-Type: application/json; charset=utf-8');
 
 $acao = $_GET['acao'] ?? '';
 
+// === LISTAR PROCESSOS ===
 if ($acao === 'listar') {
   $dataInicial = $_GET['dataInicial'] ?? '';
   $dataFinal   = $_GET['dataFinal']   ?? '';
@@ -82,144 +12,193 @@ if ($acao === 'listar') {
   $pagina      = max(1, (int)($_GET['pagina'] ?? 1));
   $tam         = min(100, max(10, (int)($_GET['tamanhoPagina'] ?? 50)));
 
-  // Valida período <= 365 dias
-  $diObj = new DateTime($dataInicial);
-  $dfObj = new DateTime($dataFinal);
+  // Valida período ≤ 365 dias
+  try {
+    $diObj = new DateTime($dataInicial);
+    $dfObj = new DateTime($dataFinal);
+  } catch (Throwable $e) {
+    http_response_code(400);
+    echo json_encode(['error' => [
+      'code' => 'DATA_INVALIDA',
+      'message' => 'Data inicial/final inválida.',
+      'hint' => 'Use o formato YYYY-MM-DD.'
+    ]], JSON_UNESCAPED_UNICODE);
+    exit;
+  }
   $diff  = $diObj->diff($dfObj)->days;
   if ($diff > 365) {
+    http_response_code(422);
     echo json_encode(['error' => [
       'code' => 'PERIODO_MAX',
       'message' => 'O período informado excede 365 dias.',
       'hint' => 'Reduza para ≤ 365 dias.'
-    ]]);
+    ]], JSON_UNESCAPED_UNICODE);
     exit;
   }
 
-  // AAAAMMDD
-  $di = preg_replace('/[^0-9]/', '', $dataInicial);
-  $df = preg_replace('/[^0-9]/', '', $dataFinal);
-  if (strlen($di) !== 8 || strlen($df) !== 8) {
-    echo json_encode(['error' => ['code' => 'FORMATO_DATA', 'message' => 'Use YYYY-MM-DD.']]);
-    exit;
-  }
-
+  // Monta query
   $qs = [
-    "dataInicial={$di}",
-    "dataFinal={$df}",
-    "codigoModalidadeContratacao={$modalidade}",
-    "pagina={$pagina}",
-    "tamanhoPagina={$tam}"
+    'dataInicial' => str_replace('-', '', $dataInicial),
+    'dataFinal'   => str_replace('-', '', $dataFinal),
+    'codigoModalidadeContratacao' => $modalidade,
+    'pagina' => $pagina,
+    'tamanhoPagina' => $tam,
   ];
-  if ($uf) $qs[] = "uf={$uf}";
-  $url = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao?" . implode('&', $qs);
+  if ($uf !== '') $qs['uf'] = $uf;
 
-  [$raw, $code, $err] = httpGetAny($url);
-  if ($err || $code >= 400 || $raw === false) {
-    $apiMsg = null;
-    if ($raw) {
-      $try = json_decode($raw, true);
-      if (isset($try['message'])) $apiMsg = $try['message'];
-    }
+  $url = 'https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao?' . http_build_query($qs);
+
+  // cURL
+  $ch = curl_init($url);
+  curl_setopt_array($ch, [
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_FOLLOWLOCATION => true,
+    CURLOPT_TIMEOUT => 60,
+    CURLOPT_CONNECTTIMEOUT => 20,
+    CURLOPT_HTTPHEADER => ['Accept: application/json'],
+  ]);
+  $resp = curl_exec($ch);
+  $http = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+  $err  = curl_error($ch);
+  curl_close($ch);
+
+  if ($resp === false) {
+    http_response_code(502);
+    echo json_encode(['error' => [
+      'code' => 'HTTP_CLIENT_ERROR',
+      'message' => 'Falha ao contatar a API do PNCP.',
+      'hint' => $err ?: 'Sem detalhes',
+    ], 'debugUrl' => $url], JSON_UNESCAPED_UNICODE);
+    exit;
+  }
+
+  // Verifica se é JSON válido
+  $dados = json_decode($resp, true);
+  if ($dados === null && json_last_error() !== JSON_ERROR_NONE) {
+    http_response_code(502);
     echo json_encode([
       'error' => [
-        'code' => "HTTP_$code",
-        'message' => $apiMsg ?: 'Erro na consulta ao PNCP.',
-        'hint' => ($code === 422 ? 'Verifique intervalo de datas (≤365 dias) e parâmetros.' : null)
+        'code'    => "HTTP_$http",
+        'message' => 'A API do PNCP retornou uma resposta inválida (não-JSON).',
+        'hint'    => 'Pode ser instabilidade no serviço PNCP.'
       ],
-      'debugUrl' => $url,
-      'httpCode' => $code
-    ]);
+      'debugUrl' => $url
+    ], JSON_UNESCAPED_UNICODE);
     exit;
   }
 
-  $j = json_decode($raw, true);
-  $data = $j['data'] ?? [];
-
-  // Normalização mínima
-  $out = [];
-  foreach ($data as $row) {
-    $num        = $row['numeroControlePNCP'] ?? '';
-    $statusNome = $row['situacaoCompraNome'] ?? '';
-    $statusAgr  = '';
-
-    $ab = $row['dataAberturaProposta'] ?? null;
-    $en = $row['dataEncerramentoProposta'] ?? null;
-    if ($ab && $en) {
-      $agora = new DateTime('now', new DateTimeZone('America/Sao_Paulo'));
-      $dab   = new DateTime($ab);
-      $den   = new DateTime($en);
-      if ($agora >= $dab && $agora <= $den) $statusAgr = 'RECEBENDO';
-      elseif ($agora > $den) $statusAgr = 'JULGAMENTO';
-    }
-    if (!$statusAgr && $statusNome) {
-      if (stripos($statusNome, 'encerr') !== false || stripos($statusNome, 'homolog') !== false || stripos($statusNome, 'adjudic') !== false || stripos($statusNome, 'finaliz') !== false) $statusAgr = 'ENCERRADA';
-      elseif (stripos($statusNome, 'julg') !== false) $statusAgr = 'JULGAMENTO';
-      elseif (stripos($statusNome, 'abert') !== false || stripos($statusNome, 'receb') !== false) $statusAgr = 'RECEBENDO';
-    }
-
-    $out[] = [
-      'numeroControlePNCP' => $num,
-      'objeto'             => $row['objetoCompra'] ?? $row['descricaoObjeto'] ?? '',
-      'orgao'              => $row['orgaoEntidade']['razaoSocial'] ?? ($row['orgaoEntidade']['razao_social'] ?? ''),
-      'uf'                 => $row['unidadeOrgao']['ufSigla'] ?? ($row['unidadeOrgao']['ufNome'] ?? ''),
-      'statusNome'         => $statusNome,
-      'statusAgrupado'     => $statusAgr,
-      'dataPublicacao'     => isoToBr($row['dataPublicacaoPncp'] ?? $row['dataPublicacao'] ?? ''),
-      'linkPublico'        => $num ? "https://pncp.gov.br/app/contratacoes/visualizacao/{$num}" : ''
-    ];
+  if ($http !== 200) {
+    http_response_code($http);
+    echo json_encode([
+      'error' => [
+        'code'    => "HTTP_$http",
+        'message' => $dados['message'] ?? 'Erro na API do PNCP.',
+        'hint'    => $dados['path'] ?? null,
+      ],
+      'debugUrl' => $url
+    ], JSON_UNESCAPED_UNICODE);
+    exit;
   }
 
-  echo json_encode(['data' => $out, 'debugUrl' => $url, 'pagina' => $pagina, 'tamanhoPagina' => $tam], JSON_UNESCAPED_UNICODE);
+  // OK
+  $lista = is_array($dados['data'] ?? null) ? $dados['data'] : [];
+  $totalReg   = isset($dados['totalRegistros']) ? (int)$dados['totalRegistros'] : (int)($dados['total'] ?? 0);
+  if ($totalReg === 0) $totalReg = count($lista);
+  $paginaOut  = isset($dados['pagina']) ? (int)$dados['pagina'] : $pagina;
+  $tamOut     = isset($dados['tamanhoPagina']) ? (int)$dados['tamanhoPagina'] : $tam;
+
+  echo json_encode([
+    'data'            => $lista,
+    'totalRegistros'  => $totalReg,
+    'pagina'          => $paginaOut,
+    'tamanhoPagina'   => $tamOut,
+    'debugUrl'        => $url
+  ], JSON_UNESCAPED_UNICODE);
   exit;
 }
 
+// === LISTAR ITENS DE UM PROCESSO ===
 if ($acao === 'itens') {
-  $id = $_GET['numeroControlePNCP'] ?? '';
-  // Espera CNPJ-1-SEQUENCIAL/ANO
-  if (!preg_match('/^(\d{14})-1-(\d{6})\/(\d{4})$/', $id, $m)) {
-    echo json_encode(['error' => ['code' => 'ID_INVALIDO', 'message' => 'numeroControlePNCP inválido']]);
-    exit;
-  }
-  $cnpj = $m[1];
-  $seq  = ltrim($m[2], '0');
-  $ano  = $m[3];
-
-  $urls = [
-    "https://pncp.gov.br/api/pncp/v1/orgaos/{$cnpj}/compras/{$ano}/{$seq}/itens",
-    "https://pncp.gov.br/pncp-api/v1/orgaos/{$cnpj}/compras/{$ano}/{$seq}/itens"
-  ];
-
-  $ok = null;
-  $tried = [];
-  foreach ($urls as $u) {
-    $tried[] = $u;
-    [$raw, $code, $err] = httpGetAny($u);
-    if (!$err && $code < 400 && $raw) {
-      $ok = $raw;
-      break;
-    }
-  }
-  if (!$ok) {
-    echo json_encode(['error' => ['code' => 'SEM_ACESSO', 'message' => 'Itens não acessíveis sem token.'], 'tried' => $tried]);
+  $num = $_GET['numeroControlePNCP'] ?? '';
+  if (!$num) {
+    http_response_code(400);
+    echo json_encode(['error' => [
+      'code' => 'SEM_ID',
+      'message' => 'Informe numeroControlePNCP'
+    ]], JSON_UNESCAPED_UNICODE);
     exit;
   }
 
-  $j = json_decode($ok, true);
-  if (!is_array($j)) {
-    echo json_encode(['error' => ['code' => 'FORMATO_ITENS', 'message' => 'Retorno inesperado']]);
+  $num = str_replace('%2F', '/', $num);
+  $url = 'https://pncp.gov.br/api/consulta/v1/contratacoes/' . $num . '/itens';
+
+  $ch = curl_init($url);
+  curl_setopt_array($ch, [
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_FOLLOWLOCATION => true,
+    CURLOPT_TIMEOUT => 25,
+    CURLOPT_CONNECTTIMEOUT => 10,
+    CURLOPT_HTTPHEADER => ['Accept: application/json'],
+  ]);
+  $resp = curl_exec($ch);
+  $http = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+  $err  = curl_error($ch);
+  curl_close($ch);
+
+  if ($resp === false) {
+    http_response_code(502);
+    echo json_encode(['error' => [
+      'code' => 'HTTP_CLIENT_ERROR',
+      'message' => 'Falha ao contatar a API do PNCP.',
+      'hint' => $err ?: 'Sem detalhes',
+    ], 'debugUrl' => $url], JSON_UNESCAPED_UNICODE);
     exit;
   }
 
-  $out = [];
-  foreach ($j as $it) {
-    $out[] = [
-      'descricao' => $it['descricao'] ?? ($it['descricaoItem'] ?? ''),
-      'quantidade' => $it['quantidade'] ?? ($it['quantidadeEstimado'] ?? ''),
-      'valorUnitarioEstimado' => $it['valorUnitarioEstimado'] ?? ($it['valorUnitario'] ?? null)
-    ];
+  // Trata 404 → sem itens
+  if ($http === 404) {
+    echo json_encode([], JSON_UNESCAPED_UNICODE);
+    exit;
   }
-  echo json_encode($out, JSON_UNESCAPED_UNICODE);
+
+  // Verifica se é JSON válido
+  $dados = json_decode($resp, true);
+  if ($dados === null && json_last_error() !== JSON_ERROR_NONE) {
+    http_response_code(502);
+    echo json_encode([
+      'error' => [
+        'code'    => "HTTP_$http",
+        'message' => 'A API do PNCP retornou uma resposta inválida (não-JSON).',
+        'hint'    => 'Pode ser instabilidade no serviço PNCP.'
+      ],
+      'debugUrl' => $url
+    ], JSON_UNESCAPED_UNICODE);
+    exit;
+  }
+
+  if ($http !== 200) {
+    http_response_code($http);
+    echo json_encode([
+      'error' => [
+        'code'    => "HTTP_$http",
+        'message' => $dados['message'] ?? 'Erro na API do PNCP.',
+        'hint'    => $dados['path'] ?? null,
+      ],
+      'debugUrl' => $url
+    ], JSON_UNESCAPED_UNICODE);
+    exit;
+  }
+
+  // OK
+  $lista = is_array($dados) ? $dados : [];
+  echo json_encode($lista, JSON_UNESCAPED_UNICODE);
   exit;
 }
 
-echo json_encode(['error' => ['code' => 'ACAO_INVALIDA', 'message' => 'Ação inválida']]);
+// === AÇÃO DESCONHECIDA ===
+http_response_code(400);
+echo json_encode(['error' => [
+  'code' => 'ACAO_INVALIDA',
+  'message' => 'Ação inválida ou não informada.'
+]], JSON_UNESCAPED_UNICODE);
+exit;

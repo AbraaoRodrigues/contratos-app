@@ -1,0 +1,146 @@
+[2025-09-17 16:45:04] 🔄 Iniciando sincronização FULL PNCP (2024-09-17 -> 2025-09-17)
+[2025-09-17 16:45:04] 📅 Período 20240917 → 20241116 | UF=SP / Mod=1
+[2025-09-17 16:45:04] ❌ Falha ao consultar página 1 (SP/1)
+[2025-09-17 16:45:04] 📅 Período 20241117 → 20250116 | UF=SP / Mod=1
+[2025-09-17 16:45:34] ❌ Falha ao consultar página 1 (SP/1)
+[2025-09-17 16:45:34] 📅 Período 20250117 → 20250318 | UF=SP / Mod=1
+[2025-09-17 16:45:34] ❌ Falha ao consultar página 1 (SP/1)
+[2025-09-17 16:45:34] 📅 Período 20250319 → 20250518 | UF=SP / Mod=1
+[2025-09-17 16:45:35] ❌ Falha ao consultar página 1 (SP/1)
+[2025-09-17 16:45:35] 📅 Período 20250519 → 20250718 | UF=SP / Mod=1
+[2025-09-17 16:45:35] ❌ Falha ao consultar página 1 (SP/1)
+[2025-09-17 16:45:35] 📅 Período 20250719 → 20250917 | UF=SP / Mod=1
+[2025-09-17 16:45:35] ❌ Falha ao consultar página 1 (SP/1)
+[2025-09-17 16:45:35] 📅 Período 20240917 → 20241116 | UF=SP / Mod=2
+[2025-09-17 16:45:35] ❌ Falha ao consultar página 1 (SP/2)
+[2025-09-17 16:45:35] 📅 Período 20241117 → 20250116 | UF=SP / Mod=2
+[2025-09-17 16:45:35] ❌ Falha ao consultar página 1 (SP/2)
+[2025-09-17 16:45:35] 📅 Período 20250117 → 20250318 | UF=SP / Mod=2
+[2025-09-17 16:46:05] ❌ Falha ao consultar página 1 (SP/2)
+[2025-09-17 16:46:05] 📅 Período 20250319 → 20250518 | UF=SP / Mod=2
+[2025-09-17 16:46:35] ❌ Falha ao consultar página 1 (SP/2)
+[2025-09-17 16:46:35] 📅 Período 20250519 → 20250718 | UF=SP / Mod=2
+[2025-09-17 16:47:05] ❌ Falha ao consultar página 1 (SP/2)
+[2025-09-17 16:47:05] 📅 Período 20250719 → 20250917 | UF=SP / Mod=2
+[2025-09-17 16:47:05] ❌ Falha ao consultar página 1 (SP/2)
+[2025-09-17 16:47:05] 📅 Período 20240917 → 20241116 | UF=SP / Mod=3
+[2025-09-17 16:47:05] ❌ Falha ao consultar página 1 (SP/3)
+[2025-09-17 16:47:05] 📅 Período 20241117 → 20250116 | UF=SP / Mod=3
+[2025-09-17 16:47:05] ❌ Falha ao consultar página 1 (SP/3)
+[2025-09-17 16:47:05] 📅 Período 20250117 → 20250318 | UF=SP / Mod=3
+[2025-09-17 16:47:35] ❌ Falha ao consultar página 1 (SP/3)
+[2025-09-17 16:47:35] 📅 Período 20250319 → 20250518 | UF=SP / Mod=3
+[2025-09-17 16:48:05] ❌ Falha ao consultar página 1 (SP/3)
+[2025-09-17 16:48:05] 📅 Período 20250519 → 20250718 | UF=SP / Mod=3
+[2025-09-17 16:48:05] ❌ Falha ao consultar página 1 (SP/3)
+[2025-09-17 16:48:05] 📅 Período 20250719 → 20250917 | UF=SP / Mod=3
+[2025-09-17 16:48:05] ❌ Falha ao consultar página 1 (SP/3)
+[2025-09-17 16:48:05] 📅 Período 20240917 → 20241116 | UF=SP / Mod=4
+[2025-09-17 16:48:35] ❌ Falha ao consultar página 1 (SP/4)
+[2025-09-17 16:48:35] 📅 Período 20241117 → 20250116 | UF=SP / Mod=4
+[2025-09-17 16:48:36] ❌ Falha ao consultar página 1 (SP/4)
+[2025-09-17 16:48:36] 📅 Período 20250117 → 20250318 | UF=SP / Mod=4
+[2025-09-17 16:48:36] ❌ Falha ao consultar página 1 (SP/4)
+[2025-09-17 16:48:36] 📅 Período 20250319 → 20250518 | UF=SP / Mod=4
+[2025-09-17 16:48:36] ❌ Falha ao consultar página 1 (SP/4)
+[2025-09-17 16:48:36] 📅 Período 20250519 → 20250718 | UF=SP / Mod=4
+[2025-09-17 16:48:36] ❌ Falha ao consultar página 1 (SP/4)
+[2025-09-17 16:48:36] 📅 Período 20250719 → 20250917 | UF=SP / Mod=4
+[2025-09-17 16:49:06] ❌ Falha ao consultar página 1 (SP/4)
+[2025-09-17 16:49:06] 📅 Período 20240917 → 20241116 | UF=SP / Mod=5
+[2025-09-17 16:49:06] ❌ Falha ao consultar página 1 (SP/5)
+[2025-09-17 16:49:06] 📅 Período 20241117 → 20250116 | UF=SP / Mod=5
+[2025-09-17 16:49:06] ❌ Falha ao consultar página 1 (SP/5)
+[2025-09-17 16:49:06] 📅 Período 20250117 → 20250318 | UF=SP / Mod=5
+[2025-09-17 16:49:06] ❌ Falha ao consultar página 1 (SP/5)
+[2025-09-17 16:49:06] 📅 Período 20250319 → 20250518 | UF=SP / Mod=5
+[2025-09-17 16:49:06] ❌ Falha ao consultar página 1 (SP/5)
+[2025-09-17 16:49:06] 📅 Período 20250519 → 20250718 | UF=SP / Mod=5
+[2025-09-17 16:49:06] ❌ Falha ao consultar página 1 (SP/5)
+[2025-09-17 16:49:06] 📅 Período 20250719 → 20250917 | UF=SP / Mod=5
+[2025-09-17 16:49:06] ❌ Falha ao consultar página 1 (SP/5)
+[2025-09-17 16:49:06] 📅 Período 20240917 → 20241116 | UF=SP / Mod=6
+[2025-09-17 16:49:06] ❌ Falha ao consultar página 1 (SP/6)
+[2025-09-17 16:49:06] 📅 Período 20241117 → 20250116 | UF=SP / Mod=6
+[2025-09-17 16:49:07] ❌ Falha ao consultar página 1 (SP/6)
+[2025-09-17 16:49:07] 📅 Período 20250117 → 20250318 | UF=SP / Mod=6
+[2025-09-17 16:49:07] ❌ Falha ao consultar página 1 (SP/6)
+[2025-09-17 16:49:07] 📅 Período 20250319 → 20250518 | UF=SP / Mod=6
+[2025-09-17 16:49:07] ❌ Falha ao consultar página 1 (SP/6)
+[2025-09-17 16:49:07] 📅 Período 20250519 → 20250718 | UF=SP / Mod=6
+[2025-09-17 16:49:07] ❌ Falha ao consultar página 1 (SP/6)
+[2025-09-17 16:49:07] 📅 Período 20250719 → 20250917 | UF=SP / Mod=6
+[2025-09-17 16:49:07] ❌ Falha ao consultar página 1 (SP/6)
+[2025-09-17 16:49:07] 📅 Período 20240917 → 20241116 | UF=SP / Mod=7
+[2025-09-17 16:49:07] ❌ Falha ao consultar página 1 (SP/7)
+[2025-09-17 16:49:07] 📅 Período 20241117 → 20250116 | UF=SP / Mod=7
+[2025-09-17 16:49:07] ❌ Falha ao consultar página 1 (SP/7)
+[2025-09-17 16:49:07] 📅 Período 20250117 → 20250318 | UF=SP / Mod=7
+[2025-09-17 16:49:37] ❌ Falha ao consultar página 1 (SP/7)
+[2025-09-17 16:49:37] 📅 Período 20250319 → 20250518 | UF=SP / Mod=7
+[2025-09-17 16:49:37] ❌ Falha ao consultar página 1 (SP/7)
+[2025-09-17 16:49:37] 📅 Período 20250519 → 20250718 | UF=SP / Mod=7
+[2025-09-17 16:49:37] ❌ Falha ao consultar página 1 (SP/7)
+[2025-09-17 16:49:37] 📅 Período 20250719 → 20250917 | UF=SP / Mod=7
+[2025-09-17 16:49:37] ❌ Falha ao consultar página 1 (SP/7)
+[2025-09-17 16:49:37] 📅 Período 20240917 → 20241116 | UF=SP / Mod=8
+[2025-09-17 16:49:38] ❌ Falha ao consultar página 1 (SP/8)
+[2025-09-17 16:49:38] 📅 Período 20241117 → 20250116 | UF=SP / Mod=8
+[2025-09-17 16:50:08] ❌ Falha ao consultar página 1 (SP/8)
+[2025-09-17 16:50:08] 📅 Período 20250117 → 20250318 | UF=SP / Mod=8
+[2025-09-17 16:50:08] ❌ Falha ao consultar página 1 (SP/8)
+[2025-09-17 16:50:08] 📅 Período 20250319 → 20250518 | UF=SP / Mod=8
+[2025-09-17 16:50:08] ❌ Falha ao consultar página 1 (SP/8)
+[2025-09-17 16:50:08] 📅 Período 20250519 → 20250718 | UF=SP / Mod=8
+[2025-09-17 16:50:38] ❌ Falha ao consultar página 1 (SP/8)
+[2025-09-17 16:50:38] 📅 Período 20250719 → 20250917 | UF=SP / Mod=8
+[2025-09-17 16:51:08] ❌ Falha ao consultar página 1 (SP/8)
+[2025-09-17 16:51:08] 📅 Período 20240917 → 20241116 | UF=SP / Mod=9
+[2025-09-17 16:51:38] ❌ Falha ao consultar página 1 (SP/9)
+[2025-09-17 16:51:38] 📅 Período 20241117 → 20250116 | UF=SP / Mod=9
+[2025-09-17 16:51:38] ❌ Falha ao consultar página 1 (SP/9)
+[2025-09-17 16:51:38] 📅 Período 20250117 → 20250318 | UF=SP / Mod=9
+[2025-09-17 16:51:38] ❌ Falha ao consultar página 1 (SP/9)
+[2025-09-17 16:51:38] 📅 Período 20250319 → 20250518 | UF=SP / Mod=9
+[2025-09-17 16:51:38] ❌ Falha ao consultar página 1 (SP/9)
+[2025-09-17 16:51:38] 📅 Período 20250519 → 20250718 | UF=SP / Mod=9
+[2025-09-17 16:51:38] ❌ Falha ao consultar página 1 (SP/9)
+[2025-09-17 16:51:38] 📅 Período 20250719 → 20250917 | UF=SP / Mod=9
+[2025-09-17 16:51:38] ❌ Falha ao consultar página 1 (SP/9)
+[2025-09-17 16:51:38] 📅 Período 20240917 → 20241116 | UF=SP / Mod=10
+[2025-09-17 16:51:38] ❌ Falha ao consultar página 1 (SP/10)
+[2025-09-17 16:51:38] 📅 Período 20241117 → 20250116 | UF=SP / Mod=10
+[2025-09-17 16:51:38] ❌ Falha ao consultar página 1 (SP/10)
+[2025-09-17 16:51:38] 📅 Período 20250117 → 20250318 | UF=SP / Mod=10
+[2025-09-17 16:51:38] ❌ Falha ao consultar página 1 (SP/10)
+[2025-09-17 16:51:38] 📅 Período 20250319 → 20250518 | UF=SP / Mod=10
+[2025-09-17 16:51:38] ❌ Falha ao consultar página 1 (SP/10)
+[2025-09-17 16:51:38] 📅 Período 20250519 → 20250718 | UF=SP / Mod=10
+[2025-09-17 16:51:39] ❌ Falha ao consultar página 1 (SP/10)
+[2025-09-17 16:51:39] 📅 Período 20250719 → 20250917 | UF=SP / Mod=10
+[2025-09-17 16:51:39] ❌ Falha ao consultar página 1 (SP/10)
+[2025-09-17 16:51:39] 📅 Período 20240917 → 20241116 | UF=SP / Mod=11
+[2025-09-17 16:51:39] ❌ Falha ao consultar página 1 (SP/11)
+[2025-09-17 16:51:39] 📅 Período 20241117 → 20250116 | UF=SP / Mod=11
+[2025-09-17 16:52:09] ❌ Falha ao consultar página 1 (SP/11)
+[2025-09-17 16:52:09] 📅 Período 20250117 → 20250318 | UF=SP / Mod=11
+[2025-09-17 16:52:09] ❌ Falha ao consultar página 1 (SP/11)
+[2025-09-17 16:52:09] 📅 Período 20250319 → 20250518 | UF=SP / Mod=11
+[2025-09-17 16:52:09] ❌ Falha ao consultar página 1 (SP/11)
+[2025-09-17 16:52:09] 📅 Período 20250519 → 20250718 | UF=SP / Mod=11
+[2025-09-17 16:52:09] ❌ Falha ao consultar página 1 (SP/11)
+[2025-09-17 16:52:09] 📅 Período 20250719 → 20250917 | UF=SP / Mod=11
+[2025-09-17 16:52:09] ❌ Falha ao consultar página 1 (SP/11)
+[2025-09-17 16:52:09] 📅 Período 20240917 → 20241116 | UF=SP / Mod=12
+[2025-09-17 16:52:09] ❌ Falha ao consultar página 1 (SP/12)
+[2025-09-17 16:52:09] 📅 Período 20241117 → 20250116 | UF=SP / Mod=12
+[2025-09-17 16:52:09] ❌ Falha ao consultar página 1 (SP/12)
+[2025-09-17 16:52:09] 📅 Período 20250117 → 20250318 | UF=SP / Mod=12
+[2025-09-17 16:52:09] ❌ Falha ao consultar página 1 (SP/12)
+[2025-09-17 16:52:09] 📅 Período 20250319 → 20250518 | UF=SP / Mod=12
+[2025-09-17 16:52:09] ❌ Falha ao consultar página 1 (SP/12)
+[2025-09-17 16:52:09] 📅 Período 20250519 → 20250718 | UF=SP / Mod=12
+[2025-09-17 16:52:10] ❌ Falha ao consultar página 1 (SP/12)
+[2025-09-17 16:52:10] 📅 Período 20250719 → 20250917 | UF=SP / Mod=12
+[2025-09-17 16:52:10] ❌ Falha ao consultar página 1 (SP/12)
+[2025-09-17 16:52:10] ✅ Finalizado FULL CACHE
