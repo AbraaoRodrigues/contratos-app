@@ -20,6 +20,7 @@ $modoEscuro = $_SESSION['modo_escuro'] ?? false;
   <title>PNCP – Busca no Cache</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="assets/busca.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -41,7 +42,7 @@ $modoEscuro = $_SESSION['modo_escuro'] ?? false;
       <div class="field">
         <label>UF</label>
         <select name="uf">
-          <option value="">Todas</option>
+          <option value="">SP</option>
           <?php
           foreach (["AC", "AL", "AM", "AP", "BA", "CE", "DF", "ES", "GO", "MA", "MG", "MS", "MT", "PA", "PB", "PE", "PI", "PR", "RJ", "RN", "RO", "RR", "RS", "SC", "SE", "SP", "TO"] as $uf) {
             echo "<option value=\"$uf\">$uf</option>";
@@ -105,11 +106,6 @@ $modoEscuro = $_SESSION['modo_escuro'] ?? false;
   <section class="results">
     <div class="bar">
       <div id="countInfo" class="muted"></div>
-      <div class="pager">
-        <button id="btnPrev" class="btn" disabled>« Anterior</button>
-        <span id="pageInfo" class="muted"></span>
-        <button id="btnNext" class="btn" disabled>Próxima »</button>
-      </div>
     </div>
 
     <div class="cols">
@@ -125,6 +121,11 @@ $modoEscuro = $_SESSION['modo_escuro'] ?? false;
           </thead>
           <tbody></tbody>
         </table>
+        <div class="pager">
+          <button id="btnPrev" class="btn" disabled>« Anterior</button>
+          <span id="pageInfo" class="muted"></span>
+          <button id="btnNext" class="btn" disabled>Próxima »</button>
+        </div>
       </div>
 
       <div class="col col-40">
@@ -141,17 +142,58 @@ $modoEscuro = $_SESSION['modo_escuro'] ?? false;
           </thead>
           <tbody></tbody>
         </table>
+        <div id="paginacaoItens" class="pager">
+          <button id="btnItensPrev" class="btn">« Anterior</button>
+          <span id="infoItens" class="muted"></span>
+          <button id="btnItensNext" class="btn">Próxima »</button>
+        </div>
+
       </div>
     </div>
 
-    <div class="bar">
-      <div class="muted">Exportar (lista atual)</div>
-      <div class="exports">
-        <a id="expPdf" class="btn" href="#" target="_blank" title="PDF">PDF</a>
-        <a id="expWord" class="btn" href="#" target="_blank" title="Word">Word</a>
-        <a id="expExcel" class="btn" href="#" target="_blank" title="Excel">Excel</a>
+    <h3>Itens selecionados</h3>
+    <div id="selecionadosBox">
+      <table id="tblSelecionados">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Descrição</th>
+            <th>Qtd</th>
+            <th>Valor Unitário</th>
+            <th>Origem</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <button id="btnGerarTabela" class="btn">Gerar Tabela Final</button>
+      <div id="previewTabelaFinalBox" style="margin-top:20px; display:none;">
+        <h3>Tabela Final de Referência de Preços</h3>
+        <table id="previewTabelaFinal" class="grid">
+          <thead>
+            <tr>
+              <th style="width:28px">
+                <input type="checkbox" id="chkAll">
+              </th>
+              <th>Descrição</th>
+              <th>Qtd</th>
+              <th>Valor Médio</th>
+              <th>Referências</th>
+              <th>Valor Total</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <div style="margin-top:10px;">
+          <button id="btnMerge" class="btn">➕ Mesclar selecionados</button>
+        </div>
+        <div id="exportBtns" style="margin-top:15px; display:none;">
+          <a id="expPdf" href="#" title="Exportar PDF"><i class="fas fa-file-pdf fa-lg" style="color:#e74c3c"></i></a>
+          <a id="expWord" href="#" title="Exportar Word"><i class="fas fa-file-word fa-lg" style="color:#2a5699"></i></a>
+          <a id="expExcel" href="#" title="Exportar Excel"><i class="fas fa-file-excel fa-lg" style="color:#217346"></i></a>
+        </div>
+
       </div>
-    </div>
   </section>
 
   <script src="assets/busca.js"></script>

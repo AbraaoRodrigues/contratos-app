@@ -1,6 +1,7 @@
 <?php
-// Ajuste o caminho conforme sua estrutura:
-$logFile = realpath(__DIR__ . '/logs/cron_full_cache.log');
+// Pega arquivo base da pasta logs ou via parâmetro
+$logParam = $_GET['file'] ?? 'cron_full_cache.log';
+$logFile = realpath(__DIR__ . '/logs/' . basename($logParam));
 
 function no_cache_headers()
 {
@@ -10,33 +11,22 @@ function no_cache_headers()
   header('Expires: 0');
 }
 
-// Limpar via POST (ou GET com ?clear=1)
+// Descarta log (não apaga arquivo)
 if (isset($_GET['clear'])) {
-  if (!$logFile) {
-    http_response_code(404);
-    echo "NOT_FOUND";
-    exit;
-  }
-  // segurança mínima: só aceitar POST
-  if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    http_response_code(405);
-    echo "METHOD_NOT_ALLOWED";
-    exit;
-  }
-  file_put_contents($logFile, '');
-  echo "CLEARED";
+  header('Content-Type: text/plain; charset=utf-8');
+  echo "DISCARDED";
   exit;
 }
 
-// Download completo
+// Download
 if (isset($_GET['download'])) {
   if (!$logFile || !file_exists($logFile)) {
     http_response_code(404);
-    echo "Arquivo de log não encontrado.";
+    echo "Arquivo não encontrado.";
     exit;
   }
   header('Content-Type: text/plain; charset=utf-8');
-  header('Content-Disposition: attachment; filename="cron_full_cache.log"');
+  header('Content-Disposition: attachment; filename="' . basename($logFile) . '"');
   header('Content-Length: ' . filesize($logFile));
   readfile($logFile);
   exit;

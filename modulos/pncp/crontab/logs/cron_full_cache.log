@@ -1,0 +1,335 @@
+[2025-09-24 13:35:47] ============================
+[2025-09-24 13:35:47] 🚀 Sincronização FULL PNCP - PMI iniciada
+[2025-09-24 13:35:47] ============================
+[2025-09-24 13:35:47] 🧹 Removidos processos/itens anteriores a 2024-09-24
+[2025-09-24 13:35:47] 📅 Período 20240924 → 20241123 | UF=SP / Mod=10 (PMI)
+[2025-09-24 13:35:49] ✅ Página 1 OK (SP/10) – 22 registros
+[2025-09-24 13:35:49] ⚠️ Erro ao salvar processo 46634044000174-1-000237/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:49] ⚠️ Erro ao salvar processo 46634044000174-1-000238/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:49] ⚠️ Erro ao salvar processo 46634044000174-1-000259/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:49] ⚠️ Erro ao salvar processo 46634044000174-1-000260/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:49] ⚠️ Erro ao salvar processo 46634044000174-1-000264/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:49] ⚠️ Erro ao salvar processo 46634044000174-1-000265/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:49] ⚠️ Erro ao salvar processo 46634044000174-1-000266/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:49] ⚠️ Erro ao salvar processo 46634044000174-1-000267/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:49] ⚠️ Erro ao salvar processo 50333616000152-1-000082/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:49] ⚠️ Erro ao salvar processo 46634044000174-1-000272/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:49] ⚠️ Erro ao salvar processo 46634044000174-1-000275/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:49] ⚠️ Erro ao salvar processo 46634044000174-1-000285/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:49] ⚠️ Erro ao salvar processo 46634044000174-1-000290/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:49] ⚠️ Erro ao salvar processo 46634044000174-1-000302/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:49] ⚠️ Erro ao salvar processo 46634044000174-1-000303/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:49] ⚠️ Erro ao salvar processo 46634044000174-1-000306/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:49] ⚠️ Erro ao salvar processo 46634044000174-1-000313/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:49] ⚠️ Erro ao salvar processo 46634044000174-1-000331/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:49] ⚠️ Erro ao salvar processo 46634044000174-1-000333/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:49] ⚠️ Erro ao salvar processo 46634044000174-1-000339/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:49] ⚠️ Erro ao salvar processo 46634044000174-1-000341/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:49] ⚠️ Erro ao salvar processo 46634044000174-1-000345/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:49] 📅 Período 20241124 → 20250123 | UF=SP / Mod=10 (PMI)
+[2025-09-24 13:35:49] ✅ Página 1 OK (SP/10) – 26 registros
+[2025-09-24 13:35:49] ⚠️ Erro ao salvar processo 46634044000174-1-000347/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:49] ⚠️ Erro ao salvar processo 46634044000174-1-000351/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:49] ⚠️ Erro ao salvar processo 46634044000174-1-000352/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:49] ⚠️ Erro ao salvar processo 46634044000174-1-000353/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:49] ⚠️ Erro ao salvar processo 46634044000174-1-000365/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000376/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000384/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000001/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000002/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000402/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 44881449000181-1-000007/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000003/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000004/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000007/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000008/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000009/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000011/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000015/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000016/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000017/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000018/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000019/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000021/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000022/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000023/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 06916689000185-1-000036/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] 📅 Período 20250124 → 20250325 | UF=SP / Mod=10 (PMI)
+[2025-09-24 13:35:50] ✅ Página 1 OK (SP/10) – 30 registros
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000029/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000030/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000033/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000035/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000036/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000037/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000038/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000039/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000040/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000041/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000044/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000047/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000048/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000049/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000053/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000054/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000055/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000056/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000057/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000058/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000059/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000060/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000061/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000062/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000063/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000067/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000069/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000071/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000073/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] ⚠️ Erro ao salvar processo 46634044000174-1-000077/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:50] 📅 Período 20250326 → 20250525 | UF=SP / Mod=10 (PMI)
+[2025-09-24 13:35:51] ✅ Página 1 OK (SP/10) – 13 registros
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 46634044000174-1-000078/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 46634044000174-1-000081/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 46634044000174-1-000087/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 46634044000174-1-000095/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 46634044000174-1-000112/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 46634044000174-1-000113/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 46634044000174-1-000116/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 01610390000184-1-000044/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 01610390000184-1-000047/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 46634044000174-1-000121/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 01610390000184-1-000049/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 46634044000174-1-000125/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 46634044000174-1-000126/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] 📅 Período 20250526 → 20250725 | UF=SP / Mod=10 (PMI)
+[2025-09-24 13:35:51] ✅ Página 1 OK (SP/10) – 27 registros
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 46634044000174-1-000129/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 53415717000160-1-000044/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 46634044000174-1-000132/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 46482840000139-1-000346/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 46482840000139-1-000347/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 46634044000174-1-000138/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 46634044000174-1-000140/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 46634044000174-1-000143/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 46634044000174-1-000147/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 01610390000184-1-000059/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 01610390000184-1-000063/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 46634044000174-1-000154/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 01610390000184-1-000065/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 01610390000184-1-000067/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 46634044000174-1-000160/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 01610390000184-1-000068/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 46634044000174-1-000168/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 46634044000174-1-000172/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 46634044000174-1-000176/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 46634044000174-1-000179/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 46634044000174-1-000180/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 46634044000174-1-000183/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 46634044000174-1-000184/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 46634044000174-1-000192/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 46634044000174-1-000195/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 01610390000184-1-000079/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] ⚠️ Erro ao salvar processo 01610390000184-1-000080/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:51] 📅 Período 20250726 → 20250924 | UF=SP / Mod=10 (PMI)
+[2025-09-24 13:35:52] ✅ Página 1 OK (SP/10) – 32 registros
+[2025-09-24 13:35:52] ⚠️ Erro ao salvar processo 46634044000174-1-000208/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:52] ⚠️ Erro ao salvar processo 01610390000184-1-000086/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:52] ⚠️ Erro ao salvar processo 01610390000184-1-000087/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:52] ⚠️ Erro ao salvar processo 46634044000174-1-000218/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:52] ⚠️ Erro ao salvar processo 46634044000174-1-000219/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:52] ⚠️ Erro ao salvar processo 01610390000184-1-000090/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:52] ⚠️ Erro ao salvar processo 01610390000184-1-000093/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:52] ⚠️ Erro ao salvar processo 01610390000184-1-000094/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:52] ⚠️ Erro ao salvar processo 46634044000174-1-000230/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:52] ⚠️ Erro ao salvar processo 46634044000174-1-000235/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:52] ⚠️ Erro ao salvar processo 46634044000174-1-000237/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:52] ⚠️ Erro ao salvar processo 46634044000174-1-000242/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:52] ⚠️ Erro ao salvar processo 46634044000174-1-000243/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:52] ⚠️ Erro ao salvar processo 46634044000174-1-000248/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:52] ⚠️ Erro ao salvar processo 53415717000160-1-000132/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:52] ⚠️ Erro ao salvar processo 46634044000174-1-000260/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:52] ⚠️ Erro ao salvar processo 46634044000174-1-000261/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:52] ⚠️ Erro ao salvar processo 01610390000184-1-000098/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:52] ⚠️ Erro ao salvar processo 01610390000184-1-000100/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:52] ⚠️ Erro ao salvar processo 46482840000139-1-000677/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:52] ⚠️ Erro ao salvar processo 46634044000174-1-000274/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:52] ⚠️ Erro ao salvar processo 46634044000174-1-000275/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:52] ⚠️ Erro ao salvar processo 46634044000174-1-000276/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:52] ⚠️ Erro ao salvar processo 46634044000174-1-000277/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:52] ⚠️ Erro ao salvar processo 46634044000174-1-000279/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:52] ⚠️ Erro ao salvar processo 46634044000174-1-000282/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:52] ⚠️ Erro ao salvar processo 01610390000184-1-000106/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:52] ⚠️ Erro ao salvar processo 05002419000104-1-000011/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:52] ⚠️ Erro ao salvar processo 01610390000184-1-000107/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:52] ⚠️ Erro ao salvar processo 46634044000174-1-000292/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:52] ⚠️ Erro ao salvar processo 46634044000174-1-000293/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:52] ⚠️ Erro ao salvar processo 50320415000110-1-000012/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:35:52] 🏁 Finalizado em 00h 00m 06s
+[2025-09-24 13:39:09] ============================
+[2025-09-24 13:39:09] 🚀 Sincronização FULL PNCP - PMI iniciada
+[2025-09-24 13:39:09] ============================
+[2025-09-24 13:39:15] 🧹 Removidos processos/itens anteriores a 2024-09-24
+[2025-09-24 13:39:15] 📅 Período 20240924 → 20241123 | UF=SP / Mod=10 (PMI)
+[2025-09-24 13:39:16] ✅ Página 1 OK (SP/10) – 22 registros
+[2025-09-24 13:39:17] ⚠️ Erro ao salvar processo 46634044000174-1-000237/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:18] ⚠️ Erro ao salvar processo 46634044000174-1-000238/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:20] ⚠️ Erro ao salvar processo 46634044000174-1-000259/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:20] ⚠️ Erro ao salvar processo 46634044000174-1-000260/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:20] ⚠️ Erro ao salvar processo 46634044000174-1-000264/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:20] ⚠️ Erro ao salvar processo 46634044000174-1-000265/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:20] ⚠️ Erro ao salvar processo 46634044000174-1-000266/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:20] ⚠️ Erro ao salvar processo 46634044000174-1-000267/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:20] ⚠️ Erro ao salvar processo 50333616000152-1-000082/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:20] ⚠️ Erro ao salvar processo 46634044000174-1-000272/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:20] ⚠️ Erro ao salvar processo 46634044000174-1-000275/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:20] ⚠️ Erro ao salvar processo 46634044000174-1-000285/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:20] ⚠️ Erro ao salvar processo 46634044000174-1-000290/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:20] ⚠️ Erro ao salvar processo 46634044000174-1-000302/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:20] ⚠️ Erro ao salvar processo 46634044000174-1-000303/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:20] ⚠️ Erro ao salvar processo 46634044000174-1-000306/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:20] ⚠️ Erro ao salvar processo 46634044000174-1-000313/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:20] ⚠️ Erro ao salvar processo 46634044000174-1-000331/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:20] ⚠️ Erro ao salvar processo 46634044000174-1-000333/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:20] ⚠️ Erro ao salvar processo 46634044000174-1-000339/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:20] ⚠️ Erro ao salvar processo 46634044000174-1-000341/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:21] ⚠️ Erro ao salvar processo 46634044000174-1-000345/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:21] 📅 Período 20241124 → 20250123 | UF=SP / Mod=10 (PMI)
+[2025-09-24 13:39:21] ✅ Página 1 OK (SP/10) – 26 registros
+[2025-09-24 13:39:23] ⚠️ Erro ao salvar processo 46634044000174-1-000347/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:23] ⚠️ Erro ao salvar processo 46634044000174-1-000351/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:23] ⚠️ Erro ao salvar processo 46634044000174-1-000352/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:23] ⚠️ Erro ao salvar processo 46634044000174-1-000353/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:23] ⚠️ Erro ao salvar processo 46634044000174-1-000365/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:23] ⚠️ Erro ao salvar processo 46634044000174-1-000376/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:23] ⚠️ Erro ao salvar processo 46634044000174-1-000384/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:23] ⚠️ Erro ao salvar processo 46634044000174-1-000001/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:23] ⚠️ Erro ao salvar processo 46634044000174-1-000002/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:23] ⚠️ Erro ao salvar processo 46634044000174-1-000402/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:24] ⚠️ Erro ao salvar processo 44881449000181-1-000007/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:24] ⚠️ Erro ao salvar processo 46634044000174-1-000003/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:24] ⚠️ Erro ao salvar processo 46634044000174-1-000004/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:24] ⚠️ Erro ao salvar processo 46634044000174-1-000007/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:24] ⚠️ Erro ao salvar processo 46634044000174-1-000008/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:24] ⚠️ Erro ao salvar processo 46634044000174-1-000009/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:24] ⚠️ Erro ao salvar processo 46634044000174-1-000011/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:24] ⚠️ Erro ao salvar processo 46634044000174-1-000015/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:24] ⚠️ Erro ao salvar processo 46634044000174-1-000016/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:24] ⚠️ Erro ao salvar processo 46634044000174-1-000017/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:24] ⚠️ Erro ao salvar processo 46634044000174-1-000018/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:24] ⚠️ Erro ao salvar processo 46634044000174-1-000019/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:24] ⚠️ Erro ao salvar processo 46634044000174-1-000021/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:24] ⚠️ Erro ao salvar processo 46634044000174-1-000022/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:24] ⚠️ Erro ao salvar processo 46634044000174-1-000023/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:24] ⚠️ Erro ao salvar processo 06916689000185-1-000036/2024: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:39:24] 📅 Período 20250124 → 20250325 | UF=SP / Mod=10 (PMI)
+[2025-09-24 13:40:09] ⚠️ cURL tent.1: Operation timed out after 45002 milliseconds with 0 bytes received
+[2025-09-24 13:40:12] ✅ Página 1 OK (SP/10) – 30 registros
+[2025-09-24 13:40:12] ⚠️ Erro ao salvar processo 46634044000174-1-000029/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:12] ⚠️ Erro ao salvar processo 46634044000174-1-000030/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:12] ⚠️ Erro ao salvar processo 46634044000174-1-000033/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:12] ⚠️ Erro ao salvar processo 46634044000174-1-000035/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:12] ⚠️ Erro ao salvar processo 46634044000174-1-000036/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:12] ⚠️ Erro ao salvar processo 46634044000174-1-000037/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:12] ⚠️ Erro ao salvar processo 46634044000174-1-000038/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:12] ⚠️ Erro ao salvar processo 46634044000174-1-000039/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:12] ⚠️ Erro ao salvar processo 46634044000174-1-000040/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:12] ⚠️ Erro ao salvar processo 46634044000174-1-000041/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:12] ⚠️ Erro ao salvar processo 46634044000174-1-000044/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:12] ⚠️ Erro ao salvar processo 46634044000174-1-000047/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:12] ⚠️ Erro ao salvar processo 46634044000174-1-000048/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:12] ⚠️ Erro ao salvar processo 46634044000174-1-000049/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:12] ⚠️ Erro ao salvar processo 46634044000174-1-000053/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:12] ⚠️ Erro ao salvar processo 46634044000174-1-000054/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:12] ⚠️ Erro ao salvar processo 46634044000174-1-000055/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:12] ⚠️ Erro ao salvar processo 46634044000174-1-000056/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:12] ⚠️ Erro ao salvar processo 46634044000174-1-000057/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:12] ⚠️ Erro ao salvar processo 46634044000174-1-000058/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:12] ⚠️ Erro ao salvar processo 46634044000174-1-000059/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:12] ⚠️ Erro ao salvar processo 46634044000174-1-000060/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:12] ⚠️ Erro ao salvar processo 46634044000174-1-000061/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:12] ⚠️ Erro ao salvar processo 46634044000174-1-000062/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:12] ⚠️ Erro ao salvar processo 46634044000174-1-000063/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:12] ⚠️ Erro ao salvar processo 46634044000174-1-000067/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:12] ⚠️ Erro ao salvar processo 46634044000174-1-000069/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:12] ⚠️ Erro ao salvar processo 46634044000174-1-000071/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:12] ⚠️ Erro ao salvar processo 46634044000174-1-000073/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:12] ⚠️ Erro ao salvar processo 46634044000174-1-000077/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:12] 📅 Período 20250326 → 20250525 | UF=SP / Mod=10 (PMI)
+[2025-09-24 13:40:17] ✅ Página 1 OK (SP/10) – 13 registros
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 46634044000174-1-000078/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 46634044000174-1-000081/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 46634044000174-1-000087/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 46634044000174-1-000095/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 46634044000174-1-000112/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 46634044000174-1-000113/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 46634044000174-1-000116/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 01610390000184-1-000044/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 01610390000184-1-000047/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 46634044000174-1-000121/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 01610390000184-1-000049/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 46634044000174-1-000125/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 46634044000174-1-000126/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] 📅 Período 20250526 → 20250725 | UF=SP / Mod=10 (PMI)
+[2025-09-24 13:40:17] ✅ Página 1 OK (SP/10) – 27 registros
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 46634044000174-1-000129/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 53415717000160-1-000044/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 46634044000174-1-000132/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 46482840000139-1-000346/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 46482840000139-1-000347/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 46634044000174-1-000138/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 46634044000174-1-000140/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 46634044000174-1-000143/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 46634044000174-1-000147/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 01610390000184-1-000059/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 01610390000184-1-000063/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 46634044000174-1-000154/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 01610390000184-1-000065/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 01610390000184-1-000067/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 46634044000174-1-000160/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 01610390000184-1-000068/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 46634044000174-1-000168/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 46634044000174-1-000172/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 46634044000174-1-000176/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 46634044000174-1-000179/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 46634044000174-1-000180/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 46634044000174-1-000183/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 46634044000174-1-000184/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 46634044000174-1-000192/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 46634044000174-1-000195/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 01610390000184-1-000079/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:17] ⚠️ Erro ao salvar processo 01610390000184-1-000080/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:18] 📅 Período 20250726 → 20250924 | UF=SP / Mod=10 (PMI)
+[2025-09-24 13:40:18] ✅ Página 1 OK (SP/10) – 32 registros
+[2025-09-24 13:40:18] ⚠️ Erro ao salvar processo 46634044000174-1-000208/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:18] ⚠️ Erro ao salvar processo 01610390000184-1-000086/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:18] ⚠️ Erro ao salvar processo 01610390000184-1-000087/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:18] ⚠️ Erro ao salvar processo 46634044000174-1-000218/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:18] ⚠️ Erro ao salvar processo 46634044000174-1-000219/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:18] ⚠️ Erro ao salvar processo 01610390000184-1-000090/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:18] ⚠️ Erro ao salvar processo 01610390000184-1-000093/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:18] ⚠️ Erro ao salvar processo 01610390000184-1-000094/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:18] ⚠️ Erro ao salvar processo 46634044000174-1-000230/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:18] ⚠️ Erro ao salvar processo 46634044000174-1-000235/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:18] ⚠️ Erro ao salvar processo 46634044000174-1-000237/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:18] ⚠️ Erro ao salvar processo 46634044000174-1-000242/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:18] ⚠️ Erro ao salvar processo 46634044000174-1-000243/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:18] ⚠️ Erro ao salvar processo 46634044000174-1-000248/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:18] ⚠️ Erro ao salvar processo 53415717000160-1-000132/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:18] ⚠️ Erro ao salvar processo 46634044000174-1-000260/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:18] ⚠️ Erro ao salvar processo 46634044000174-1-000261/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:18] ⚠️ Erro ao salvar processo 01610390000184-1-000098/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:18] ⚠️ Erro ao salvar processo 01610390000184-1-000100/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:18] ⚠️ Erro ao salvar processo 46482840000139-1-000677/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:18] ⚠️ Erro ao salvar processo 46634044000174-1-000274/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:18] ⚠️ Erro ao salvar processo 46634044000174-1-000275/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:18] ⚠️ Erro ao salvar processo 46634044000174-1-000276/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:18] ⚠️ Erro ao salvar processo 46634044000174-1-000277/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:18] ⚠️ Erro ao salvar processo 46634044000174-1-000279/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:18] ⚠️ Erro ao salvar processo 46634044000174-1-000282/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:18] ⚠️ Erro ao salvar processo 01610390000184-1-000106/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:18] ⚠️ Erro ao salvar processo 05002419000104-1-000011/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:18] ⚠️ Erro ao salvar processo 01610390000184-1-000107/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:18] ⚠️ Erro ao salvar processo 46634044000174-1-000292/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:18] ⚠️ Erro ao salvar processo 46634044000174-1-000293/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:18] ⚠️ Erro ao salvar processo 50320415000110-1-000012/2025: SQLSTATE[42000]: Syntax error or access violation: 1110 Column 'dataPublicacao' specified twice
+[2025-09-24 13:40:18] 🏁 Finalizado em 00h 01m 09s

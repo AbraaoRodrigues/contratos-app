@@ -109,16 +109,18 @@
 <body>
   <header>
     <div class="title">Terminal PNCP — Logs</div>
-    <div class="bar">
-      <button id="btnRefresh">Atualizar agora</button>
-      <button id="btnToggleAuto">Pausar auto-atualização</button>
-      <button id="btnToggleScroll">Pausar auto-scroll</button>
-      <a class="btn" href="ver_log.php?download=1" target="_blank" rel="noopener">Baixar log</a>
-      <button id="btnClear" class="btn" style="border-color:#663;">Limpar log</button>
-    </div>
-    <div class="right">
-      <span class="pill">Atualiza a cada <span id="freq">3s</span></span>
-      <span class="pill" id="runtime">Rodando há 0s</span>
+    <div class="toolbar">
+      <div class="controls">
+        <input type="file" id="logFileInput" accept=".log,.txt">
+        <button id="btnRefresh">🔄 Atualizar</button>
+        <button id="btnToggleAuto">Pausar auto-atualização</button>
+        <button id="btnToggleScroll">Pausar auto-scroll</button>
+        <button id="btnClear">🧹 Descartar log atual</button>
+      </div>
+      <div class="right">
+        <span class="pill">Atualiza a cada <span id="freq">3s</span></span>
+        <span class="pill" id="runtime">Rodando há 0s</span>
+      </div>
     </div>
 
   </header>
@@ -126,15 +128,17 @@
   <div id="terminal">Carregando logs...</div>
 
   <script>
-    const LOG_URL = 'ver_log.php?tailKb=256'; // pega os últimos 256 KB p/ não pesar
+    let LOG_URL = 'ver_log.php?tailKb=256';
     const term = document.getElementById('terminal');
     const btnRefresh = document.getElementById('btnRefresh');
     const btnToggleAuto = document.getElementById('btnToggleAuto');
     const btnToggleScroll = document.getElementById('btnToggleScroll');
+    const btnClear = document.getElementById('btnClear');
+    const fileInput = document.getElementById('logFileInput');
 
     let autoRefresh = true;
     let autoScroll = true;
-    let timer = null;
+    let logTimer = null;
     const intervalMs = 3000;
 
     async function carregarLogs() {
@@ -147,36 +151,24 @@
         if (autoScroll) term.scrollTop = term.scrollHeight;
 
         // Detecta inícios
-        if (
-          texto.includes("🔄 Iniciando sincronização FULL PNCP") ||
+        if (texto.match(/🚀 .*iniciada/) ||
           texto.includes("🔄 [FALHAS] Iniciando reprocessamento") ||
-          texto.includes("🔄 [PROCESSOS] Iniciando reprocessamento")
-        ) {
-          iniciarRuntime();
+          texto.includes("🔄 [PROCESSOS] Iniciando reprocessamento")) {
+          if (!runtimeTimer) iniciarRuntime();
         }
 
         // Detecta finais
-        if (
-          texto.includes("✅ Finalizado") ||
+        if (texto.includes("🏁 Finalizado") ||
           texto.includes("🏁 [FALHAS] Finalizado reprocessamento.") ||
-          texto.includes("🏁 [PROCESSOS] Finalizado reprocessamento.")
-        ) {
+          texto.includes("🏁 [PROCESSOS] Finalizado reprocessamento.")) {
           pararRuntime();
         }
-
       } catch (e) {
         term.textContent = 'Erro ao carregar logs: ' + e;
       }
     }
 
-    //alerta de cronômetro rodando
-    let runtimeRunning = false;
-
-
-    // Timer dos logs
-    let logTimer = null;
-
-    // Inicia atualização automática dos logs
+    // Inicia atualização automática
     function start() {
       if (logTimer) clearInterval(logTimer);
       logTimer = setInterval(() => {
@@ -197,28 +189,58 @@
       if (autoScroll) term.scrollTop = term.scrollHeight;
     });
 
-    // Cronômetro de tempo de execução
+    // Clear apenas descarta
+    btnClear.addEventListener('click', async () => {
+      if (!confirm('Descartar log atual da visualização?')) return;
+      try {
+        const res = await fetch(LOG_URL + '&clear=1', {
+          method: 'POST',
+          cache: 'no-store'
+        });
+        const txt = await res.text();
+        if (txt.trim() === 'DISCARDED') {
+          term.textContent = '🧹 Log descartado da visualização.\n';
+          resetarRuntime();
+        } else {
+          alert('Não foi possível descartar o log.');
+        }
+      } catch (e) {
+        console.error(e);
+        alert('Erro ao descartar log.');
+      }
+    });
+
+    // Input file → escolhe outro log
+    fileInput.addEventListener('change', () => {
+      if (fileInput.files.length === 0) return;
+      const nome = fileInput.files[0].name;
+      LOG_URL = 'ver_log.php?tailKb=256&file=' + encodeURIComponent(nome);
+      term.textContent = `📂 Log selecionado: ${nome}\nCarregando...\n`;
+      resetarRuntime();
+      carregarLogs();
+    });
+
+    // Cronômetro
     const runtimeEl = document.getElementById('runtime');
     let startTime = null;
     let runtimeTimer = null;
+    let runtimeRunning = false;
 
     function atualizarRuntime() {
-      if (startTime === null) return; // parado, não faz nada
+      if (startTime === null) return;
       const diff = Math.floor((Date.now() - startTime) / 1000);
       const horas = Math.floor(diff / 3600);
       const minutos = Math.floor((diff % 3600) / 60);
       const segundos = diff % 60;
-
       let txt = "";
       if (horas > 0) txt += horas + "h ";
       if (minutos > 0) txt += minutos + "m ";
       txt += segundos + "s";
-
       runtimeEl.textContent = "Rodando há " + txt.trim();
     }
 
     function iniciarRuntime() {
-      if (runtimeRunning) return; // já rodando, não reinicia
+      if (runtimeRunning) return;
       if (runtimeTimer) clearInterval(runtimeTimer);
       startTime = Date.now();
       runtimeTimer = setInterval(atualizarRuntime, 1000);
@@ -244,32 +266,8 @@
     }
 
     start();
-
-    const btnClear = document.getElementById('btnClear');
-
-    btnClear.addEventListener('click', async () => {
-      if (!confirm('Limpar arquivo de log?')) return;
-      try {
-        const res = await fetch('ver_log.php?clear=1', {
-          method: 'POST',
-          cache: 'no-store'
-        });
-        const txt = await res.text();
-        if (txt.trim() === 'CLEARED') {
-          term.textContent = '🧹 Logs limpos.\n';
-          if (autoScroll) term.scrollTop = term.scrollHeight;
-          resetarRuntime(); // 🔄 reseta cronômetro
-          setTimeout(carregarLogs, 300); // recarrega o conteúdo logo depois
-        } else {
-          alert('Não foi possível limpar o log.');
-        }
-
-      } catch (e) {
-        console.error(e);
-        alert('Erro ao limpar log.');
-      }
-    });
   </script>
+
 </body>
 
 </html>

@@ -6,9 +6,13 @@ if (!isset($_SESSION['usuario_id'])) {
 }
 include 'includes/header.php';
 require_once '../../templates/includes/verifica_login.php';
+require_once '../../config/db.php';
+$pdo = Conexao::getInstance();
 
 require_once __DIR__ . '/../../config/db_precos.php';
 $pdo2 = ConexaoPrecos::getInstance();
+
+$modoEscuro = $_SESSION['modo_escuro'] ?? false;
 
 // Estatísticas
 $totalProc = $pdo2->query("SELECT COUNT(*) FROM cache_pncp_processos")->fetchColumn();
@@ -76,7 +80,7 @@ $ultimo = $pdo2->query("SELECT MAX(atualizado_em) FROM cache_pncp_processos")->f
   </style>
 </head>
 
-<body>
+<body class="<?= $modoEscuro ? 'dark' : '' ?>">
   <h1>📊 Dashboard PNCP</h1>
 
   <div class="cards">

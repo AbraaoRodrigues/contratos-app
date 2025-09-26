@@ -89,10 +89,11 @@ $sql = "SELECT
           p.orgao,
           p.uf,
           p.status,
-          p.dataPublicacao
+          p.dataPublicacao,
+          p.dataAbertura
         FROM cache_pncp_processos p
         $whereSql
-        ORDER BY p.dataPublicacao DESC
+        ORDER BY p.dataAbertura DESC
         LIMIT :lim OFFSET :off";
 $st = $pdo->prepare($sql);
 
