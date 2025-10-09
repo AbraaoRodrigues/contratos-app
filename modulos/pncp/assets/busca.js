@@ -157,7 +157,19 @@ async function carregarItens(numeroControlePNCP) {
   try {
     const url = `api/itens_cache.php?numeroControlePNCP=${encodeURIComponent(numeroControlePNCP)}&page=${currentItemPage}&pageSize=${itemsPageSize}`;
     const r = await fetch(url);
-    const j = await r.json();
+const text = await r.text();
+
+// debug seguro de resposta
+let j;
+try {
+  j = JSON.parse(text);
+} catch (err) {
+  console.error("⚠️ Erro ao decodificar JSON:", err);
+  console.log("🔍 Resposta recebida (primeiros 300 caracteres):\n", text.slice(0, 300));
+  alert("Erro ao consultar a base local: " + err.message);
+  return;
+}
+
     if (!j.ok) throw new Error(j.msg || 'Falha ao obter itens.');
 
     const itens = j.itens || [];
@@ -580,6 +592,7 @@ async function baixarArquivo(url, payload, nomeArquivo) {
     document.body.appendChild(link);
     link.click();
     link.remove();
+    URL.revokeObjectURL(link.href);
   } catch (err) {
     alert("Erro ao exportar: " + err.message);
   }

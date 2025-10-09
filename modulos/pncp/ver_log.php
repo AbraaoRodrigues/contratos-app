@@ -1,7 +1,34 @@
 <?php
-// Pega arquivo base da pasta logs ou via parâmetro
-$logParam = $_GET['file'] ?? 'cron_full_cache.log';
-$logFile = realpath(__DIR__ . '/logs/' . basename($logParam));
+$logDir = __DIR__ . '/logs';
+
+
+// === LISTAR LOGS DISPONÍVEIS ===
+if (isset($_GET['list'])) {
+  header('Content-Type: application/json; charset=utf-8');
+  $files = glob($logDir . '/cron_*.log');
+  if (!$files) {
+    echo json_encode([]);
+    exit;
+  }
+  usort($files, fn($a, $b) => filemtime($b) <=> filemtime($a));
+  $files = array_slice($files, 0, 15); // só os 15 mais recentes
+  echo json_encode(array_map('basename', $files));
+  exit;
+}
+
+// se veio ?file=, usa esse; caso contrário, pega o mais recente
+if (!empty($_GET['file'])) {
+  $logFile = realpath($logDir . '/' . basename($_GET['file']));
+} else {
+  $files = glob($logDir . '/cron_*.log');
+  if (!$files) {
+    $logFile = null;
+  } else {
+    // ordena por data de modificação, mais novo primeiro
+    usort($files, fn($a, $b) => filemtime($b) <=> filemtime($a));
+    $logFile = $files[0];
+  }
+}
 
 function no_cache_headers()
 {
@@ -11,14 +38,14 @@ function no_cache_headers()
   header('Expires: 0');
 }
 
-// Descarta log (não apaga arquivo)
+// === DESCARTAR (não apaga arquivo, só responde) ===
 if (isset($_GET['clear'])) {
   header('Content-Type: text/plain; charset=utf-8');
   echo "DISCARDED";
   exit;
 }
 
-// Download
+// === DOWNLOAD COMPLETO ===
 if (isset($_GET['download'])) {
   if (!$logFile || !file_exists($logFile)) {
     http_response_code(404);
@@ -32,7 +59,7 @@ if (isset($_GET['download'])) {
   exit;
 }
 
-// Leitura normal (com tail opcional)
+// === LEITURA NORMAL / TAIL ===
 no_cache_headers();
 if (!$logFile || !file_exists($logFile)) {
   echo "Nenhum log encontrado.";

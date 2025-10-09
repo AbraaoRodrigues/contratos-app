@@ -111,7 +111,10 @@
     <div class="title">Terminal PNCP — Logs</div>
     <div class="toolbar">
       <div class="controls">
-        <input type="file" id="logFileInput" accept=".log,.txt">
+        <div>
+          <label for="selLog">Escolher log:</label>
+          <select id="selLog"></select>
+        </div>
         <button id="btnRefresh">🔄 Atualizar</button>
         <button id="btnToggleAuto">Pausar auto-atualização</button>
         <button id="btnToggleScroll">Pausar auto-scroll</button>
@@ -128,24 +131,63 @@
   <div id="terminal">Carregando logs...</div>
 
   <script>
-    let LOG_URL = 'ver_log.php?tailKb=256';
     const term = document.getElementById('terminal');
     const btnRefresh = document.getElementById('btnRefresh');
     const btnToggleAuto = document.getElementById('btnToggleAuto');
     const btnToggleScroll = document.getElementById('btnToggleScroll');
     const btnClear = document.getElementById('btnClear');
-    const fileInput = document.getElementById('logFileInput');
+    const selLog = document.getElementById('selLog');
 
     let autoRefresh = true;
     let autoScroll = true;
     let logTimer = null;
+    let currentLogFile = null;
     const intervalMs = 3000;
 
-    async function carregarLogs() {
+    // === Lista os logs disponíveis ===
+    async function carregarListaLogs() {
       try {
-        const res = await fetch(LOG_URL, {
-          cache: 'no-store'
+        const res = await fetch('ver_log.php?list=1');
+        const files = await res.json();
+        selLog.innerHTML = '';
+        if (!files.length) {
+          selLog.innerHTML = '<option value="">Nenhum log encontrado</option>';
+          currentLogFile = null;
+          return;
+        }
+        files.forEach((f, i) => {
+          const opt = document.createElement('option');
+          opt.value = f;
+          opt.textContent = f;
+          if (i === 0) {
+            opt.selected = true;
+            currentLogFile = f;
+          }
+          selLog.appendChild(opt);
         });
+      } catch (err) {
+        console.error("Erro ao listar logs", err);
+      }
+    }
+
+    selLog.addEventListener('change', () => {
+      currentLogFile = selLog.value;
+      resetarRuntime();
+      carregarLogs();
+    });
+
+    // === Carrega conteúdo do log atual ===
+    async function carregarLogs() {
+      if (!currentLogFile) {
+        term.textContent = "Nenhum log selecionado.";
+        return;
+      }
+      try {
+        const res = await fetch(
+          'ver_log.php?tailKb=256&file=' + encodeURIComponent(currentLogFile), {
+            cache: 'no-store'
+          }
+        );
         const texto = await res.text();
         term.textContent = texto || 'Nenhum log encontrado.';
         if (autoScroll) term.scrollTop = term.scrollHeight;
@@ -168,39 +210,40 @@
       }
     }
 
-    // Inicia atualização automática
-    function start() {
-      if (logTimer) clearInterval(logTimer);
-      logTimer = setInterval(() => {
-        if (autoRefresh) carregarLogs();
-      }, intervalMs);
-      carregarLogs();
-    }
-
+    // === Botões ===
     btnRefresh.addEventListener('click', carregarLogs);
     btnToggleAuto.addEventListener('click', () => {
       autoRefresh = !autoRefresh;
-      btnToggleAuto.textContent = autoRefresh ? 'Pausar auto-atualização' : 'Retomar auto-atualização';
+      btnToggleAuto.textContent = autoRefresh ?
+        'Pausar auto-atualização' :
+        'Retomar auto-atualização';
       if (autoRefresh) carregarLogs();
     });
     btnToggleScroll.addEventListener('click', () => {
       autoScroll = !autoScroll;
-      btnToggleScroll.textContent = autoScroll ? 'Pausar auto-scroll' : 'Retomar auto-scroll';
+      btnToggleScroll.textContent = autoScroll ?
+        'Pausar auto-scroll' :
+        'Retomar auto-scroll';
       if (autoScroll) term.scrollTop = term.scrollHeight;
     });
 
-    // Clear apenas descarta
+    // Descarta log atual
     btnClear.addEventListener('click', async () => {
+      if (!currentLogFile) return;
       if (!confirm('Descartar log atual da visualização?')) return;
       try {
-        const res = await fetch(LOG_URL + '&clear=1', {
-          method: 'POST',
-          cache: 'no-store'
-        });
+        const res = await fetch(
+          'ver_log.php?clear=1&file=' + encodeURIComponent(currentLogFile), {
+            method: 'POST',
+            cache: 'no-store'
+          }
+        );
         const txt = await res.text();
         if (txt.trim() === 'DISCARDED') {
           term.textContent = '🧹 Log descartado da visualização.\n';
           resetarRuntime();
+          await carregarListaLogs();
+          carregarLogs();
         } else {
           alert('Não foi possível descartar o log.');
         }
@@ -210,17 +253,7 @@
       }
     });
 
-    // Input file → escolhe outro log
-    fileInput.addEventListener('change', () => {
-      if (fileInput.files.length === 0) return;
-      const nome = fileInput.files[0].name;
-      LOG_URL = 'ver_log.php?tailKb=256&file=' + encodeURIComponent(nome);
-      term.textContent = `📂 Log selecionado: ${nome}\nCarregando...\n`;
-      resetarRuntime();
-      carregarLogs();
-    });
-
-    // Cronômetro
+    // === Cronômetro ===
     const runtimeEl = document.getElementById('runtime');
     let startTime = null;
     let runtimeTimer = null;
@@ -265,9 +298,18 @@
       runtimeRunning = false;
     }
 
+    // === Start ===
+    async function start() {
+      await carregarListaLogs();
+      carregarLogs();
+      if (logTimer) clearInterval(logTimer);
+      logTimer = setInterval(() => {
+        if (autoRefresh) carregarLogs();
+      }, intervalMs);
+    }
+
     start();
   </script>
-
 </body>
 
 </html>

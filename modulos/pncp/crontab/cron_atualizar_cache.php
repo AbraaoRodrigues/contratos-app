@@ -1,28 +1,26 @@
 <?php
 
 /**
- * CRON para atualizar cache PNCP (últimos X dias)
+ * CRON — Atualizar cache PNCP (últimos X dias)
  * Rodar semanalmente (ex.: 7 dias)
  */
 
+set_time_limit(0);
+ini_set('memory_limit', '512M');
+
 require_once __DIR__ . '/../../../config/db_precos.php';
 require_once __DIR__ . '/funcoes_pncp.php';
+require_once __DIR__ . '/logger.php';
 
 $pdo = ConexaoPrecos::getInstance();
 
-// === LOG ===
-$logFile = __DIR__ . '/logs/cron_full_cache.log'; // mesmo arquivo
-function logar($mensagem)
-{
-  global $logFile;
-  $linha = "[" . date('Y-m-d H:i:s') . "] " . $mensagem . "\n";
-  echo $linha;
-  file_put_contents($logFile, $linha, FILE_APPEND);
-}
+// Marca início
+$inicioExec = microtime(true);
+logInicioExec("Atualização semanal de cache PNCP");
 
 // === Configuração ===
-$ufs = ['SP'];         // pode expandir para todas ['AC','AL','AM',...]
-$modalidades = [6, 7]; // pode expandir se quiser
+$ufs = ['SP'];  // pode expandir: ['AC','AL','AM',...]
+$modalidades = [1, 3, 4, 6, 8, 9, 10, 11, 12]; // 7 removida
 $tamPagina = 100;
 
 // Quantos dias (CLI ou GET)
@@ -36,7 +34,7 @@ if (php_sapi_name() === 'cli') {
 $dataInicial = new DateTime("-$dias days");
 $dataFinal   = new DateTime();
 
-logar("🔄 [ATUALIZAR] Sincronizando PNCP ({$dataInicial->format('Y-m-d')} -> {$dataFinal->format('Y-m-d')})");
+logar("📅 Período {$dataInicial->format('Y-m-d')} → {$dataFinal->format('Y-m-d')}");
 
 foreach ($ufs as $uf) {
   foreach ($modalidades as $mod) {
@@ -52,21 +50,22 @@ foreach ($ufs as $uf) {
       $resposta = consultarApi($url);
 
       if ($resposta === false) {
-        logar("❌ Erro cURL/timeout ao consultar página $pagina ($uf/$mod)");
+        logar("❌ Erro cURL/timeout ao consultar página $pagina ($uf/mod $mod)");
         break;
       }
       if ($resposta === null) {
-        logar("⚠️ Janela inválida (HTTP 400) — $uf/$mod");
+        logar("⚠️ Janela inválida (HTTP 400) — $uf/mod $mod");
         break;
       }
 
       $total = $resposta['totalRegistros'] ?? 0;
       $dados = $resposta['data'] ?? [];
+
       logar("📄 Página $pagina / ~" . ceil(($total ?: 1) / $tamPagina)
         . " ($uf / mod $mod) → " . count($dados) . " processos");
 
       if (empty($dados)) {
-        logar("ℹ️ Nenhum dado retornado, encerrando $uf/$mod.");
+        logar("ℹ️ Nenhum dado retornado, encerrando $uf/mod $mod.");
         break;
       }
 
@@ -76,7 +75,7 @@ foreach ($ufs as $uf) {
           logar("   💾 Processo {$proc['numeroControlePNCP']} salvo/atualizado.");
         } catch (Throwable $e) {
           logar("   ⚠️ Erro ao salvar processo {$proc['numeroControlePNCP']}: " . $e->getMessage());
-          registrarFalha($pdo, "ERRO_SALVAR_PROCESSO", $proc['numeroControlePNCP']);
+          registrarFalha($pdo, "ERRO_SALVAR_PROCESSO: " . $e->getMessage(), $proc['numeroControlePNCP']);
           continue;
         }
 
@@ -95,10 +94,10 @@ foreach ($ufs as $uf) {
       $pagina++;
       $continuar = ($pagina - 1) * $tamPagina < $total;
 
-      // Throttle p/ aliviar API
+      // Throttle para aliviar API
       usleep(200_000); // 200ms
     }
   }
 }
 
-logar("🏁 [ATUALIZAR] Finalizado");
+logFimExec($inicioExec);

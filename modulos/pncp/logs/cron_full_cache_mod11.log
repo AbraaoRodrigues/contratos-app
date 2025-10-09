@@ -1,0 +1,77 @@
+[2025-10-02 16:49:51] ============================
+[2025-10-02 16:49:51] 🚀 Sincronização FULL PNCP - Pré-qualificação iniciada
+[2025-10-02 16:49:51] ============================
+[2025-10-02 16:49:51] 🧹 Removidos processos/itens anteriores a 2024-10-02
+[2025-10-02 16:49:51] 📅 Período 20241002 → 20241201 | UF=SP / Mod=11 (Pré-qualificação)
+[2025-10-02 16:50:36] ⚠️ cURL tent.1: Operation timed out after 45002 milliseconds with 0 bytes received
+[2025-10-02 16:50:39] ✅ Página 1 OK (SP/11) – 1 registros
+[2025-10-02 16:50:39] 💾 Processo 70946009000175-1-000297/2024 salvo/atualizado
+[2025-10-02 16:50:39] 💾 Itens do processo 70946009000175-1-000297/2024 salvos/atualizados (1)
+[2025-10-02 16:50:39] 📦 Itens 70946009000175-1-000297/2024 salvos
+[2025-10-02 16:50:40] 📅 Período 20241202 → 20250131 | UF=SP / Mod=11 (Pré-qualificação)
+[2025-10-02 16:50:40] ℹ️ HTTP 204 (No Content) — https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao?dataInicial=20241202&dataFinal=20250131&codigoModalidadeContratacao=11&uf=SP&pagina=1&tamanhoPagina=50
+[2025-10-02 16:50:40] ℹ️ Página 1 sem registros (SP/11)
+[2025-10-02 16:50:40] 📅 Período 20250201 → 20250402 | UF=SP / Mod=11 (Pré-qualificação)
+[2025-10-02 16:50:40] ✅ Página 1 OK (SP/11) – 1 registros
+[2025-10-02 16:50:40] 💾 Processo 46189726000115-1-000135/2024 salvo/atualizado
+[2025-10-02 16:50:40] 💾 Itens do processo 46189726000115-1-000135/2024 salvos/atualizados (1)
+[2025-10-02 16:50:40] 📦 Itens 46189726000115-1-000135/2024 salvos
+[2025-10-02 16:50:40] 📅 Período 20250403 → 20250602 | UF=SP / Mod=11 (Pré-qualificação)
+[2025-10-02 16:50:41] ✅ Página 1 OK (SP/11) – 9 registros
+[2025-10-02 16:50:41] 💾 Processo 46341038000129-1-000196/2025 salvo/atualizado
+[2025-10-02 16:50:41] 💾 Itens do processo 46341038000129-1-000196/2025 salvos/atualizados (1)
+[2025-10-02 16:50:41] 📦 Itens 46341038000129-1-000196/2025 salvos
+[2025-10-02 16:50:41] 💾 Processo 46523031000128-1-000089/2025 salvo/atualizado
+[2025-10-02 16:50:41] 💾 Itens do processo 46523031000128-1-000089/2025 salvos/atualizados (1)
+[2025-10-02 16:50:41] 📦 Itens 46523031000128-1-000089/2025 salvos
+[2025-10-02 16:50:41] 💾 Processo 46523031000128-1-000090/2025 salvo/atualizado
+[2025-10-02 16:50:41] 💾 Itens do processo 46523031000128-1-000090/2025 salvos/atualizados (1)
+[2025-10-02 16:50:41] 📦 Itens 46523031000128-1-000090/2025 salvos
+[2025-10-02 16:50:41] 💾 Processo 46523031000128-1-000115/2025 salvo/atualizado
+[2025-10-02 16:50:41] 💾 Itens do processo 46523031000128-1-000115/2025 salvos/atualizados (1)
+[2025-10-02 16:50:41] 📦 Itens 46523031000128-1-000115/2025 salvos
+[2025-10-02 16:50:41] 💾 Processo 46523031000128-1-000116/2025 salvo/atualizado
+[2025-10-02 16:50:41] 💾 Itens do processo 46523031000128-1-000116/2025 salvos/atualizados (1)
+[2025-10-02 16:50:41] 📦 Itens 46523031000128-1-000116/2025 salvos
+[2025-10-02 16:50:41] 💾 Processo 46523031000128-1-000117/2025 salvo/atualizado
+[2025-10-02 16:50:41] 💾 Itens do processo 46523031000128-1-000117/2025 salvos/atualizados (1)
+[2025-10-02 16:50:41] 📦 Itens 46523031000128-1-000117/2025 salvos
+[2025-10-02 16:50:41] 💾 Processo 46523031000128-1-000118/2025 salvo/atualizado
+[2025-10-02 16:50:42] 💾 Itens do processo 46523031000128-1-000118/2025 salvos/atualizados (1)
+[2025-10-02 16:50:42] 📦 Itens 46523031000128-1-000118/2025 salvos
+[2025-10-02 16:50:42] 💾 Processo 46523031000128-1-000119/2025 salvo/atualizado
+[2025-10-02 16:50:42] 💾 Itens do processo 46523031000128-1-000119/2025 salvos/atualizados (1)
+[2025-10-02 16:50:42] 📦 Itens 46523031000128-1-000119/2025 salvos
+[2025-10-02 16:50:42] 💾 Processo 46523031000128-1-000120/2025 salvo/atualizado
+[2025-10-02 16:50:42] 💾 Itens do processo 46523031000128-1-000120/2025 salvos/atualizados (1)
+[2025-10-02 16:50:42] 📦 Itens 46523031000128-1-000120/2025 salvos
+[2025-10-02 16:50:42] 📅 Período 20250603 → 20250802 | UF=SP / Mod=11 (Pré-qualificação)
+[2025-10-02 16:50:42] ✅ Página 1 OK (SP/11) – 4 registros
+[2025-10-02 16:50:42] 💾 Processo 70946009000175-1-000226/2025 salvo/atualizado
+[2025-10-02 16:50:42] 💾 Itens do processo 70946009000175-1-000226/2025 salvos/atualizados (1)
+[2025-10-02 16:50:42] 📦 Itens 70946009000175-1-000226/2025 salvos
+[2025-10-02 16:50:42] 💾 Processo 46341038000129-1-000307/2025 salvo/atualizado
+[2025-10-02 16:50:42] 💾 Itens do processo 46341038000129-1-000307/2025 salvos/atualizados (1)
+[2025-10-02 16:50:42] 📦 Itens 46341038000129-1-000307/2025 salvos
+[2025-10-02 16:50:42] 💾 Processo 46523031000128-1-000144/2025 salvo/atualizado
+[2025-10-02 16:50:43] 💾 Itens do processo 46523031000128-1-000144/2025 salvos/atualizados (1)
+[2025-10-02 16:50:43] 📦 Itens 46523031000128-1-000144/2025 salvos
+[2025-10-02 16:50:43] 💾 Processo 46523031000128-1-000145/2025 salvo/atualizado
+[2025-10-02 16:50:43] 💾 Itens do processo 46523031000128-1-000145/2025 salvos/atualizados (1)
+[2025-10-02 16:50:43] 📦 Itens 46523031000128-1-000145/2025 salvos
+[2025-10-02 16:50:43] 📅 Período 20250803 → 20251002 | UF=SP / Mod=11 (Pré-qualificação)
+[2025-10-02 16:51:28] ⚠️ cURL tent.1: Operation timed out after 45002 milliseconds with 0 bytes received
+[2025-10-02 16:51:30] ✅ Página 1 OK (SP/11) – 4 registros
+[2025-10-02 16:51:30] 💾 Processo 46523031000128-1-000183/2025 salvo/atualizado
+[2025-10-02 16:51:30] 💾 Itens do processo 46523031000128-1-000183/2025 salvos/atualizados (1)
+[2025-10-02 16:51:30] 📦 Itens 46523031000128-1-000183/2025 salvos
+[2025-10-02 16:51:30] 💾 Processo 45122942000180-1-000135/2025 salvo/atualizado
+[2025-10-02 16:51:31] 💾 Itens do processo 45122942000180-1-000135/2025 salvos/atualizados (100)
+[2025-10-02 16:51:31] 📦 Itens 45122942000180-1-000135/2025 salvos
+[2025-10-02 16:51:31] 💾 Processo 46523031000128-1-000213/2025 salvo/atualizado
+[2025-10-02 16:51:31] 💾 Itens do processo 46523031000128-1-000213/2025 salvos/atualizados (1)
+[2025-10-02 16:51:31] 📦 Itens 46523031000128-1-000213/2025 salvos
+[2025-10-02 16:51:31] 💾 Processo 46634069000178-1-000132/2025 salvo/atualizado
+[2025-10-02 16:51:31] 💾 Itens do processo 46634069000178-1-000132/2025 salvos/atualizados (4)
+[2025-10-02 16:51:31] 📦 Itens 46634069000178-1-000132/2025 salvos
+[2025-10-02 16:51:32] 🏁 Finalizado em 00h 01m 40s

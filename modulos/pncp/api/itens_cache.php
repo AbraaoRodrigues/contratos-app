@@ -1,5 +1,12 @@
 <?php
+
+ob_clean();           // limpa qualquer buffer pendente
+header_remove();      // remove headers antigos
 header('Content-Type: application/json; charset=utf-8');
+header('Cache-Control: no-store, no-cache, must-revalidate, max-age=0');
+ini_set('display_errors', 0);
+error_reporting(0);
+
 
 require_once __DIR__ . '/../../../config/db_precos.php';
 $pdo = ConexaoPrecos::getInstance();
@@ -40,3 +47,5 @@ echo json_encode([
   'page' => $page,
   'pageSize' => $pageSize
 ], JSON_UNESCAPED_UNICODE);
+
+exit;

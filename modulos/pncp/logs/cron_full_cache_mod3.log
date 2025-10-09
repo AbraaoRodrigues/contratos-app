@@ -1,0 +1,293 @@
+[2025-09-29 16:55:27] ============================
+[2025-09-29 16:55:27] 🚀 Sincronização FULL PNCP - Concurso iniciada
+[2025-09-29 16:55:27] ============================
+[2025-09-29 16:55:27] 🧹 Removidos processos/itens anteriores a 2024-09-29
+[2025-09-29 16:55:27] 📅 Período 20240929 → 20241128 | UF=SP / Mod=3 (Concurso)
+[2025-09-29 16:55:28] ✅ Página 1 OK (SP/3) – 2 registros
+[2025-09-29 16:55:28] 💾 Processo 55555957000196-1-000166/2024 salvo/atualizado
+[2025-09-29 16:55:28] ⚠️ Erro ao salvar itens 55555957000196-1-000166/2024: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '55555957000196-1-000166/2024-PREMIAÇÃO HONORÍFICA, ACRESCIDAS' for key 'cache_pncp_itens.uq_item'
+[2025-09-29 16:55:28] 💾 Processo 09495438000162-1-000052/2024 salvo/atualizado
+[2025-09-29 16:55:28] ⚠️ Erro ao salvar itens 09495438000162-1-000052/2024: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '09495438000162-1-000052/2024-Realização de Shows / Concursos /' for key 'cache_pncp_itens.uq_item'
+[2025-09-29 16:55:29] 📅 Período 20241129 → 20250128 | UF=SP / Mod=3 (Concurso)
+[2025-09-29 16:55:29] ✅ Página 1 OK (SP/3) – 2 registros
+[2025-09-29 16:55:30] 💾 Processo 55555957000196-1-000180/2024 salvo/atualizado
+[2025-09-29 16:55:30] ⚠️ Erro ao salvar itens 55555957000196-1-000180/2024: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '55555957000196-1-000180/2024-MELHOR COMPOSIÇAO INÉDITA - 1º L' for key 'cache_pncp_itens.uq_item'
+[2025-09-29 16:55:30] 💾 Processo 46523270000188-1-000556/2024 salvo/atualizado
+[2025-09-29 16:55:30] ⚠️ Erro ao salvar itens 46523270000188-1-000556/2024: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '46523270000188-1-000556/2024-PREMIAÇÃO: MOSTRA DANÇA MOGI 202' for key 'cache_pncp_itens.uq_item'
+[2025-09-29 16:55:30] 📅 Período 20250129 → 20250330 | UF=SP / Mod=3 (Concurso)
+[2025-09-29 16:55:31] ✅ Página 1 OK (SP/3) – 7 registros
+[2025-09-29 16:55:31] 💾 Processo 49269244000163-1-000018/2025 salvo/atualizado
+[2025-09-29 16:55:31] ⚠️ Erro ao salvar itens 49269244000163-1-000018/2025: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '49269244000163-1-000018/2025-Realização de Shows / Concursos /' for key 'cache_pncp_itens.uq_item'
+[2025-09-29 16:55:31] 💾 Processo 33093248000101-1-000008/2025 salvo/atualizado
+[2025-09-29 16:55:31] ⚠️ Erro ao salvar itens 33093248000101-1-000008/2025: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '33093248000101-1-000008/2025-Desenho Técnico - Convencional' for key 'cache_pncp_itens.uq_item'
+[2025-09-29 16:55:31] 💾 Processo 49269244000163-1-000019/2025 salvo/atualizado
+[2025-09-29 16:55:31] ⚠️ Erro ao salvar itens 49269244000163-1-000019/2025: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '49269244000163-1-000019/2025-Realização de Shows / Concursos /' for key 'cache_pncp_itens.uq_item'
+[2025-09-29 16:55:31] 💾 Processo 46341038000129-1-000106/2025 salvo/atualizado
+[2025-09-29 16:55:31] ⚠️ Erro ao salvar itens 46341038000129-1-000106/2025: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '46341038000129-1-000106/2025-Prêmio aquisitivo para o artista A' for key 'cache_pncp_itens.uq_item'
+[2025-09-29 16:55:31] 💾 Processo 46341038000129-1-000107/2025 salvo/atualizado
+[2025-09-29 16:55:32] ⚠️ Erro ao salvar itens 46341038000129-1-000107/2025: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '46341038000129-1-000107/2025-Prêmio aquisitivo para o artista D' for key 'cache_pncp_itens.uq_item'
+[2025-09-29 16:55:32] 💾 Processo 46341038000129-1-000108/2025 salvo/atualizado
+[2025-09-29 16:55:32] ⚠️ Erro ao salvar itens 46341038000129-1-000108/2025: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '46341038000129-1-000108/2025-Prêmio aquisitivo para o artista D' for key 'cache_pncp_itens.uq_item'
+[2025-09-29 16:55:32] 💾 Processo 46341038000129-1-000111/2025 salvo/atualizado
+[2025-09-29 16:55:32] ⚠️ Erro ao salvar itens 46341038000129-1-000111/2025: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '46341038000129-1-000111/2025-Prêmio aquisitivo para o artista M' for key 'cache_pncp_itens.uq_item'
+[2025-09-29 16:55:32] 📅 Período 20250331 → 20250530 | UF=SP / Mod=3 (Concurso)
+[2025-09-29 16:55:33] ✅ Página 1 OK (SP/3) – 13 registros
+[2025-09-29 16:55:33] 💾 Processo 45395704000149-1-000297/2025 salvo/atualizado
+[2025-09-29 16:55:33] ⚠️ Erro ao salvar itens 45395704000149-1-000297/2025: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '45395704000149-1-000297/2025-MELHOR BAILARINA DO 35º FESTIDANÇ' for key 'cache_pncp_itens.uq_item'
+[2025-09-29 16:55:33] 💾 Processo 45395704000149-1-000298/2025 salvo/atualizado
+[2025-09-29 16:55:33] ⚠️ Erro ao salvar itens 45395704000149-1-000298/2025: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '45395704000149-1-000298/2025-GRUPO 1 DE ARTISTAS INDEPENDENTES D' for key 'cache_pncp_itens.uq_item'
+[2025-09-29 16:55:33] 💾 Processo 45226214000119-1-000122/2025 salvo/atualizado
+[2025-09-29 16:55:33] ⚠️ Erro ao salvar itens 45226214000119-1-000122/2025: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '45226214000119-1-000122/2025-SERVIÇOS ESPECIFICOS
+Especificaç�' for key 'cache_pncp_itens.uq_item'
+[2025-09-29 16:55:33] 💾 Processo 46482865000132-1-000107/2025 salvo/atualizado
+[2025-09-29 16:55:33] ⚠️ Erro ao salvar itens 46482865000132-1-000107/2025: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '46482865000132-1-000107/2025-SERVIÇO DE PREMIAÇÃO CONCURSO DE' for key 'cache_pncp_itens.uq_item'
+[2025-09-29 16:55:33] 💾 Processo 55555957000196-1-000030/2025 salvo/atualizado
+[2025-09-29 16:55:34] ⚠️ Erro ao salvar itens 55555957000196-1-000030/2025: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '55555957000196-1-000030/2025-PREMIAÇÃO DECORAÇÃO DE BARCOS/E' for key 'cache_pncp_itens.uq_item'
+[2025-09-29 16:55:34] 💾 Processo 45226214000119-1-000160/2025 salvo/atualizado
+[2025-09-29 16:55:34] ⚠️ Erro ao salvar itens 45226214000119-1-000160/2025: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '45226214000119-1-000160/2025-SERVIÇOS ESPECIFICOS
+Especificaç�' for key 'cache_pncp_itens.uq_item'
+[2025-09-29 16:55:34] 💾 Processo 45279635000108-1-000348/2025 salvo/atualizado
+[2025-09-29 16:55:34] ⚠️ Erro ao salvar itens 45279635000108-1-000348/2025: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '45279635000108-1-000348/2025-JURADO ARTÍSTICO' for key 'cache_pncp_itens.uq_item'
+[2025-09-29 16:55:34] 💾 Processo 55555957000196-1-000032/2025 salvo/atualizado
+[2025-09-29 16:55:34] ⚠️ Erro ao salvar itens 55555957000196-1-000032/2025: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '55555957000196-1-000032/2025-PREMIAÇÃO DO CONCURSO RAINHA DOS ' for key 'cache_pncp_itens.uq_item'
+[2025-09-29 16:55:34] 💾 Processo 45279635000108-1-000370/2025 salvo/atualizado
+[2025-09-29 16:55:34] ⚠️ Erro ao salvar itens 45279635000108-1-000370/2025: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '45279635000108-1-000370/2025-1º colocado - CONCURSO ARTÍSTICO' for key 'cache_pncp_itens.uq_item'
+[2025-09-29 16:55:34] 💾 Processo 49269244000163-1-000037/2025 salvo/atualizado
+[2025-09-29 16:55:34] ⚠️ Erro ao salvar itens 49269244000163-1-000037/2025: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '49269244000163-1-000037/2025-Realização de Shows / Concursos /' for key 'cache_pncp_itens.uq_item'
+[2025-09-29 16:55:34] 💾 Processo 46523015000135-1-000122/2025 salvo/atualizado
+[2025-09-29 16:55:35] ⚠️ Erro ao salvar itens 46523015000135-1-000122/2025: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '46523015000135-1-000122/2025-SELEÇÃO DE ENTIDADE DE DIREITO PR' for key 'cache_pncp_itens.uq_item'
+[2025-09-29 16:55:35] 💾 Processo 46523015000135-1-000123/2025 salvo/atualizado
+[2025-09-29 16:55:35] ⚠️ Erro ao salvar itens 46523015000135-1-000123/2025: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '46523015000135-1-000123/2025-SELEÇÃO DE ENTIDADE DE DIREITO PR' for key 'cache_pncp_itens.uq_item'
+[2025-09-29 16:55:35] 💾 Processo 51531051000180-1-000016/2025 salvo/atualizado
+[2025-09-29 16:55:35] ⚠️ Erro ao salvar itens 51531051000180-1-000016/2025: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '51531051000180-1-000016/2025-Elaboração de Minuta de Edital pa' for key 'cache_pncp_itens.uq_item'
+[2025-09-29 16:55:35] 📅 Período 20250531 → 20250730 | UF=SP / Mod=3 (Concurso)
+[2025-09-29 16:55:36] ✅ Página 1 OK (SP/3) – 5 registros
+[2025-09-29 16:55:36] 💾 Processo 45780103000150-1-000832/2025 salvo/atualizado
+[2025-09-29 16:55:36] ⚠️ Erro ao salvar itens 45780103000150-1-000832/2025: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '45780103000150-1-000832/2025-Cota Principal    - PREMIACAO      ' for key 'cache_pncp_itens.uq_item'
+[2025-09-29 16:55:36] 💾 Processo 45780103000150-1-000888/2025 salvo/atualizado
+[2025-09-29 16:55:36] ⚠️ Erro ao salvar itens 45780103000150-1-000888/2025: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '45780103000150-1-000888/2025-Cota Principal    - PREMIACAO      ' for key 'cache_pncp_itens.uq_item'
+[2025-09-29 16:55:36] 💾 Processo 45122603000102-1-000485/2025 salvo/atualizado
+[2025-09-29 16:55:36] ⚠️ Erro ao salvar itens 45122603000102-1-000485/2025: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '45122603000102-1-000485/2025-PREMIAÇÃO 01° LUGAR' for key 'cache_pncp_itens.uq_item'
+[2025-09-29 16:55:36] 💾 Processo 45395704000149-1-000639/2025 salvo/atualizado
+[2025-09-29 16:55:36] ⚠️ Erro ao salvar itens 45395704000149-1-000639/2025: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '45395704000149-1-000639/2025-Contratação de espetáculos teatr' for key 'cache_pncp_itens.uq_item'
+[2025-09-29 16:55:36] 💾 Processo 46523015000135-1-000212/2025 salvo/atualizado
+[2025-09-29 16:55:37] ⚠️ Erro ao salvar itens 46523015000135-1-000212/2025: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '46523015000135-1-000212/2025-SELEÇÃO DE ENTIDADE DE DIREITO PR' for key 'cache_pncp_itens.uq_item'
+[2025-09-29 16:55:37] 📅 Período 20250731 → 20250929 | UF=SP / Mod=3 (Concurso)
+[2025-09-29 16:55:37] ✅ Página 1 OK (SP/3) – 1 registros
+[2025-09-29 16:55:37] 💾 Processo 46523015000135-1-000248/2025 salvo/atualizado
+[2025-09-29 16:55:37] ⚠️ Erro ao salvar itens 46523015000135-1-000248/2025: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '46523015000135-1-000248/2025-CONTRATAÇÃO DE ENTIDADE DE DIREIT' for key 'cache_pncp_itens.uq_item'
+[2025-09-29 16:55:37] 🏁 Finalizado em 00h 00m 10s
+[2025-09-30 15:03:40] ============================
+[2025-09-30 15:03:40] 🚀 Sincronização FULL PNCP - Concurso iniciada
+[2025-09-30 15:03:40] ============================
+[2025-09-30 15:03:40] 🧹 Removidos processos/itens anteriores a 2024-09-30
+[2025-09-30 15:03:40] 📅 Período 20240930 → 20241129 | UF=SP / Mod=3 (Concurso)
+[2025-09-30 15:03:40] ✅ Página 1 OK (SP/3) – 2 registros
+[2025-09-30 15:03:41] 💾 Processo 55555957000196-1-000166/2024 salvo/atualizado
+[2025-09-30 15:03:41] 💾 Itens do processo 55555957000196-1-000166/2024 salvos/atualizados (9)
+[2025-09-30 15:03:41] 📦 Itens 55555957000196-1-000166/2024 salvos
+[2025-09-30 15:03:42] 💾 Processo 09495438000162-1-000052/2024 salvo/atualizado
+[2025-09-30 15:03:42] 💾 Itens do processo 09495438000162-1-000052/2024 salvos/atualizados (1)
+[2025-09-30 15:03:42] 📦 Itens 09495438000162-1-000052/2024 salvos
+[2025-09-30 15:03:42] 📅 Período 20241130 → 20250129 | UF=SP / Mod=3 (Concurso)
+[2025-09-30 15:03:42] ✅ Página 1 OK (SP/3) – 2 registros
+[2025-09-30 15:03:42] 💾 Processo 55555957000196-1-000180/2024 salvo/atualizado
+[2025-09-30 15:03:43] 💾 Itens do processo 55555957000196-1-000180/2024 salvos/atualizados (6)
+[2025-09-30 15:03:43] 📦 Itens 55555957000196-1-000180/2024 salvos
+[2025-09-30 15:03:43] 💾 Processo 46523270000188-1-000556/2024 salvo/atualizado
+[2025-09-30 15:03:43] 💾 Itens do processo 46523270000188-1-000556/2024 salvos/atualizados (3)
+[2025-09-30 15:03:43] 📦 Itens 46523270000188-1-000556/2024 salvos
+[2025-09-30 15:03:43] 📅 Período 20250130 → 20250331 | UF=SP / Mod=3 (Concurso)
+[2025-09-30 15:03:43] ✅ Página 1 OK (SP/3) – 7 registros
+[2025-09-30 15:03:43] 💾 Processo 49269244000163-1-000018/2025 salvo/atualizado
+[2025-09-30 15:03:44] 💾 Itens do processo 49269244000163-1-000018/2025 salvos/atualizados (1)
+[2025-09-30 15:03:44] 📦 Itens 49269244000163-1-000018/2025 salvos
+[2025-09-30 15:03:44] 💾 Processo 33093248000101-1-000008/2025 salvo/atualizado
+[2025-09-30 15:03:44] 💾 Itens do processo 33093248000101-1-000008/2025 salvos/atualizados (1)
+[2025-09-30 15:03:44] 📦 Itens 33093248000101-1-000008/2025 salvos
+[2025-09-30 15:03:44] 💾 Processo 49269244000163-1-000019/2025 salvo/atualizado
+[2025-09-30 15:03:44] 💾 Itens do processo 49269244000163-1-000019/2025 salvos/atualizados (1)
+[2025-09-30 15:03:44] 📦 Itens 49269244000163-1-000019/2025 salvos
+[2025-09-30 15:03:44] 💾 Processo 46341038000129-1-000106/2025 salvo/atualizado
+[2025-09-30 15:03:45] 💾 Itens do processo 46341038000129-1-000106/2025 salvos/atualizados (1)
+[2025-09-30 15:03:45] 📦 Itens 46341038000129-1-000106/2025 salvos
+[2025-09-30 15:03:45] 💾 Processo 46341038000129-1-000107/2025 salvo/atualizado
+[2025-09-30 15:03:45] 💾 Itens do processo 46341038000129-1-000107/2025 salvos/atualizados (1)
+[2025-09-30 15:03:45] 📦 Itens 46341038000129-1-000107/2025 salvos
+[2025-09-30 15:03:45] 💾 Processo 46341038000129-1-000108/2025 salvo/atualizado
+[2025-09-30 15:03:45] 💾 Itens do processo 46341038000129-1-000108/2025 salvos/atualizados (1)
+[2025-09-30 15:03:45] 📦 Itens 46341038000129-1-000108/2025 salvos
+[2025-09-30 15:03:45] 💾 Processo 46341038000129-1-000111/2025 salvo/atualizado
+[2025-09-30 15:03:45] 💾 Itens do processo 46341038000129-1-000111/2025 salvos/atualizados (1)
+[2025-09-30 15:03:45] 📦 Itens 46341038000129-1-000111/2025 salvos
+[2025-09-30 15:03:45] 📅 Período 20250401 → 20250531 | UF=SP / Mod=3 (Concurso)
+[2025-09-30 15:03:46] ✅ Página 1 OK (SP/3) – 13 registros
+[2025-09-30 15:03:46] 💾 Processo 45395704000149-1-000297/2025 salvo/atualizado
+[2025-09-30 15:03:46] 💾 Itens do processo 45395704000149-1-000297/2025 salvos/atualizados (5)
+[2025-09-30 15:03:46] 📦 Itens 45395704000149-1-000297/2025 salvos
+[2025-09-30 15:03:46] 💾 Processo 45395704000149-1-000298/2025 salvo/atualizado
+[2025-09-30 15:03:47] 💾 Itens do processo 45395704000149-1-000298/2025 salvos/atualizados (18)
+[2025-09-30 15:03:47] 📦 Itens 45395704000149-1-000298/2025 salvos
+[2025-09-30 15:03:47] 💾 Processo 45226214000119-1-000122/2025 salvo/atualizado
+[2025-09-30 15:03:47] 💾 Itens do processo 45226214000119-1-000122/2025 salvos/atualizados (1)
+[2025-09-30 15:03:47] 📦 Itens 45226214000119-1-000122/2025 salvos
+[2025-09-30 15:03:47] 💾 Processo 46482865000132-1-000107/2025 salvo/atualizado
+[2025-09-30 15:03:47] 💾 Itens do processo 46482865000132-1-000107/2025 salvos/atualizados (3)
+[2025-09-30 15:03:47] 📦 Itens 46482865000132-1-000107/2025 salvos
+[2025-09-30 15:03:47] 💾 Processo 55555957000196-1-000030/2025 salvo/atualizado
+[2025-09-30 15:03:48] 💾 Itens do processo 55555957000196-1-000030/2025 salvos/atualizados (6)
+[2025-09-30 15:03:48] 📦 Itens 55555957000196-1-000030/2025 salvos
+[2025-09-30 15:03:48] 💾 Processo 45226214000119-1-000160/2025 salvo/atualizado
+[2025-09-30 15:03:48] 💾 Itens do processo 45226214000119-1-000160/2025 salvos/atualizados (1)
+[2025-09-30 15:03:48] 📦 Itens 45226214000119-1-000160/2025 salvos
+[2025-09-30 15:03:48] 💾 Processo 45279635000108-1-000348/2025 salvo/atualizado
+[2025-09-30 15:03:49] 💾 Itens do processo 45279635000108-1-000348/2025 salvos/atualizados (3)
+[2025-09-30 15:03:49] 📦 Itens 45279635000108-1-000348/2025 salvos
+[2025-09-30 15:03:49] 💾 Processo 55555957000196-1-000032/2025 salvo/atualizado
+[2025-09-30 15:03:49] 💾 Itens do processo 55555957000196-1-000032/2025 salvos/atualizados (3)
+[2025-09-30 15:03:49] 📦 Itens 55555957000196-1-000032/2025 salvos
+[2025-09-30 15:03:49] 💾 Processo 45279635000108-1-000370/2025 salvo/atualizado
+[2025-09-30 15:03:50] 💾 Itens do processo 45279635000108-1-000370/2025 salvos/atualizados (4)
+[2025-09-30 15:03:50] 📦 Itens 45279635000108-1-000370/2025 salvos
+[2025-09-30 15:03:50] 💾 Processo 49269244000163-1-000037/2025 salvo/atualizado
+[2025-09-30 15:03:50] 💾 Itens do processo 49269244000163-1-000037/2025 salvos/atualizados (1)
+[2025-09-30 15:03:50] 📦 Itens 49269244000163-1-000037/2025 salvos
+[2025-09-30 15:03:50] 💾 Processo 46523015000135-1-000122/2025 salvo/atualizado
+[2025-09-30 15:03:50] 💾 Itens do processo 46523015000135-1-000122/2025 salvos/atualizados (1)
+[2025-09-30 15:03:50] 📦 Itens 46523015000135-1-000122/2025 salvos
+[2025-09-30 15:03:50] 💾 Processo 46523015000135-1-000123/2025 salvo/atualizado
+[2025-09-30 15:03:50] 💾 Itens do processo 46523015000135-1-000123/2025 salvos/atualizados (1)
+[2025-09-30 15:03:50] 📦 Itens 46523015000135-1-000123/2025 salvos
+[2025-09-30 15:03:50] 💾 Processo 51531051000180-1-000016/2025 salvo/atualizado
+[2025-09-30 15:03:50] 💾 Itens do processo 51531051000180-1-000016/2025 salvos/atualizados (2)
+[2025-09-30 15:03:50] 📦 Itens 51531051000180-1-000016/2025 salvos
+[2025-09-30 15:03:51] 📅 Período 20250601 → 20250731 | UF=SP / Mod=3 (Concurso)
+[2025-09-30 15:03:51] ✅ Página 1 OK (SP/3) – 5 registros
+[2025-09-30 15:03:51] 💾 Processo 45780103000150-1-000832/2025 salvo/atualizado
+[2025-09-30 15:03:51] 💾 Itens do processo 45780103000150-1-000832/2025 salvos/atualizados (1)
+[2025-09-30 15:03:51] 📦 Itens 45780103000150-1-000832/2025 salvos
+[2025-09-30 15:03:51] 💾 Processo 45780103000150-1-000888/2025 salvo/atualizado
+[2025-09-30 15:03:51] 💾 Itens do processo 45780103000150-1-000888/2025 salvos/atualizados (1)
+[2025-09-30 15:03:51] 📦 Itens 45780103000150-1-000888/2025 salvos
+[2025-09-30 15:03:51] 💾 Processo 45122603000102-1-000485/2025 salvo/atualizado
+[2025-09-30 15:03:52] 💾 Itens do processo 45122603000102-1-000485/2025 salvos/atualizados (14)
+[2025-09-30 15:03:52] 📦 Itens 45122603000102-1-000485/2025 salvos
+[2025-09-30 15:03:52] 💾 Processo 45395704000149-1-000639/2025 salvo/atualizado
+[2025-09-30 15:03:52] 💾 Itens do processo 45395704000149-1-000639/2025 salvos/atualizados (1)
+[2025-09-30 15:03:52] 📦 Itens 45395704000149-1-000639/2025 salvos
+[2025-09-30 15:03:52] 💾 Processo 46523015000135-1-000212/2025 salvo/atualizado
+[2025-09-30 15:03:52] 💾 Itens do processo 46523015000135-1-000212/2025 salvos/atualizados (1)
+[2025-09-30 15:03:52] 📦 Itens 46523015000135-1-000212/2025 salvos
+[2025-09-30 15:03:52] 📅 Período 20250801 → 20250930 | UF=SP / Mod=3 (Concurso)
+[2025-09-30 15:03:53] ✅ Página 1 OK (SP/3) – 1 registros
+[2025-09-30 15:03:53] 💾 Processo 46523015000135-1-000248/2025 salvo/atualizado
+[2025-09-30 15:03:53] 💾 Itens do processo 46523015000135-1-000248/2025 salvos/atualizados (1)
+[2025-09-30 15:03:53] 📦 Itens 46523015000135-1-000248/2025 salvos
+[2025-09-30 15:03:53] 🏁 Finalizado em 00h 00m 14s
+[2025-09-30 15:03:53] ============================
+[2025-09-30 15:03:53] 🚀 Sincronização FULL PNCP - Concurso iniciada
+[2025-09-30 15:03:53] ============================
+[2025-09-30 15:03:53] 🧹 Removidos processos/itens anteriores a 2024-09-30
+[2025-09-30 15:03:53] 📅 Período 20240930 → 20241129 | UF=SP / Mod=3 (Concurso)
+[2025-09-30 15:03:54] ✅ Página 1 OK (SP/3) – 2 registros
+[2025-09-30 15:03:54] 💾 Processo 55555957000196-1-000166/2024 salvo/atualizado
+[2025-09-30 15:03:54] 💾 Itens do processo 55555957000196-1-000166/2024 salvos/atualizados (9)
+[2025-09-30 15:03:54] 📦 Itens 55555957000196-1-000166/2024 salvos
+[2025-09-30 15:03:54] 💾 Processo 09495438000162-1-000052/2024 salvo/atualizado
+[2025-09-30 15:03:54] 💾 Itens do processo 09495438000162-1-000052/2024 salvos/atualizados (1)
+[2025-09-30 15:03:54] 📦 Itens 09495438000162-1-000052/2024 salvos
+[2025-09-30 15:03:54] 📅 Período 20241130 → 20250129 | UF=SP / Mod=3 (Concurso)
+[2025-09-30 15:03:55] ✅ Página 1 OK (SP/3) – 2 registros
+[2025-09-30 15:03:55] 💾 Processo 55555957000196-1-000180/2024 salvo/atualizado
+[2025-09-30 15:03:55] 💾 Itens do processo 55555957000196-1-000180/2024 salvos/atualizados (6)
+[2025-09-30 15:03:55] 📦 Itens 55555957000196-1-000180/2024 salvos
+[2025-09-30 15:03:55] 💾 Processo 46523270000188-1-000556/2024 salvo/atualizado
+[2025-09-30 15:03:55] 💾 Itens do processo 46523270000188-1-000556/2024 salvos/atualizados (3)
+[2025-09-30 15:03:55] 📦 Itens 46523270000188-1-000556/2024 salvos
+[2025-09-30 15:03:55] 📅 Período 20250130 → 20250331 | UF=SP / Mod=3 (Concurso)
+[2025-09-30 15:03:55] ✅ Página 1 OK (SP/3) – 7 registros
+[2025-09-30 15:03:55] 💾 Processo 49269244000163-1-000018/2025 salvo/atualizado
+[2025-09-30 15:03:55] 💾 Itens do processo 49269244000163-1-000018/2025 salvos/atualizados (1)
+[2025-09-30 15:03:55] 📦 Itens 49269244000163-1-000018/2025 salvos
+[2025-09-30 15:03:56] 💾 Processo 33093248000101-1-000008/2025 salvo/atualizado
+[2025-09-30 15:03:56] 💾 Itens do processo 33093248000101-1-000008/2025 salvos/atualizados (1)
+[2025-09-30 15:03:56] 📦 Itens 33093248000101-1-000008/2025 salvos
+[2025-09-30 15:03:56] 💾 Processo 49269244000163-1-000019/2025 salvo/atualizado
+[2025-09-30 15:03:56] 💾 Itens do processo 49269244000163-1-000019/2025 salvos/atualizados (1)
+[2025-09-30 15:03:56] 📦 Itens 49269244000163-1-000019/2025 salvos
+[2025-09-30 15:03:56] 💾 Processo 46341038000129-1-000106/2025 salvo/atualizado
+[2025-09-30 15:03:56] 💾 Itens do processo 46341038000129-1-000106/2025 salvos/atualizados (1)
+[2025-09-30 15:03:56] 📦 Itens 46341038000129-1-000106/2025 salvos
+[2025-09-30 15:03:56] 💾 Processo 46341038000129-1-000107/2025 salvo/atualizado
+[2025-09-30 15:03:56] 💾 Itens do processo 46341038000129-1-000107/2025 salvos/atualizados (1)
+[2025-09-30 15:03:56] 📦 Itens 46341038000129-1-000107/2025 salvos
+[2025-09-30 15:03:56] 💾 Processo 46341038000129-1-000108/2025 salvo/atualizado
+[2025-09-30 15:03:56] 💾 Itens do processo 46341038000129-1-000108/2025 salvos/atualizados (1)
+[2025-09-30 15:03:56] 📦 Itens 46341038000129-1-000108/2025 salvos
+[2025-09-30 15:03:56] 💾 Processo 46341038000129-1-000111/2025 salvo/atualizado
+[2025-09-30 15:03:56] 💾 Itens do processo 46341038000129-1-000111/2025 salvos/atualizados (1)
+[2025-09-30 15:03:56] 📦 Itens 46341038000129-1-000111/2025 salvos
+[2025-09-30 15:03:57] 📅 Período 20250401 → 20250531 | UF=SP / Mod=3 (Concurso)
+[2025-09-30 15:03:57] ✅ Página 1 OK (SP/3) – 13 registros
+[2025-09-30 15:03:57] 💾 Processo 45395704000149-1-000297/2025 salvo/atualizado
+[2025-09-30 15:03:57] 💾 Itens do processo 45395704000149-1-000297/2025 salvos/atualizados (5)
+[2025-09-30 15:03:57] 📦 Itens 45395704000149-1-000297/2025 salvos
+[2025-09-30 15:03:57] 💾 Processo 45395704000149-1-000298/2025 salvo/atualizado
+[2025-09-30 15:03:57] 💾 Itens do processo 45395704000149-1-000298/2025 salvos/atualizados (18)
+[2025-09-30 15:03:57] 📦 Itens 45395704000149-1-000298/2025 salvos
+[2025-09-30 15:03:57] 💾 Processo 45226214000119-1-000122/2025 salvo/atualizado
+[2025-09-30 15:03:58] 💾 Itens do processo 45226214000119-1-000122/2025 salvos/atualizados (1)
+[2025-09-30 15:03:58] 📦 Itens 45226214000119-1-000122/2025 salvos
+[2025-09-30 15:03:58] 💾 Processo 46482865000132-1-000107/2025 salvo/atualizado
+[2025-09-30 15:03:58] 💾 Itens do processo 46482865000132-1-000107/2025 salvos/atualizados (3)
+[2025-09-30 15:03:58] 📦 Itens 46482865000132-1-000107/2025 salvos
+[2025-09-30 15:03:58] 💾 Processo 55555957000196-1-000030/2025 salvo/atualizado
+[2025-09-30 15:03:58] 💾 Itens do processo 55555957000196-1-000030/2025 salvos/atualizados (6)
+[2025-09-30 15:03:58] 📦 Itens 55555957000196-1-000030/2025 salvos
+[2025-09-30 15:03:58] 💾 Processo 45226214000119-1-000160/2025 salvo/atualizado
+[2025-09-30 15:03:58] 💾 Itens do processo 45226214000119-1-000160/2025 salvos/atualizados (1)
+[2025-09-30 15:03:58] 📦 Itens 45226214000119-1-000160/2025 salvos
+[2025-09-30 15:03:58] 💾 Processo 45279635000108-1-000348/2025 salvo/atualizado
+[2025-09-30 15:03:58] 💾 Itens do processo 45279635000108-1-000348/2025 salvos/atualizados (3)
+[2025-09-30 15:03:58] 📦 Itens 45279635000108-1-000348/2025 salvos
+[2025-09-30 15:03:58] 💾 Processo 55555957000196-1-000032/2025 salvo/atualizado
+[2025-09-30 15:03:59] 💾 Itens do processo 55555957000196-1-000032/2025 salvos/atualizados (3)
+[2025-09-30 15:03:59] 📦 Itens 55555957000196-1-000032/2025 salvos
+[2025-09-30 15:03:59] 💾 Processo 45279635000108-1-000370/2025 salvo/atualizado
+[2025-09-30 15:03:59] 💾 Itens do processo 45279635000108-1-000370/2025 salvos/atualizados (4)
+[2025-09-30 15:03:59] 📦 Itens 45279635000108-1-000370/2025 salvos
+[2025-09-30 15:03:59] 💾 Processo 49269244000163-1-000037/2025 salvo/atualizado
+[2025-09-30 15:03:59] 💾 Itens do processo 49269244000163-1-000037/2025 salvos/atualizados (1)
+[2025-09-30 15:03:59] 📦 Itens 49269244000163-1-000037/2025 salvos
+[2025-09-30 15:03:59] 💾 Processo 46523015000135-1-000122/2025 salvo/atualizado
+[2025-09-30 15:03:59] 💾 Itens do processo 46523015000135-1-000122/2025 salvos/atualizados (1)
+[2025-09-30 15:03:59] 📦 Itens 46523015000135-1-000122/2025 salvos
+[2025-09-30 15:03:59] 💾 Processo 46523015000135-1-000123/2025 salvo/atualizado
+[2025-09-30 15:03:59] 💾 Itens do processo 46523015000135-1-000123/2025 salvos/atualizados (1)
+[2025-09-30 15:03:59] 📦 Itens 46523015000135-1-000123/2025 salvos
+[2025-09-30 15:03:59] 💾 Processo 51531051000180-1-000016/2025 salvo/atualizado
+[2025-09-30 15:03:59] 💾 Itens do processo 51531051000180-1-000016/2025 salvos/atualizados (2)
+[2025-09-30 15:03:59] 📦 Itens 51531051000180-1-000016/2025 salvos
+[2025-09-30 15:04:00] 📅 Período 20250601 → 20250731 | UF=SP / Mod=3 (Concurso)
+[2025-09-30 15:04:00] ✅ Página 1 OK (SP/3) – 5 registros
+[2025-09-30 15:04:00] 💾 Processo 45780103000150-1-000832/2025 salvo/atualizado
+[2025-09-30 15:04:00] 💾 Itens do processo 45780103000150-1-000832/2025 salvos/atualizados (1)
+[2025-09-30 15:04:00] 📦 Itens 45780103000150-1-000832/2025 salvos
+[2025-09-30 15:04:00] 💾 Processo 45780103000150-1-000888/2025 salvo/atualizado
+[2025-09-30 15:04:00] 💾 Itens do processo 45780103000150-1-000888/2025 salvos/atualizados (1)
+[2025-09-30 15:04:00] 📦 Itens 45780103000150-1-000888/2025 salvos
+[2025-09-30 15:04:01] 💾 Processo 45122603000102-1-000485/2025 salvo/atualizado
+[2025-09-30 15:04:02] 💾 Itens do processo 45122603000102-1-000485/2025 salvos/atualizados (14)
+[2025-09-30 15:04:02] 📦 Itens 45122603000102-1-000485/2025 salvos
+[2025-09-30 15:04:02] 💾 Processo 45395704000149-1-000639/2025 salvo/atualizado
+[2025-09-30 15:04:02] 💾 Itens do processo 45395704000149-1-000639/2025 salvos/atualizados (1)
+[2025-09-30 15:04:02] 📦 Itens 45395704000149-1-000639/2025 salvos
+[2025-09-30 15:04:02] 💾 Processo 46523015000135-1-000212/2025 salvo/atualizado
+[2025-09-30 15:04:02] 💾 Itens do processo 46523015000135-1-000212/2025 salvos/atualizados (1)
+[2025-09-30 15:04:02] 📦 Itens 46523015000135-1-000212/2025 salvos
+[2025-09-30 15:04:02] 📅 Período 20250801 → 20250930 | UF=SP / Mod=3 (Concurso)
+[2025-09-30 15:04:03] ✅ Página 1 OK (SP/3) – 1 registros
+[2025-09-30 15:04:03] 💾 Processo 46523015000135-1-000248/2025 salvo/atualizado
+[2025-09-30 15:04:03] 💾 Itens do processo 46523015000135-1-000248/2025 salvos/atualizados (1)
+[2025-09-30 15:04:03] 📦 Itens 46523015000135-1-000248/2025 salvos
+[2025-09-30 15:04:03] 🏁 Finalizado em 00h 00m 10s

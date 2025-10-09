@@ -2,7 +2,6 @@
 
 /**
  * CRON individual — FULL CACHE por modalidade
- * Exemplo: Pregão Eletrônico (mod=6)
  */
 
 set_time_limit(0);
@@ -16,7 +15,7 @@ $pdo = ConexaoPrecos::getInstance();
 // Configurações
 $uf = 'SP';
 $mod = 6;
-$nomeMod = "Pregão Eletrônico";
+$nomeMod = "Pregão";
 $tamPagina = 50;
 $intervaloDias = 60;
 
@@ -25,16 +24,20 @@ $inicioExec = microtime(true);
 $inicio = new DateTime('-365 days');
 $hoje   = new DateTime();
 
-logInicioExec("Sincronização FULL PNCP - Pregão Eletrônico");
+logInicioExec("Sincronização FULL PNCP - Pregão");
 
 // Limpa registros antigos
 $limite = $inicio->format('Y-m-d');
-$delProc = $pdo->prepare("DELETE FROM cache_pncp_processos WHERE dataPublicacao < ?");
-$delItens = $pdo->prepare("DELETE FROM cache_pncp_itens WHERE numeroControlePNCP NOT IN (
-  SELECT numeroControlePNCP FROM cache_pncp_processos
+// Primeiro remove os itens "órfãos"
+$delItens = $pdo->prepare("DELETE FROM cache_pncp_itens WHERE numeroControlePNCP IN (
+  SELECT numeroControlePNCP FROM cache_pncp_processos WHERE dataPublicacao < ?
 )");
+$delItens->execute([$limite]);
+
+// Depois remove os processos antigos
+$delProc = $pdo->prepare("DELETE FROM cache_pncp_processos WHERE dataPublicacao < ?");
 $delProc->execute([$limite]);
-$delItens->execute();
+
 logar("🧹 Removidos processos/itens anteriores a $limite");
 
 // Loop por janelas

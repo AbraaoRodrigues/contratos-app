@@ -25,7 +25,7 @@ if (!ini_get('date.timezone')) {
 }*/
 
 // Registrar falha simples
-function registrarFalha(PDO $pdo, string $numeroControlePNCP, string $motivo, int $tentativas = 0)
+function registrarFalha(PDO $pdo, string $motivo, string $numeroControlePNCP, int $tentativas = 0)
 {
   try {
     $st = $pdo->prepare("INSERT INTO cache_pncp_falhas
@@ -127,55 +127,77 @@ function baixarJson(string $url)
 
 function salvarProcesso(PDO $pdo, array $proc): bool
 {
-  if (empty($proc['numeroControlePNCP'])) {
-    logar("⚠️ Processo sem numeroControlePNCP — ignorado");
+  $numero = $proc['numeroControlePNCP'] ?? null;
+  if (!$numero) {
+    logar("⚠️ salvarProcesso chamado sem numeroControlePNCP");
     return false;
   }
 
-  $numero = $proc['numeroControlePNCP'];
+  // Normaliza campos obrigatórios (aceita null se não existir)
+  $objeto = $proc['objetoCompra'] ?? '(sem objeto)';
+  $orgao  = $proc['orgaoEntidade']['razaoSocial'] ?? ($proc['orgao'] ?? 'N/D');
+  $uf     = $proc['unidadeOrgao']['ufSigla'] ?? ($proc['uf'] ?? 'N/D');
+  $status = $proc['situacaoCompraNome'] ?? ($proc['status'] ?? 'N/D');
+
+  $dataPub = !empty($proc['dataPublicacaoPncp'])
+    ? substr($proc['dataPublicacaoPncp'], 0, 10)
+    : (!empty($proc['dataInclusao']) ? substr($proc['dataInclusao'], 0, 10) : null);
+
+  $dataAbe = !empty($proc['dataAberturaProposta'])
+    ? substr($proc['dataAberturaProposta'], 0, 10)
+    : null;
+
+  $dataEnc = !empty($proc['dataEncerramentoProposta'])
+    ? substr($proc['dataEncerramentoProposta'], 0, 10)
+    : null;
+
+  $modalidadeId   = $proc['modalidadeId']   ?? null;
+  $modalidadeNome = $proc['modalidadeNome'] ?? null;
 
   $sql = "INSERT INTO cache_pncp_processos
-          (numeroControlePNCP, objeto, orgao, uf, modalidade, status, dataPublicacao, dataAbertura, dataEncerramento, json_original)
-        VALUES
-          (:numeroControlePNCP, :objeto, :orgao, :uf, :modalidade, :status, :dataPublicacao, :dataAbertura, :dataEncerramento, :json)
-        ON DUPLICATE KEY UPDATE
-          objeto = VALUES(objeto),
-          orgao = VALUES(orgao),
-          uf = VALUES(uf),
-          modalidade = VALUES(modalidade),
-          status = VALUES(status),
-          dataPublicacao = VALUES(dataPublicacao),
-          dataAbertura = VALUES(dataAbertura),
-          dataEncerramento = VALUES(dataEncerramento),
-          json_original = VALUES(json_original),
-          atualizado_em = CURRENT_TIMESTAMP";
+              (numeroControlePNCP, objeto, orgao, uf, modalidade_nome, modalidade_id,status,
+               dataPublicacao, dataAbertura, dataEncerramento, json_original)
+            VALUES
+              (:num, :obj, :orgao, :uf, :mod_nome, :mod_id,:status,
+               :dPub, :dAbe, :dEnc, :json)
+            ON DUPLICATE KEY UPDATE
+              objeto = VALUES(objeto),
+              orgao = VALUES(orgao),
+              uf = VALUES(uf),
+              modalidade_nome = VALUES(modalidade_nome),
+              modalidade_id = VALUES(modalidade_id),
+              status = VALUES(status),
+              dataPublicacao = VALUES(dataPublicacao),
+              dataAbertura = VALUES(dataAbertura),
+              dataEncerramento = VALUES(dataEncerramento),
+              json_original = VALUES(json_original),
+              atualizado_em = CURRENT_TIMESTAMP";
 
   $stmt = $pdo->prepare($sql);
 
   $ok = $stmt->execute([
-    ':num'     => $numero,
-    ':obj'     => $proc['objetoCompra'] ?? '',
-    ':orgao'   => $proc['orgaoEntidade']['razaoSocial'] ?? '',
-    ':uf'      => $proc['unidadeOrgao']['ufSigla'] ?? '',
-    ':status'  => $proc['situacaoCompraNome'] ?? '',
-    ':dPub'    => !empty($proc['dataPublicacaoPncp']) ? substr($proc['dataPublicacaoPncp'], 0, 10) : null,
-    ':dAbe'    => !empty($proc['dataAberturaProposta']) ? substr($proc['dataAberturaProposta'], 0, 10) : null,
-    ':dEnc'    => !empty($proc['dataEncerramentoProposta']) ? substr($proc['dataEncerramentoProposta'], 0, 10) : null,
-    ':modId'   => $proc['modalidadeId'] ?? null,
-    ':modNome' => $proc['modalidadeNome'] ?? null,
-    ':sitNome' => $proc['situacaoCompraNome'] ?? null,
-    ':dPub2'   => !empty($proc['dataPublicacaoPncp']) ? substr($proc['dataPublicacaoPncp'], 0, 10) : null,
-    ':json'    => json_encode($proc, JSON_UNESCAPED_UNICODE)
+    ':num'   => $numero,
+    ':obj'   => $objeto,
+    ':orgao' => $orgao,
+    ':uf'    => $uf,
+    ':mod_nome'   => $modalidadeNome, // usamos só o nome; se precisar o ID é fácil incluir
+    ':mod_id'   => $modalidadeId,
+    ':status' => $status,
+    ':dPub'  => $dataPub,
+    ':dAbe'  => $dataAbe,
+    ':dEnc'  => $dataEnc,
+    ':json'  => json_encode($proc, JSON_UNESCAPED_UNICODE)
   ]);
 
-  if ($ok) {
-    logar("💾 Processo $numero salvo/atualizado");
-    return true;
-  } else {
-    logar("❌ Falha ao salvar processo $numero");
-    return false;
+  if (!$ok) {
+    $err = $stmt->errorInfo();
+    logar("❌ Erro ao salvar processo $numero — " . ($err[2] ?? 'desconhecido'));
   }
+
+  logar("💾 Processo $numero salvo/atualizado");
+  return true;
 }
+
 
 /**
  * salvarItensDoProcesso - utiliza endpoint PNCP paginado (estrutura /pncp/v1/orgaos/{cnpj}/compras/{ano}/{seq}/itens)
@@ -184,52 +206,64 @@ function salvarProcesso(PDO $pdo, array $proc): bool
  */
 function salvarItensDoProcesso(PDO $pdo, string $numeroControlePNCP): bool
 {
-  [$cnpj, $parte2, $sequencialAno] = explode('-', $numeroControlePNCP);
-  [$sequencial, $ano] = explode('/', $sequencialAno);
+  try {
+    // Quebra numeroControlePNCP → cnpj-orgao, modalidade, sequencial/ano
+    $partes = explode('-', $numeroControlePNCP);
+    if (count($partes) < 3) {
+      throw new Exception("Formato inválido de numeroControlePNCP: $numeroControlePNCP");
+    }
 
-  $pagina = 1;
-  $ok = false;
+    $cnpj = $partes[0];
+    list($sequencial, $ano) = explode('/', $partes[2]);
+    $sequencial = (int)$sequencial;
 
-  while (true) {
-    $urlItens = "https://pncp.gov.br/api/pncp/v1/orgaos/$cnpj/compras/$ano/$sequencial/itens?pagina=$pagina&tamanhoPagina=50";
+    // Monta URL dos itens
+    $urlItens = "https://pncp.gov.br/api/pncp/v1/orgaos/$cnpj/compras/$ano/$sequencial/itens?pagina=1&tamanhoPagina=100";
+
     $itens = baixarJson($urlItens);
-
-    if ($itens === null) {
-      logar("   ⚠️ Falha ao consultar itens de $numeroControlePNCP (página $pagina)");
-      registrarFalha($pdo, $numeroControlePNCP, "Falha ao consultar itens (página $pagina)");
-      return false;
+    if (!$itens || !is_array($itens)) {
+      throw new Exception("Itens não encontrados para $numeroControlePNCP");
     }
 
-    if (!is_array($itens) || empty($itens)) {
-      break; // acabou
-    }
+    // SQL compatível com a tabela atual
+    $sql = "INSERT INTO cache_pncp_itens
+                  (numeroControlePNCP, numeroItem, descricao, quantidade,
+                   valorUnitarioEstimado, valorUnitarioHomologado, sigiloso, json_original)
+                VALUES
+                  (:numeroControlePNCP, :numeroItem, :descricao, :quantidade,
+                   :valorUnitarioEstimado, :valorUnitarioHomologado, :sigiloso, :json)
+                ON DUPLICATE KEY UPDATE
+                  descricao = VALUES(descricao),
+                  quantidade = VALUES(quantidade),
+                  valorUnitarioEstimado = VALUES(valorUnitarioEstimado),
+                  valorUnitarioHomologado = VALUES(valorUnitarioHomologado),
+                  sigiloso = VALUES(sigiloso),
+                  json_original = VALUES(json_original),
+                  atualizado_em = CURRENT_TIMESTAMP";
+
+    $stmt = $pdo->prepare($sql);
 
     foreach ($itens as $it) {
-      $sql = "INSERT INTO cache_pncp_itens
-                        (numeroControlePNCP, descricao, quantidade, valorUnitarioEstimado, valorUnitarioHomologado, sigiloso, json_original)
-                    VALUES
-                        (:num, :desc, :qtd, :vEst, :vHom, :sig, :json)";
-      $stmt = $pdo->prepare($sql);
       $stmt->execute([
-        ':num'  => $numeroControlePNCP,
-        ':desc' => $it['descricao'] ?? '',
-        ':qtd'  => $it['quantidade'] ?? null,
-        ':vEst' => $it['valorUnitarioEstimado'] ?? null,
-        ':vHom' => $it['valorUnitarioHomologado'] ?? null,
-        ':sig'  => $it['sigiloso'] ?? 0,
-        ':json' => json_encode($it, JSON_UNESCAPED_UNICODE)
+        ':numeroControlePNCP'    => $numeroControlePNCP,
+        ':numeroItem'            => $it['numeroItem'] ?? null,
+        ':descricao'             => $it['descricao'] ?? '',
+        ':quantidade'            => $it['quantidade'] ?? 0,
+        ':valorUnitarioEstimado' => $it['valorUnitarioEstimado'] ?? null,
+        ':valorUnitarioHomologado' => $it['valorUnitarioHomologado'] ?? null,
+        ':sigiloso'              => !empty($it['orcamentoSigiloso']) ? 1 : 0,
+        ':json'                  => json_encode($it, JSON_UNESCAPED_UNICODE)
       ]);
     }
 
-    logar("   📦 Itens salvos para $numeroControlePNCP (página $pagina) — " . count($itens) . " itens");
-    $ok = true;
-
-    if (count($itens) < 50) break;
-    $pagina++;
+    logar("💾 Itens do processo $numeroControlePNCP salvos/atualizados (" . count($itens) . ")");
+    return true;
+  } catch (Throwable $e) {
+    logar("⚠️ Erro ao salvar itens de $numeroControlePNCP — " . $e->getMessage());
+    return false;
   }
-
-  return $ok;
 }
+
 
 /**
  * salvarItensDoProcesso_alternativo

@@ -4,28 +4,22 @@
  * Logger centralizado para os crons PNCP
  */
 
-$logDir = __DIR__ . '/../logs';   // sempre na pasta logs acima de crontab
+$logDir = __DIR__ . '/../logs';
 if (!is_dir($logDir)) {
   mkdir($logDir, 0777, true);
 }
 
-// nome único com data/hora
-$logFile = $logDir . '/cron_' . date('Ymd_His') . '.log';
-
-// cria/abre arquivo atual
-file_put_contents($logFile, "");
 $maxSize = 5 * 1024 * 1024; // 5 MB
 
-// Nome base do log
-$nomeBase = basename($_SERVER['SCRIPT_NAME'], '.php'); // ex: cron_full_cache_mod9
-$logFile = $logDir . "/{$nomeBase}.log";
+// Nome base do log = nome do script
+$nomeBase = basename($_SERVER['SCRIPT_NAME'], '.php');
+$logFile  = $logDir . "/{$nomeBase}.log";
 
-// Rotaciona se arquivo ficar grande
+// Rotaciona se ficar grande
 if (file_exists($logFile) && filesize($logFile) > $maxSize) {
   $backup = $logDir . '/' . $nomeBase . '_' . date('Ymd_His') . '.log';
   rename($logFile, $backup);
-  // Cria novo vazio para continuar logs em tempo real
-  file_put_contents($logFile, '');
+  file_put_contents($logFile, ""); // cria novo vazio
 }
 
 /**
@@ -35,12 +29,12 @@ function logar(string $msg): void
 {
   global $logFile;
   $line = "[" . date('Y-m-d H:i:s') . "] $msg\n";
-  echo $line; // mostra no terminal/navegador
-  file_put_contents($logFile, $line, FILE_APPEND); // grava no arquivo
+  echo $line;
+  file_put_contents($logFile, $line, FILE_APPEND);
 }
 
 /**
- * Marca início de execução (com cabeçalho e reset visual)
+ * Marca início de execução
  */
 function logInicioExec(string $titulo = "Execução CRON"): void
 {
@@ -50,7 +44,7 @@ function logInicioExec(string $titulo = "Execução CRON"): void
 }
 
 /**
- * Marca fim de execução com duração total
+ * Marca fim de execução
  */
 function logFimExec(float $inicioExec): void
 {

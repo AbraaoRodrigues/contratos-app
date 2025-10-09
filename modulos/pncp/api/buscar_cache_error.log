@@ -1,0 +1,32 @@
+[06-Oct-2025 11:06:46 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1191 Can't find FULLTEXT index matching the column list in /var/www/html/modulos/pncp/api/buscar_cache.php:75
+Stack trace:
+#0 /var/www/html/modulos/pncp/api/buscar_cache.php(75): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /var/www/html/modulos/pncp/api/buscar_cache.php on line 75
+[06-Oct-2025 11:07:08 America/Sao_Paulo] PHP Notice:  ob_end_flush(): Failed to delete and flush buffer. No buffer to delete or flush in /var/www/html/modulos/pncp/api/buscar_cache.php on line 117
+[08-Oct-2025 16:14:38 America/Sao_Paulo] PHP Notice:  ob_end_flush(): Failed to delete and flush buffer. No buffer to delete or flush in /var/www/html/modulos/pncp/api/buscar_cache.php on line 117
+[08-Oct-2025 16:15:09 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1191 Can't find FULLTEXT index matching the column list in /var/www/html/modulos/pncp/api/buscar_cache.php:75
+Stack trace:
+#0 /var/www/html/modulos/pncp/api/buscar_cache.php(75): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /var/www/html/modulos/pncp/api/buscar_cache.php on line 75
+[08-Oct-2025 16:15:20 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1191 Can't find FULLTEXT index matching the column list in /var/www/html/modulos/pncp/api/buscar_cache.php:75
+Stack trace:
+#0 /var/www/html/modulos/pncp/api/buscar_cache.php(75): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /var/www/html/modulos/pncp/api/buscar_cache.php on line 75
+[09-Oct-2025 08:41:03 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1191 Can't find FULLTEXT index matching the column list in /var/www/html/modulos/pncp/api/buscar_cache.php:75
+Stack trace:
+#0 /var/www/html/modulos/pncp/api/buscar_cache.php(75): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /var/www/html/modulos/pncp/api/buscar_cache.php on line 75
+[09-Oct-2025 08:41:21 America/Sao_Paulo] PHP Notice:  ob_end_flush(): Failed to delete and flush buffer. No buffer to delete or flush in /var/www/html/modulos/pncp/api/buscar_cache.php on line 117
+[09-Oct-2025 09:35:16 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1191 Can't find FULLTEXT index matching the column list in /var/www/html/modulos/pncp/api/buscar_cache.php:75
+Stack trace:
+#0 /var/www/html/modulos/pncp/api/buscar_cache.php(75): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /var/www/html/modulos/pncp/api/buscar_cache.php on line 75
+[09-Oct-2025 09:44:28 America/Sao_Paulo] PHP Notice:  ob_end_flush(): Failed to delete and flush buffer. No buffer to delete or flush in /var/www/html/modulos/pncp/api/buscar_cache.php on line 117
+[09-Oct-2025 09:44:33 America/Sao_Paulo] PHP Notice:  ob_end_flush(): Failed to delete and flush buffer. No buffer to delete or flush in /var/www/html/modulos/pncp/api/buscar_cache.php on line 117
+[09-Oct-2025 09:46:59 America/Sao_Paulo] PHP Notice:  ob_end_flush(): Failed to delete and flush buffer. No buffer to delete or flush in /var/www/html/modulos/pncp/api/buscar_cache.php on line 117
+[09-Oct-2025 09:51:14 America/Sao_Paulo] PHP Notice:  ob_end_flush(): Failed to delete and flush buffer. No buffer to delete or flush in /var/www/html/modulos/pncp/api/buscar_cache.php on line 117

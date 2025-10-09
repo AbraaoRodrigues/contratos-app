@@ -173,3 +173,688 @@
 [2025-09-24 15:03:28] ⚠️ Erro ao salvar processo 46634044000174-1-000299/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
 [2025-09-24 15:03:28] ⚠️ Erro ao salvar processo 46634044000174-1-000300/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
 [2025-09-24 15:03:28] 🏁 Finalizado em 00h 04m 09s
+[2025-09-29 13:27:39] ============================
+[2025-09-29 13:27:39] 🚀 Sincronização FULL PNCP - PMI iniciada
+[2025-09-29 13:27:39] ============================
+[2025-09-29 13:27:39] 🧹 Removidos processos/itens anteriores a 2024-09-29
+[2025-09-29 13:27:39] 📅 Período 20240929 → 20241128 | UF=SP / Mod=10 (PMI)
+[2025-09-29 13:27:39] ✅ Página 1 OK (SP/10) – 22 registros
+[2025-09-29 13:27:39] ⚠️ Erro ao salvar processo 46634044000174-1-000259/2024: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:39] ⚠️ Erro ao salvar processo 46634044000174-1-000260/2024: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:39] ⚠️ Erro ao salvar processo 46634044000174-1-000264/2024: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:39] ⚠️ Erro ao salvar processo 46634044000174-1-000265/2024: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:39] ⚠️ Erro ao salvar processo 46634044000174-1-000266/2024: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000267/2024: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 50333616000152-1-000082/2024: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000272/2024: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000275/2024: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000285/2024: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000290/2024: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000302/2024: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000303/2024: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000306/2024: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000313/2024: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000331/2024: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000333/2024: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000339/2024: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000341/2024: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000345/2024: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000347/2024: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000351/2024: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] 📅 Período 20241129 → 20250128 | UF=SP / Mod=10 (PMI)
+[2025-09-29 13:27:40] ✅ Página 1 OK (SP/10) – 24 registros
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000352/2024: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000353/2024: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000365/2024: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000376/2024: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000384/2024: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000001/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000002/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000402/2024: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 44881449000181-1-000007/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000003/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000004/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000007/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000008/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000009/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000011/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000015/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000016/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000017/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000018/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000019/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000021/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000022/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 46634044000174-1-000023/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] ⚠️ Erro ao salvar processo 06916689000185-1-000036/2024: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:40] 📅 Período 20250129 → 20250330 | UF=SP / Mod=10 (PMI)
+[2025-09-29 13:27:41] ✅ Página 1 OK (SP/10) – 31 registros
+[2025-09-29 13:27:41] ⚠️ Erro ao salvar processo 46634044000174-1-000029/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:41] ⚠️ Erro ao salvar processo 46634044000174-1-000030/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:41] ⚠️ Erro ao salvar processo 46634044000174-1-000033/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:41] ⚠️ Erro ao salvar processo 46634044000174-1-000035/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:41] ⚠️ Erro ao salvar processo 46634044000174-1-000036/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:41] ⚠️ Erro ao salvar processo 46634044000174-1-000037/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:41] ⚠️ Erro ao salvar processo 46634044000174-1-000038/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:41] ⚠️ Erro ao salvar processo 46634044000174-1-000039/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:41] ⚠️ Erro ao salvar processo 46634044000174-1-000040/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:41] ⚠️ Erro ao salvar processo 46634044000174-1-000041/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:41] ⚠️ Erro ao salvar processo 46634044000174-1-000044/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:41] ⚠️ Erro ao salvar processo 46634044000174-1-000047/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:41] ⚠️ Erro ao salvar processo 46634044000174-1-000048/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:41] ⚠️ Erro ao salvar processo 46634044000174-1-000049/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:41] ⚠️ Erro ao salvar processo 46634044000174-1-000053/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:41] ⚠️ Erro ao salvar processo 46634044000174-1-000054/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:41] ⚠️ Erro ao salvar processo 46634044000174-1-000055/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:41] ⚠️ Erro ao salvar processo 46634044000174-1-000056/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:41] ⚠️ Erro ao salvar processo 46634044000174-1-000057/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:41] ⚠️ Erro ao salvar processo 46634044000174-1-000058/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:41] ⚠️ Erro ao salvar processo 46634044000174-1-000059/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:41] ⚠️ Erro ao salvar processo 46634044000174-1-000060/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:41] ⚠️ Erro ao salvar processo 46634044000174-1-000061/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:41] ⚠️ Erro ao salvar processo 46634044000174-1-000062/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:41] ⚠️ Erro ao salvar processo 46634044000174-1-000063/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:41] ⚠️ Erro ao salvar processo 46634044000174-1-000067/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:41] ⚠️ Erro ao salvar processo 46634044000174-1-000069/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:41] ⚠️ Erro ao salvar processo 46634044000174-1-000071/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:41] ⚠️ Erro ao salvar processo 46634044000174-1-000073/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:41] ⚠️ Erro ao salvar processo 46634044000174-1-000077/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:41] ⚠️ Erro ao salvar processo 46634044000174-1-000078/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:41] 📅 Período 20250331 → 20250530 | UF=SP / Mod=10 (PMI)
+[2025-09-29 13:27:41] ✅ Página 1 OK (SP/10) – 18 registros
+[2025-09-29 13:27:41] ⚠️ Erro ao salvar processo 46634044000174-1-000081/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:41] ⚠️ Erro ao salvar processo 46634044000174-1-000087/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:41] ⚠️ Erro ao salvar processo 46634044000174-1-000095/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:41] ⚠️ Erro ao salvar processo 46634044000174-1-000112/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:41] ⚠️ Erro ao salvar processo 46634044000174-1-000113/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:42] ⚠️ Erro ao salvar processo 46634044000174-1-000116/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:42] ⚠️ Erro ao salvar processo 01610390000184-1-000044/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:42] ⚠️ Erro ao salvar processo 01610390000184-1-000047/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:42] ⚠️ Erro ao salvar processo 46634044000174-1-000121/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:42] ⚠️ Erro ao salvar processo 01610390000184-1-000049/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:42] ⚠️ Erro ao salvar processo 46634044000174-1-000125/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:42] ⚠️ Erro ao salvar processo 46634044000174-1-000126/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:42] ⚠️ Erro ao salvar processo 46634044000174-1-000129/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:42] ⚠️ Erro ao salvar processo 53415717000160-1-000044/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:42] ⚠️ Erro ao salvar processo 46634044000174-1-000132/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:42] ⚠️ Erro ao salvar processo 46482840000139-1-000346/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:42] ⚠️ Erro ao salvar processo 46482840000139-1-000347/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:42] ⚠️ Erro ao salvar processo 46634044000174-1-000138/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:42] 📅 Período 20250531 → 20250730 | UF=SP / Mod=10 (PMI)
+[2025-09-29 13:27:42] ✅ Página 1 OK (SP/10) – 22 registros
+[2025-09-29 13:27:42] ⚠️ Erro ao salvar processo 46634044000174-1-000140/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:42] ⚠️ Erro ao salvar processo 46634044000174-1-000143/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:42] ⚠️ Erro ao salvar processo 46634044000174-1-000147/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:42] ⚠️ Erro ao salvar processo 01610390000184-1-000059/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:42] ⚠️ Erro ao salvar processo 01610390000184-1-000063/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:42] ⚠️ Erro ao salvar processo 46634044000174-1-000154/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:42] ⚠️ Erro ao salvar processo 01610390000184-1-000065/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:42] ⚠️ Erro ao salvar processo 01610390000184-1-000067/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:42] ⚠️ Erro ao salvar processo 46634044000174-1-000160/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:42] ⚠️ Erro ao salvar processo 01610390000184-1-000068/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:42] ⚠️ Erro ao salvar processo 46634044000174-1-000168/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:42] ⚠️ Erro ao salvar processo 46634044000174-1-000172/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:42] ⚠️ Erro ao salvar processo 46634044000174-1-000176/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:42] ⚠️ Erro ao salvar processo 46634044000174-1-000179/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:42] ⚠️ Erro ao salvar processo 46634044000174-1-000180/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:42] ⚠️ Erro ao salvar processo 46634044000174-1-000183/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:42] ⚠️ Erro ao salvar processo 46634044000174-1-000184/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:42] ⚠️ Erro ao salvar processo 46634044000174-1-000192/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:42] ⚠️ Erro ao salvar processo 46634044000174-1-000195/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:42] ⚠️ Erro ao salvar processo 01610390000184-1-000079/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:42] ⚠️ Erro ao salvar processo 01610390000184-1-000080/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:42] ⚠️ Erro ao salvar processo 46634044000174-1-000208/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:42] 📅 Período 20250731 → 20250929 | UF=SP / Mod=10 (PMI)
+[2025-09-29 13:27:43] ✅ Página 1 OK (SP/10) – 44 registros
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 01610390000184-1-000086/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 01610390000184-1-000087/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 46634044000174-1-000218/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 46634044000174-1-000219/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 01610390000184-1-000090/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 01610390000184-1-000093/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 01610390000184-1-000094/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 46634044000174-1-000230/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 46634044000174-1-000235/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 46634044000174-1-000237/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 46634044000174-1-000242/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 46634044000174-1-000243/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 46634044000174-1-000248/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 53415717000160-1-000132/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 46634044000174-1-000260/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 46634044000174-1-000261/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 01610390000184-1-000098/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 01610390000184-1-000100/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 46482840000139-1-000677/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 46634044000174-1-000274/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 46634044000174-1-000275/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 46634044000174-1-000276/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 46634044000174-1-000277/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 46634044000174-1-000279/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 46634044000174-1-000282/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 01610390000184-1-000106/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 05002419000104-1-000011/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 01610390000184-1-000107/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 46634044000174-1-000292/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 46634044000174-1-000293/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 50320415000110-1-000012/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 01610390000184-1-000108/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 46634044000174-1-000299/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 46634044000174-1-000300/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 46634044000174-1-000301/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 46634044000174-1-000302/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 46634044000174-1-000304/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 46634044000174-1-000305/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 46634044000174-1-000306/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 46634044000174-1-000307/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 46634044000174-1-000308/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 46634044000174-1-000309/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 46634044000174-1-000311/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] ⚠️ Erro ao salvar processo 01610390000184-1-000111/2025: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-09-29 13:27:43] 🏁 Finalizado em 00h 00m 04s
+[2025-10-02 16:47:54] ============================
+[2025-10-02 16:47:54] 🚀 Sincronização FULL PNCP - PMI iniciada
+[2025-10-02 16:47:54] ============================
+[2025-10-02 16:47:54] 🧹 Removidos processos/itens anteriores a 2024-10-02
+[2025-10-02 16:47:54] 📅 Período 20241002 → 20241201 | UF=SP / Mod=10 (PMI)
+[2025-10-02 16:47:55] ✅ Página 1 OK (SP/10) – 24 registros
+[2025-10-02 16:47:55] 💾 Processo 46634044000174-1-000259/2024 salvo/atualizado
+[2025-10-02 16:47:55] 💾 Itens do processo 46634044000174-1-000259/2024 salvos/atualizados (12)
+[2025-10-02 16:47:55] 📦 Itens 46634044000174-1-000259/2024 salvos
+[2025-10-02 16:47:55] 💾 Processo 46634044000174-1-000260/2024 salvo/atualizado
+[2025-10-02 16:47:56] 💾 Itens do processo 46634044000174-1-000260/2024 salvos/atualizados (14)
+[2025-10-02 16:47:56] 📦 Itens 46634044000174-1-000260/2024 salvos
+[2025-10-02 16:47:56] 💾 Processo 46634044000174-1-000264/2024 salvo/atualizado
+[2025-10-02 16:47:56] 💾 Itens do processo 46634044000174-1-000264/2024 salvos/atualizados (1)
+[2025-10-02 16:47:56] 📦 Itens 46634044000174-1-000264/2024 salvos
+[2025-10-02 16:47:56] 💾 Processo 46634044000174-1-000265/2024 salvo/atualizado
+[2025-10-02 16:47:56] 💾 Itens do processo 46634044000174-1-000265/2024 salvos/atualizados (11)
+[2025-10-02 16:47:56] 📦 Itens 46634044000174-1-000265/2024 salvos
+[2025-10-02 16:47:56] 💾 Processo 46634044000174-1-000266/2024 salvo/atualizado
+[2025-10-02 16:47:56] 💾 Itens do processo 46634044000174-1-000266/2024 salvos/atualizados (4)
+[2025-10-02 16:47:56] 📦 Itens 46634044000174-1-000266/2024 salvos
+[2025-10-02 16:47:56] 💾 Processo 46634044000174-1-000267/2024 salvo/atualizado
+[2025-10-02 16:47:56] 💾 Itens do processo 46634044000174-1-000267/2024 salvos/atualizados (11)
+[2025-10-02 16:47:56] 📦 Itens 46634044000174-1-000267/2024 salvos
+[2025-10-02 16:47:56] 💾 Processo 50333616000152-1-000082/2024 salvo/atualizado
+[2025-10-02 16:47:56] 💾 Itens do processo 50333616000152-1-000082/2024 salvos/atualizados (2)
+[2025-10-02 16:47:56] 📦 Itens 50333616000152-1-000082/2024 salvos
+[2025-10-02 16:47:56] 💾 Processo 46634044000174-1-000272/2024 salvo/atualizado
+[2025-10-02 16:47:57] 💾 Itens do processo 46634044000174-1-000272/2024 salvos/atualizados (17)
+[2025-10-02 16:47:57] 📦 Itens 46634044000174-1-000272/2024 salvos
+[2025-10-02 16:47:57] 💾 Processo 46634044000174-1-000275/2024 salvo/atualizado
+[2025-10-02 16:47:57] 💾 Itens do processo 46634044000174-1-000275/2024 salvos/atualizados (1)
+[2025-10-02 16:47:57] 📦 Itens 46634044000174-1-000275/2024 salvos
+[2025-10-02 16:47:57] 💾 Processo 46634044000174-1-000285/2024 salvo/atualizado
+[2025-10-02 16:47:57] 💾 Itens do processo 46634044000174-1-000285/2024 salvos/atualizados (10)
+[2025-10-02 16:47:57] 📦 Itens 46634044000174-1-000285/2024 salvos
+[2025-10-02 16:47:57] 💾 Processo 46634044000174-1-000290/2024 salvo/atualizado
+[2025-10-02 16:47:57] 💾 Itens do processo 46634044000174-1-000290/2024 salvos/atualizados (6)
+[2025-10-02 16:47:57] 📦 Itens 46634044000174-1-000290/2024 salvos
+[2025-10-02 16:47:57] 💾 Processo 46634044000174-1-000302/2024 salvo/atualizado
+[2025-10-02 16:47:58] 💾 Itens do processo 46634044000174-1-000302/2024 salvos/atualizados (1)
+[2025-10-02 16:47:58] 📦 Itens 46634044000174-1-000302/2024 salvos
+[2025-10-02 16:47:58] 💾 Processo 46634044000174-1-000303/2024 salvo/atualizado
+[2025-10-02 16:47:58] 💾 Itens do processo 46634044000174-1-000303/2024 salvos/atualizados (3)
+[2025-10-02 16:47:58] 📦 Itens 46634044000174-1-000303/2024 salvos
+[2025-10-02 16:47:58] 💾 Processo 46634044000174-1-000306/2024 salvo/atualizado
+[2025-10-02 16:47:58] 💾 Itens do processo 46634044000174-1-000306/2024 salvos/atualizados (1)
+[2025-10-02 16:47:58] 📦 Itens 46634044000174-1-000306/2024 salvos
+[2025-10-02 16:47:58] 💾 Processo 46634044000174-1-000313/2024 salvo/atualizado
+[2025-10-02 16:47:58] 💾 Itens do processo 46634044000174-1-000313/2024 salvos/atualizados (2)
+[2025-10-02 16:47:58] 📦 Itens 46634044000174-1-000313/2024 salvos
+[2025-10-02 16:47:58] 💾 Processo 46634044000174-1-000331/2024 salvo/atualizado
+[2025-10-02 16:47:58] 💾 Itens do processo 46634044000174-1-000331/2024 salvos/atualizados (2)
+[2025-10-02 16:47:58] 📦 Itens 46634044000174-1-000331/2024 salvos
+[2025-10-02 16:47:58] 💾 Processo 46634044000174-1-000333/2024 salvo/atualizado
+[2025-10-02 16:47:58] 💾 Itens do processo 46634044000174-1-000333/2024 salvos/atualizados (7)
+[2025-10-02 16:47:58] 📦 Itens 46634044000174-1-000333/2024 salvos
+[2025-10-02 16:47:58] 💾 Processo 46634044000174-1-000339/2024 salvo/atualizado
+[2025-10-02 16:47:58] 💾 Itens do processo 46634044000174-1-000339/2024 salvos/atualizados (1)
+[2025-10-02 16:47:58] 📦 Itens 46634044000174-1-000339/2024 salvos
+[2025-10-02 16:47:58] 💾 Processo 46634044000174-1-000341/2024 salvo/atualizado
+[2025-10-02 16:47:59] 💾 Itens do processo 46634044000174-1-000341/2024 salvos/atualizados (1)
+[2025-10-02 16:47:59] 📦 Itens 46634044000174-1-000341/2024 salvos
+[2025-10-02 16:47:59] 💾 Processo 46634044000174-1-000345/2024 salvo/atualizado
+[2025-10-02 16:47:59] 💾 Itens do processo 46634044000174-1-000345/2024 salvos/atualizados (2)
+[2025-10-02 16:47:59] 📦 Itens 46634044000174-1-000345/2024 salvos
+[2025-10-02 16:47:59] 💾 Processo 46634044000174-1-000347/2024 salvo/atualizado
+[2025-10-02 16:47:59] 💾 Itens do processo 46634044000174-1-000347/2024 salvos/atualizados (9)
+[2025-10-02 16:47:59] 📦 Itens 46634044000174-1-000347/2024 salvos
+[2025-10-02 16:47:59] 💾 Processo 46634044000174-1-000351/2024 salvo/atualizado
+[2025-10-02 16:47:59] 💾 Itens do processo 46634044000174-1-000351/2024 salvos/atualizados (10)
+[2025-10-02 16:47:59] 📦 Itens 46634044000174-1-000351/2024 salvos
+[2025-10-02 16:47:59] 💾 Processo 46634044000174-1-000352/2024 salvo/atualizado
+[2025-10-02 16:48:00] 💾 Itens do processo 46634044000174-1-000352/2024 salvos/atualizados (5)
+[2025-10-02 16:48:00] 📦 Itens 46634044000174-1-000352/2024 salvos
+[2025-10-02 16:48:00] 💾 Processo 46634044000174-1-000353/2024 salvo/atualizado
+[2025-10-02 16:48:00] 💾 Itens do processo 46634044000174-1-000353/2024 salvos/atualizados (10)
+[2025-10-02 16:48:00] 📦 Itens 46634044000174-1-000353/2024 salvos
+[2025-10-02 16:48:00] 📅 Período 20241202 → 20250131 | UF=SP / Mod=10 (PMI)
+[2025-10-02 16:48:00] ✅ Página 1 OK (SP/10) – 22 registros
+[2025-10-02 16:48:00] 💾 Processo 46634044000174-1-000365/2024 salvo/atualizado
+[2025-10-02 16:48:01] 💾 Itens do processo 46634044000174-1-000365/2024 salvos/atualizados (1)
+[2025-10-02 16:48:01] 📦 Itens 46634044000174-1-000365/2024 salvos
+[2025-10-02 16:48:01] 💾 Processo 46634044000174-1-000376/2024 salvo/atualizado
+[2025-10-02 16:48:01] 💾 Itens do processo 46634044000174-1-000376/2024 salvos/atualizados (11)
+[2025-10-02 16:48:01] 📦 Itens 46634044000174-1-000376/2024 salvos
+[2025-10-02 16:48:01] 💾 Processo 46634044000174-1-000384/2024 salvo/atualizado
+[2025-10-02 16:48:01] 💾 Itens do processo 46634044000174-1-000384/2024 salvos/atualizados (9)
+[2025-10-02 16:48:01] 📦 Itens 46634044000174-1-000384/2024 salvos
+[2025-10-02 16:48:01] 💾 Processo 46634044000174-1-000001/2025 salvo/atualizado
+[2025-10-02 16:48:01] 💾 Itens do processo 46634044000174-1-000001/2025 salvos/atualizados (1)
+[2025-10-02 16:48:01] 📦 Itens 46634044000174-1-000001/2025 salvos
+[2025-10-02 16:48:01] 💾 Processo 46634044000174-1-000002/2025 salvo/atualizado
+[2025-10-02 16:48:01] 💾 Itens do processo 46634044000174-1-000002/2025 salvos/atualizados (1)
+[2025-10-02 16:48:01] 📦 Itens 46634044000174-1-000002/2025 salvos
+[2025-10-02 16:48:01] 💾 Processo 46634044000174-1-000402/2024 salvo/atualizado
+[2025-10-02 16:48:01] 💾 Itens do processo 46634044000174-1-000402/2024 salvos/atualizados (4)
+[2025-10-02 16:48:01] 📦 Itens 46634044000174-1-000402/2024 salvos
+[2025-10-02 16:48:01] 💾 Processo 44881449000181-1-000007/2025 salvo/atualizado
+[2025-10-02 16:48:02] 💾 Itens do processo 44881449000181-1-000007/2025 salvos/atualizados (1)
+[2025-10-02 16:48:02] 📦 Itens 44881449000181-1-000007/2025 salvos
+[2025-10-02 16:48:02] 💾 Processo 46634044000174-1-000003/2025 salvo/atualizado
+[2025-10-02 16:48:02] 💾 Itens do processo 46634044000174-1-000003/2025 salvos/atualizados (5)
+[2025-10-02 16:48:02] 📦 Itens 46634044000174-1-000003/2025 salvos
+[2025-10-02 16:48:02] 💾 Processo 46634044000174-1-000004/2025 salvo/atualizado
+[2025-10-02 16:48:02] 💾 Itens do processo 46634044000174-1-000004/2025 salvos/atualizados (6)
+[2025-10-02 16:48:02] 📦 Itens 46634044000174-1-000004/2025 salvos
+[2025-10-02 16:48:02] 💾 Processo 46634044000174-1-000007/2025 salvo/atualizado
+[2025-10-02 16:48:02] 💾 Itens do processo 46634044000174-1-000007/2025 salvos/atualizados (10)
+[2025-10-02 16:48:02] 📦 Itens 46634044000174-1-000007/2025 salvos
+[2025-10-02 16:48:02] 💾 Processo 46634044000174-1-000008/2025 salvo/atualizado
+[2025-10-02 16:48:03] 💾 Itens do processo 46634044000174-1-000008/2025 salvos/atualizados (13)
+[2025-10-02 16:48:03] 📦 Itens 46634044000174-1-000008/2025 salvos
+[2025-10-02 16:48:03] 💾 Processo 46634044000174-1-000009/2025 salvo/atualizado
+[2025-10-02 16:48:03] 💾 Itens do processo 46634044000174-1-000009/2025 salvos/atualizados (5)
+[2025-10-02 16:48:03] 📦 Itens 46634044000174-1-000009/2025 salvos
+[2025-10-02 16:48:03] 💾 Processo 46634044000174-1-000011/2025 salvo/atualizado
+[2025-10-02 16:48:03] 💾 Itens do processo 46634044000174-1-000011/2025 salvos/atualizados (1)
+[2025-10-02 16:48:03] 📦 Itens 46634044000174-1-000011/2025 salvos
+[2025-10-02 16:48:03] 💾 Processo 46634044000174-1-000015/2025 salvo/atualizado
+[2025-10-02 16:48:03] 💾 Itens do processo 46634044000174-1-000015/2025 salvos/atualizados (11)
+[2025-10-02 16:48:03] 📦 Itens 46634044000174-1-000015/2025 salvos
+[2025-10-02 16:48:03] 💾 Processo 46634044000174-1-000016/2025 salvo/atualizado
+[2025-10-02 16:48:03] 💾 Itens do processo 46634044000174-1-000016/2025 salvos/atualizados (9)
+[2025-10-02 16:48:03] 📦 Itens 46634044000174-1-000016/2025 salvos
+[2025-10-02 16:48:03] 💾 Processo 46634044000174-1-000017/2025 salvo/atualizado
+[2025-10-02 16:48:04] 💾 Itens do processo 46634044000174-1-000017/2025 salvos/atualizados (15)
+[2025-10-02 16:48:04] 📦 Itens 46634044000174-1-000017/2025 salvos
+[2025-10-02 16:48:04] 💾 Processo 46634044000174-1-000018/2025 salvo/atualizado
+[2025-10-02 16:48:04] 💾 Itens do processo 46634044000174-1-000018/2025 salvos/atualizados (3)
+[2025-10-02 16:48:04] 📦 Itens 46634044000174-1-000018/2025 salvos
+[2025-10-02 16:48:04] 💾 Processo 46634044000174-1-000019/2025 salvo/atualizado
+[2025-10-02 16:48:04] 💾 Itens do processo 46634044000174-1-000019/2025 salvos/atualizados (11)
+[2025-10-02 16:48:04] 📦 Itens 46634044000174-1-000019/2025 salvos
+[2025-10-02 16:48:04] 💾 Processo 46634044000174-1-000021/2025 salvo/atualizado
+[2025-10-02 16:48:05] 💾 Itens do processo 46634044000174-1-000021/2025 salvos/atualizados (7)
+[2025-10-02 16:48:05] 📦 Itens 46634044000174-1-000021/2025 salvos
+[2025-10-02 16:48:05] 💾 Processo 46634044000174-1-000022/2025 salvo/atualizado
+[2025-10-02 16:48:05] 💾 Itens do processo 46634044000174-1-000022/2025 salvos/atualizados (12)
+[2025-10-02 16:48:05] 📦 Itens 46634044000174-1-000022/2025 salvos
+[2025-10-02 16:48:05] 💾 Processo 46634044000174-1-000023/2025 salvo/atualizado
+[2025-10-02 16:48:05] 💾 Itens do processo 46634044000174-1-000023/2025 salvos/atualizados (10)
+[2025-10-02 16:48:05] 📦 Itens 46634044000174-1-000023/2025 salvos
+[2025-10-02 16:48:05] 💾 Processo 06916689000185-1-000036/2024 salvo/atualizado
+[2025-10-02 16:48:05] 💾 Itens do processo 06916689000185-1-000036/2024 salvos/atualizados (11)
+[2025-10-02 16:48:05] 📦 Itens 06916689000185-1-000036/2024 salvos
+[2025-10-02 16:48:05] 📅 Período 20250201 → 20250402 | UF=SP / Mod=10 (PMI)
+[2025-10-02 16:48:06] ✅ Página 1 OK (SP/10) – 32 registros
+[2025-10-02 16:48:06] 💾 Processo 46634044000174-1-000029/2025 salvo/atualizado
+[2025-10-02 16:48:06] 💾 Itens do processo 46634044000174-1-000029/2025 salvos/atualizados (5)
+[2025-10-02 16:48:06] 📦 Itens 46634044000174-1-000029/2025 salvos
+[2025-10-02 16:48:06] 💾 Processo 46634044000174-1-000030/2025 salvo/atualizado
+[2025-10-02 16:48:06] 💾 Itens do processo 46634044000174-1-000030/2025 salvos/atualizados (10)
+[2025-10-02 16:48:06] 📦 Itens 46634044000174-1-000030/2025 salvos
+[2025-10-02 16:48:06] 💾 Processo 46634044000174-1-000033/2025 salvo/atualizado
+[2025-10-02 16:48:06] 💾 Itens do processo 46634044000174-1-000033/2025 salvos/atualizados (3)
+[2025-10-02 16:48:06] 📦 Itens 46634044000174-1-000033/2025 salvos
+[2025-10-02 16:48:06] 💾 Processo 46634044000174-1-000035/2025 salvo/atualizado
+[2025-10-02 16:48:06] 💾 Itens do processo 46634044000174-1-000035/2025 salvos/atualizados (7)
+[2025-10-02 16:48:06] 📦 Itens 46634044000174-1-000035/2025 salvos
+[2025-10-02 16:48:06] 💾 Processo 46634044000174-1-000036/2025 salvo/atualizado
+[2025-10-02 16:48:07] 💾 Itens do processo 46634044000174-1-000036/2025 salvos/atualizados (7)
+[2025-10-02 16:48:07] 📦 Itens 46634044000174-1-000036/2025 salvos
+[2025-10-02 16:48:07] 💾 Processo 46634044000174-1-000037/2025 salvo/atualizado
+[2025-10-02 16:48:07] 💾 Itens do processo 46634044000174-1-000037/2025 salvos/atualizados (4)
+[2025-10-02 16:48:07] 📦 Itens 46634044000174-1-000037/2025 salvos
+[2025-10-02 16:48:07] 💾 Processo 46634044000174-1-000038/2025 salvo/atualizado
+[2025-10-02 16:48:07] 💾 Itens do processo 46634044000174-1-000038/2025 salvos/atualizados (12)
+[2025-10-02 16:48:07] 📦 Itens 46634044000174-1-000038/2025 salvos
+[2025-10-02 16:48:07] 💾 Processo 46634044000174-1-000039/2025 salvo/atualizado
+[2025-10-02 16:48:07] 💾 Itens do processo 46634044000174-1-000039/2025 salvos/atualizados (9)
+[2025-10-02 16:48:07] 📦 Itens 46634044000174-1-000039/2025 salvos
+[2025-10-02 16:48:07] 💾 Processo 46634044000174-1-000040/2025 salvo/atualizado
+[2025-10-02 16:48:08] 💾 Itens do processo 46634044000174-1-000040/2025 salvos/atualizados (7)
+[2025-10-02 16:48:08] 📦 Itens 46634044000174-1-000040/2025 salvos
+[2025-10-02 16:48:08] 💾 Processo 46634044000174-1-000041/2025 salvo/atualizado
+[2025-10-02 16:48:08] 💾 Itens do processo 46634044000174-1-000041/2025 salvos/atualizados (2)
+[2025-10-02 16:48:08] 📦 Itens 46634044000174-1-000041/2025 salvos
+[2025-10-02 16:48:08] 💾 Processo 46634044000174-1-000044/2025 salvo/atualizado
+[2025-10-02 16:48:08] 💾 Itens do processo 46634044000174-1-000044/2025 salvos/atualizados (1)
+[2025-10-02 16:48:08] 📦 Itens 46634044000174-1-000044/2025 salvos
+[2025-10-02 16:48:08] 💾 Processo 46634044000174-1-000047/2025 salvo/atualizado
+[2025-10-02 16:48:08] 💾 Itens do processo 46634044000174-1-000047/2025 salvos/atualizados (4)
+[2025-10-02 16:48:08] 📦 Itens 46634044000174-1-000047/2025 salvos
+[2025-10-02 16:48:08] 💾 Processo 46634044000174-1-000048/2025 salvo/atualizado
+[2025-10-02 16:48:08] 💾 Itens do processo 46634044000174-1-000048/2025 salvos/atualizados (2)
+[2025-10-02 16:48:08] 📦 Itens 46634044000174-1-000048/2025 salvos
+[2025-10-02 16:48:08] 💾 Processo 46634044000174-1-000049/2025 salvo/atualizado
+[2025-10-02 16:48:08] 💾 Itens do processo 46634044000174-1-000049/2025 salvos/atualizados (3)
+[2025-10-02 16:48:08] 📦 Itens 46634044000174-1-000049/2025 salvos
+[2025-10-02 16:48:08] 💾 Processo 46634044000174-1-000053/2025 salvo/atualizado
+[2025-10-02 16:48:09] 💾 Itens do processo 46634044000174-1-000053/2025 salvos/atualizados (1)
+[2025-10-02 16:48:09] 📦 Itens 46634044000174-1-000053/2025 salvos
+[2025-10-02 16:48:09] 💾 Processo 46634044000174-1-000054/2025 salvo/atualizado
+[2025-10-02 16:48:09] 💾 Itens do processo 46634044000174-1-000054/2025 salvos/atualizados (5)
+[2025-10-02 16:48:09] 📦 Itens 46634044000174-1-000054/2025 salvos
+[2025-10-02 16:48:09] 💾 Processo 46634044000174-1-000055/2025 salvo/atualizado
+[2025-10-02 16:48:09] 💾 Itens do processo 46634044000174-1-000055/2025 salvos/atualizados (1)
+[2025-10-02 16:48:09] 📦 Itens 46634044000174-1-000055/2025 salvos
+[2025-10-02 16:48:09] 💾 Processo 46634044000174-1-000056/2025 salvo/atualizado
+[2025-10-02 16:48:09] 💾 Itens do processo 46634044000174-1-000056/2025 salvos/atualizados (4)
+[2025-10-02 16:48:09] 📦 Itens 46634044000174-1-000056/2025 salvos
+[2025-10-02 16:48:09] 💾 Processo 46634044000174-1-000057/2025 salvo/atualizado
+[2025-10-02 16:48:09] 💾 Itens do processo 46634044000174-1-000057/2025 salvos/atualizados (6)
+[2025-10-02 16:48:09] 📦 Itens 46634044000174-1-000057/2025 salvos
+[2025-10-02 16:48:09] 💾 Processo 46634044000174-1-000058/2025 salvo/atualizado
+[2025-10-02 16:48:09] 💾 Itens do processo 46634044000174-1-000058/2025 salvos/atualizados (8)
+[2025-10-02 16:48:09] 📦 Itens 46634044000174-1-000058/2025 salvos
+[2025-10-02 16:48:09] 💾 Processo 46634044000174-1-000059/2025 salvo/atualizado
+[2025-10-02 16:48:09] 💾 Itens do processo 46634044000174-1-000059/2025 salvos/atualizados (4)
+[2025-10-02 16:48:09] 📦 Itens 46634044000174-1-000059/2025 salvos
+[2025-10-02 16:48:09] 💾 Processo 46634044000174-1-000060/2025 salvo/atualizado
+[2025-10-02 16:48:10] 💾 Itens do processo 46634044000174-1-000060/2025 salvos/atualizados (10)
+[2025-10-02 16:48:10] 📦 Itens 46634044000174-1-000060/2025 salvos
+[2025-10-02 16:48:10] 💾 Processo 46634044000174-1-000061/2025 salvo/atualizado
+[2025-10-02 16:48:10] 💾 Itens do processo 46634044000174-1-000061/2025 salvos/atualizados (3)
+[2025-10-02 16:48:10] 📦 Itens 46634044000174-1-000061/2025 salvos
+[2025-10-02 16:48:10] 💾 Processo 46634044000174-1-000062/2025 salvo/atualizado
+[2025-10-02 16:48:10] 💾 Itens do processo 46634044000174-1-000062/2025 salvos/atualizados (6)
+[2025-10-02 16:48:10] 📦 Itens 46634044000174-1-000062/2025 salvos
+[2025-10-02 16:48:10] 💾 Processo 46634044000174-1-000063/2025 salvo/atualizado
+[2025-10-02 16:48:10] 💾 Itens do processo 46634044000174-1-000063/2025 salvos/atualizados (4)
+[2025-10-02 16:48:10] 📦 Itens 46634044000174-1-000063/2025 salvos
+[2025-10-02 16:48:10] 💾 Processo 46634044000174-1-000067/2025 salvo/atualizado
+[2025-10-02 16:48:10] 💾 Itens do processo 46634044000174-1-000067/2025 salvos/atualizados (23)
+[2025-10-02 16:48:10] 📦 Itens 46634044000174-1-000067/2025 salvos
+[2025-10-02 16:48:10] 💾 Processo 46634044000174-1-000069/2025 salvo/atualizado
+[2025-10-02 16:48:11] 💾 Itens do processo 46634044000174-1-000069/2025 salvos/atualizados (3)
+[2025-10-02 16:48:11] 📦 Itens 46634044000174-1-000069/2025 salvos
+[2025-10-02 16:48:11] 💾 Processo 46634044000174-1-000071/2025 salvo/atualizado
+[2025-10-02 16:48:11] 💾 Itens do processo 46634044000174-1-000071/2025 salvos/atualizados (4)
+[2025-10-02 16:48:11] 📦 Itens 46634044000174-1-000071/2025 salvos
+[2025-10-02 16:48:11] 💾 Processo 46634044000174-1-000073/2025 salvo/atualizado
+[2025-10-02 16:48:11] 💾 Itens do processo 46634044000174-1-000073/2025 salvos/atualizados (7)
+[2025-10-02 16:48:11] 📦 Itens 46634044000174-1-000073/2025 salvos
+[2025-10-02 16:48:11] 💾 Processo 46634044000174-1-000077/2025 salvo/atualizado
+[2025-10-02 16:48:11] 💾 Itens do processo 46634044000174-1-000077/2025 salvos/atualizados (1)
+[2025-10-02 16:48:11] 📦 Itens 46634044000174-1-000077/2025 salvos
+[2025-10-02 16:48:11] 💾 Processo 46634044000174-1-000078/2025 salvo/atualizado
+[2025-10-02 16:48:11] 💾 Itens do processo 46634044000174-1-000078/2025 salvos/atualizados (46)
+[2025-10-02 16:48:11] 📦 Itens 46634044000174-1-000078/2025 salvos
+[2025-10-02 16:48:11] 💾 Processo 46634044000174-1-000081/2025 salvo/atualizado
+[2025-10-02 16:48:11] 💾 Itens do processo 46634044000174-1-000081/2025 salvos/atualizados (3)
+[2025-10-02 16:48:11] 📦 Itens 46634044000174-1-000081/2025 salvos
+[2025-10-02 16:48:12] 📅 Período 20250403 → 20250602 | UF=SP / Mod=10 (PMI)
+[2025-10-02 16:48:12] ✅ Página 1 OK (SP/10) – 17 registros
+[2025-10-02 16:48:12] 💾 Processo 46634044000174-1-000087/2025 salvo/atualizado
+[2025-10-02 16:48:12] 💾 Itens do processo 46634044000174-1-000087/2025 salvos/atualizados (1)
+[2025-10-02 16:48:12] 📦 Itens 46634044000174-1-000087/2025 salvos
+[2025-10-02 16:48:12] 💾 Processo 46634044000174-1-000095/2025 salvo/atualizado
+[2025-10-02 16:48:13] 💾 Itens do processo 46634044000174-1-000095/2025 salvos/atualizados (1)
+[2025-10-02 16:48:13] 📦 Itens 46634044000174-1-000095/2025 salvos
+[2025-10-02 16:48:13] 💾 Processo 46634044000174-1-000112/2025 salvo/atualizado
+[2025-10-02 16:48:15] 💾 Itens do processo 46634044000174-1-000112/2025 salvos/atualizados (10)
+[2025-10-02 16:48:15] 📦 Itens 46634044000174-1-000112/2025 salvos
+[2025-10-02 16:48:15] 💾 Processo 46634044000174-1-000113/2025 salvo/atualizado
+[2025-10-02 16:48:15] 💾 Itens do processo 46634044000174-1-000113/2025 salvos/atualizados (8)
+[2025-10-02 16:48:15] 📦 Itens 46634044000174-1-000113/2025 salvos
+[2025-10-02 16:48:15] 💾 Processo 46634044000174-1-000116/2025 salvo/atualizado
+[2025-10-02 16:48:16] 💾 Itens do processo 46634044000174-1-000116/2025 salvos/atualizados (10)
+[2025-10-02 16:48:16] 📦 Itens 46634044000174-1-000116/2025 salvos
+[2025-10-02 16:48:16] 💾 Processo 01610390000184-1-000044/2025 salvo/atualizado
+[2025-10-02 16:48:16] 💾 Itens do processo 01610390000184-1-000044/2025 salvos/atualizados (12)
+[2025-10-02 16:48:16] 📦 Itens 01610390000184-1-000044/2025 salvos
+[2025-10-02 16:48:16] 💾 Processo 01610390000184-1-000047/2025 salvo/atualizado
+[2025-10-02 16:48:16] 💾 Itens do processo 01610390000184-1-000047/2025 salvos/atualizados (5)
+[2025-10-02 16:48:16] 📦 Itens 01610390000184-1-000047/2025 salvos
+[2025-10-02 16:48:16] 💾 Processo 46634044000174-1-000121/2025 salvo/atualizado
+[2025-10-02 16:48:17] 💾 Itens do processo 46634044000174-1-000121/2025 salvos/atualizados (9)
+[2025-10-02 16:48:17] 📦 Itens 46634044000174-1-000121/2025 salvos
+[2025-10-02 16:48:17] 💾 Processo 01610390000184-1-000049/2025 salvo/atualizado
+[2025-10-02 16:48:17] 💾 Itens do processo 01610390000184-1-000049/2025 salvos/atualizados (1)
+[2025-10-02 16:48:17] 📦 Itens 01610390000184-1-000049/2025 salvos
+[2025-10-02 16:48:17] 💾 Processo 46634044000174-1-000125/2025 salvo/atualizado
+[2025-10-02 16:48:17] 💾 Itens do processo 46634044000174-1-000125/2025 salvos/atualizados (1)
+[2025-10-02 16:48:17] 📦 Itens 46634044000174-1-000125/2025 salvos
+[2025-10-02 16:48:17] 💾 Processo 46634044000174-1-000126/2025 salvo/atualizado
+[2025-10-02 16:48:17] 💾 Itens do processo 46634044000174-1-000126/2025 salvos/atualizados (6)
+[2025-10-02 16:48:17] 📦 Itens 46634044000174-1-000126/2025 salvos
+[2025-10-02 16:48:17] 💾 Processo 46634044000174-1-000129/2025 salvo/atualizado
+[2025-10-02 16:48:17] 💾 Itens do processo 46634044000174-1-000129/2025 salvos/atualizados (6)
+[2025-10-02 16:48:17] 📦 Itens 46634044000174-1-000129/2025 salvos
+[2025-10-02 16:48:17] 💾 Processo 53415717000160-1-000044/2025 salvo/atualizado
+[2025-10-02 16:48:17] 💾 Itens do processo 53415717000160-1-000044/2025 salvos/atualizados (1)
+[2025-10-02 16:48:17] 📦 Itens 53415717000160-1-000044/2025 salvos
+[2025-10-02 16:48:17] 💾 Processo 46634044000174-1-000132/2025 salvo/atualizado
+[2025-10-02 16:48:17] 💾 Itens do processo 46634044000174-1-000132/2025 salvos/atualizados (3)
+[2025-10-02 16:48:17] 📦 Itens 46634044000174-1-000132/2025 salvos
+[2025-10-02 16:48:17] 💾 Processo 46482840000139-1-000346/2025 salvo/atualizado
+[2025-10-02 16:48:18] 💾 Itens do processo 46482840000139-1-000346/2025 salvos/atualizados (1)
+[2025-10-02 16:48:18] 📦 Itens 46482840000139-1-000346/2025 salvos
+[2025-10-02 16:48:18] 💾 Processo 46482840000139-1-000347/2025 salvo/atualizado
+[2025-10-02 16:48:18] 💾 Itens do processo 46482840000139-1-000347/2025 salvos/atualizados (1)
+[2025-10-02 16:48:18] 📦 Itens 46482840000139-1-000347/2025 salvos
+[2025-10-02 16:48:18] 💾 Processo 46634044000174-1-000138/2025 salvo/atualizado
+[2025-10-02 16:48:18] 💾 Itens do processo 46634044000174-1-000138/2025 salvos/atualizados (1)
+[2025-10-02 16:48:18] 📦 Itens 46634044000174-1-000138/2025 salvos
+[2025-10-02 16:48:18] 📅 Período 20250603 → 20250802 | UF=SP / Mod=10 (PMI)
+[2025-10-02 16:49:03] ⚠️ cURL tent.1: Operation timed out after 45002 milliseconds with 0 bytes received
+[2025-10-02 16:49:06] ✅ Página 1 OK (SP/10) – 23 registros
+[2025-10-02 16:49:06] 💾 Processo 46634044000174-1-000140/2025 salvo/atualizado
+[2025-10-02 16:49:06] 💾 Itens do processo 46634044000174-1-000140/2025 salvos/atualizados (7)
+[2025-10-02 16:49:06] 📦 Itens 46634044000174-1-000140/2025 salvos
+[2025-10-02 16:49:06] 💾 Processo 46634044000174-1-000143/2025 salvo/atualizado
+[2025-10-02 16:49:06] 💾 Itens do processo 46634044000174-1-000143/2025 salvos/atualizados (1)
+[2025-10-02 16:49:06] 📦 Itens 46634044000174-1-000143/2025 salvos
+[2025-10-02 16:49:06] 💾 Processo 46634044000174-1-000147/2025 salvo/atualizado
+[2025-10-02 16:49:06] 💾 Itens do processo 46634044000174-1-000147/2025 salvos/atualizados (3)
+[2025-10-02 16:49:06] 📦 Itens 46634044000174-1-000147/2025 salvos
+[2025-10-02 16:49:06] 💾 Processo 01610390000184-1-000059/2025 salvo/atualizado
+[2025-10-02 16:49:07] 💾 Itens do processo 01610390000184-1-000059/2025 salvos/atualizados (1)
+[2025-10-02 16:49:07] 📦 Itens 01610390000184-1-000059/2025 salvos
+[2025-10-02 16:49:07] 💾 Processo 01610390000184-1-000063/2025 salvo/atualizado
+[2025-10-02 16:49:07] 💾 Itens do processo 01610390000184-1-000063/2025 salvos/atualizados (1)
+[2025-10-02 16:49:07] 📦 Itens 01610390000184-1-000063/2025 salvos
+[2025-10-02 16:49:07] 💾 Processo 46634044000174-1-000154/2025 salvo/atualizado
+[2025-10-02 16:49:07] 💾 Itens do processo 46634044000174-1-000154/2025 salvos/atualizados (1)
+[2025-10-02 16:49:07] 📦 Itens 46634044000174-1-000154/2025 salvos
+[2025-10-02 16:49:07] 💾 Processo 01610390000184-1-000065/2025 salvo/atualizado
+[2025-10-02 16:49:07] 💾 Itens do processo 01610390000184-1-000065/2025 salvos/atualizados (1)
+[2025-10-02 16:49:07] 📦 Itens 01610390000184-1-000065/2025 salvos
+[2025-10-02 16:49:07] 💾 Processo 01610390000184-1-000067/2025 salvo/atualizado
+[2025-10-02 16:49:07] 💾 Itens do processo 01610390000184-1-000067/2025 salvos/atualizados (2)
+[2025-10-02 16:49:07] 📦 Itens 01610390000184-1-000067/2025 salvos
+[2025-10-02 16:49:07] 💾 Processo 46634044000174-1-000160/2025 salvo/atualizado
+[2025-10-02 16:49:07] 💾 Itens do processo 46634044000174-1-000160/2025 salvos/atualizados (1)
+[2025-10-02 16:49:07] 📦 Itens 46634044000174-1-000160/2025 salvos
+[2025-10-02 16:49:07] 💾 Processo 01610390000184-1-000068/2025 salvo/atualizado
+[2025-10-02 16:49:07] 💾 Itens do processo 01610390000184-1-000068/2025 salvos/atualizados (1)
+[2025-10-02 16:49:07] 📦 Itens 01610390000184-1-000068/2025 salvos
+[2025-10-02 16:49:07] 💾 Processo 46634044000174-1-000168/2025 salvo/atualizado
+[2025-10-02 16:49:08] 💾 Itens do processo 46634044000174-1-000168/2025 salvos/atualizados (10)
+[2025-10-02 16:49:08] 📦 Itens 46634044000174-1-000168/2025 salvos
+[2025-10-02 16:49:08] 💾 Processo 46634044000174-1-000172/2025 salvo/atualizado
+[2025-10-02 16:49:08] 💾 Itens do processo 46634044000174-1-000172/2025 salvos/atualizados (2)
+[2025-10-02 16:49:08] 📦 Itens 46634044000174-1-000172/2025 salvos
+[2025-10-02 16:49:08] 💾 Processo 46634044000174-1-000176/2025 salvo/atualizado
+[2025-10-02 16:49:08] 💾 Itens do processo 46634044000174-1-000176/2025 salvos/atualizados (10)
+[2025-10-02 16:49:08] 📦 Itens 46634044000174-1-000176/2025 salvos
+[2025-10-02 16:49:08] 💾 Processo 46634044000174-1-000179/2025 salvo/atualizado
+[2025-10-02 16:49:08] 💾 Itens do processo 46634044000174-1-000179/2025 salvos/atualizados (1)
+[2025-10-02 16:49:08] 📦 Itens 46634044000174-1-000179/2025 salvos
+[2025-10-02 16:49:08] 💾 Processo 46634044000174-1-000180/2025 salvo/atualizado
+[2025-10-02 16:49:08] 💾 Itens do processo 46634044000174-1-000180/2025 salvos/atualizados (7)
+[2025-10-02 16:49:08] 📦 Itens 46634044000174-1-000180/2025 salvos
+[2025-10-02 16:49:08] 💾 Processo 46634044000174-1-000183/2025 salvo/atualizado
+[2025-10-02 16:49:08] 💾 Itens do processo 46634044000174-1-000183/2025 salvos/atualizados (7)
+[2025-10-02 16:49:08] 📦 Itens 46634044000174-1-000183/2025 salvos
+[2025-10-02 16:49:08] 💾 Processo 46634044000174-1-000184/2025 salvo/atualizado
+[2025-10-02 16:49:09] 💾 Itens do processo 46634044000174-1-000184/2025 salvos/atualizados (1)
+[2025-10-02 16:49:09] 📦 Itens 46634044000174-1-000184/2025 salvos
+[2025-10-02 16:49:09] 💾 Processo 46634044000174-1-000192/2025 salvo/atualizado
+[2025-10-02 16:49:09] 💾 Itens do processo 46634044000174-1-000192/2025 salvos/atualizados (3)
+[2025-10-02 16:49:09] 📦 Itens 46634044000174-1-000192/2025 salvos
+[2025-10-02 16:49:09] 💾 Processo 46634044000174-1-000195/2025 salvo/atualizado
+[2025-10-02 16:49:09] 💾 Itens do processo 46634044000174-1-000195/2025 salvos/atualizados (1)
+[2025-10-02 16:49:09] 📦 Itens 46634044000174-1-000195/2025 salvos
+[2025-10-02 16:49:09] 💾 Processo 01610390000184-1-000079/2025 salvo/atualizado
+[2025-10-02 16:49:09] 💾 Itens do processo 01610390000184-1-000079/2025 salvos/atualizados (8)
+[2025-10-02 16:49:09] 📦 Itens 01610390000184-1-000079/2025 salvos
+[2025-10-02 16:49:09] 💾 Processo 01610390000184-1-000080/2025 salvo/atualizado
+[2025-10-02 16:49:10] 💾 Itens do processo 01610390000184-1-000080/2025 salvos/atualizados (1)
+[2025-10-02 16:49:10] 📦 Itens 01610390000184-1-000080/2025 salvos
+[2025-10-02 16:49:10] 💾 Processo 46634044000174-1-000208/2025 salvo/atualizado
+[2025-10-02 16:49:10] 💾 Itens do processo 46634044000174-1-000208/2025 salvos/atualizados (4)
+[2025-10-02 16:49:10] 📦 Itens 46634044000174-1-000208/2025 salvos
+[2025-10-02 16:49:10] 💾 Processo 01610390000184-1-000086/2025 salvo/atualizado
+[2025-10-02 16:49:10] 💾 Itens do processo 01610390000184-1-000086/2025 salvos/atualizados (1)
+[2025-10-02 16:49:10] 📦 Itens 01610390000184-1-000086/2025 salvos
+[2025-10-02 16:49:10] 📅 Período 20250803 → 20251002 | UF=SP / Mod=10 (PMI)
+[2025-10-02 16:49:10] ✅ Página 1 OK (SP/10) – 45 registros
+[2025-10-02 16:49:10] 💾 Processo 01610390000184-1-000087/2025 salvo/atualizado
+[2025-10-02 16:49:10] 💾 Itens do processo 01610390000184-1-000087/2025 salvos/atualizados (1)
+[2025-10-02 16:49:10] 📦 Itens 01610390000184-1-000087/2025 salvos
+[2025-10-02 16:49:10] 💾 Processo 46634044000174-1-000218/2025 salvo/atualizado
+[2025-10-02 16:49:11] 💾 Itens do processo 46634044000174-1-000218/2025 salvos/atualizados (10)
+[2025-10-02 16:49:11] 📦 Itens 46634044000174-1-000218/2025 salvos
+[2025-10-02 16:49:11] 💾 Processo 46634044000174-1-000219/2025 salvo/atualizado
+[2025-10-02 16:49:11] 💾 Itens do processo 46634044000174-1-000219/2025 salvos/atualizados (6)
+[2025-10-02 16:49:11] 📦 Itens 46634044000174-1-000219/2025 salvos
+[2025-10-02 16:49:11] 💾 Processo 01610390000184-1-000090/2025 salvo/atualizado
+[2025-10-02 16:49:11] 💾 Itens do processo 01610390000184-1-000090/2025 salvos/atualizados (1)
+[2025-10-02 16:49:11] 📦 Itens 01610390000184-1-000090/2025 salvos
+[2025-10-02 16:49:11] 💾 Processo 01610390000184-1-000093/2025 salvo/atualizado
+[2025-10-02 16:49:11] 💾 Itens do processo 01610390000184-1-000093/2025 salvos/atualizados (2)
+[2025-10-02 16:49:11] 📦 Itens 01610390000184-1-000093/2025 salvos
+[2025-10-02 16:49:11] 💾 Processo 01610390000184-1-000094/2025 salvo/atualizado
+[2025-10-02 16:49:11] 💾 Itens do processo 01610390000184-1-000094/2025 salvos/atualizados (1)
+[2025-10-02 16:49:11] 📦 Itens 01610390000184-1-000094/2025 salvos
+[2025-10-02 16:49:11] 💾 Processo 46634044000174-1-000230/2025 salvo/atualizado
+[2025-10-02 16:49:11] 💾 Itens do processo 46634044000174-1-000230/2025 salvos/atualizados (6)
+[2025-10-02 16:49:11] 📦 Itens 46634044000174-1-000230/2025 salvos
+[2025-10-02 16:49:11] 💾 Processo 46634044000174-1-000235/2025 salvo/atualizado
+[2025-10-02 16:49:12] 💾 Itens do processo 46634044000174-1-000235/2025 salvos/atualizados (6)
+[2025-10-02 16:49:12] 📦 Itens 46634044000174-1-000235/2025 salvos
+[2025-10-02 16:49:12] 💾 Processo 46634044000174-1-000237/2025 salvo/atualizado
+[2025-10-02 16:49:12] 💾 Itens do processo 46634044000174-1-000237/2025 salvos/atualizados (8)
+[2025-10-02 16:49:12] 📦 Itens 46634044000174-1-000237/2025 salvos
+[2025-10-02 16:49:12] 💾 Processo 46634044000174-1-000242/2025 salvo/atualizado
+[2025-10-02 16:49:12] 💾 Itens do processo 46634044000174-1-000242/2025 salvos/atualizados (6)
+[2025-10-02 16:49:12] 📦 Itens 46634044000174-1-000242/2025 salvos
+[2025-10-02 16:49:12] 💾 Processo 46634044000174-1-000243/2025 salvo/atualizado
+[2025-10-02 16:49:12] 💾 Itens do processo 46634044000174-1-000243/2025 salvos/atualizados (2)
+[2025-10-02 16:49:12] 📦 Itens 46634044000174-1-000243/2025 salvos
+[2025-10-02 16:49:12] 💾 Processo 46634044000174-1-000248/2025 salvo/atualizado
+[2025-10-02 16:49:12] 💾 Itens do processo 46634044000174-1-000248/2025 salvos/atualizados (3)
+[2025-10-02 16:49:12] 📦 Itens 46634044000174-1-000248/2025 salvos
+[2025-10-02 16:49:12] 💾 Processo 53415717000160-1-000132/2025 salvo/atualizado
+[2025-10-02 16:49:12] 💾 Itens do processo 53415717000160-1-000132/2025 salvos/atualizados (1)
+[2025-10-02 16:49:12] 📦 Itens 53415717000160-1-000132/2025 salvos
+[2025-10-02 16:49:12] 💾 Processo 46634044000174-1-000260/2025 salvo/atualizado
+[2025-10-02 16:49:13] 💾 Itens do processo 46634044000174-1-000260/2025 salvos/atualizados (6)
+[2025-10-02 16:49:13] 📦 Itens 46634044000174-1-000260/2025 salvos
+[2025-10-02 16:49:13] 💾 Processo 46634044000174-1-000261/2025 salvo/atualizado
+[2025-10-02 16:49:13] 💾 Itens do processo 46634044000174-1-000261/2025 salvos/atualizados (3)
+[2025-10-02 16:49:13] 📦 Itens 46634044000174-1-000261/2025 salvos
+[2025-10-02 16:49:13] 💾 Processo 01610390000184-1-000098/2025 salvo/atualizado
+[2025-10-02 16:49:13] 💾 Itens do processo 01610390000184-1-000098/2025 salvos/atualizados (2)
+[2025-10-02 16:49:13] 📦 Itens 01610390000184-1-000098/2025 salvos
+[2025-10-02 16:49:13] 💾 Processo 01610390000184-1-000100/2025 salvo/atualizado
+[2025-10-02 16:49:13] 💾 Itens do processo 01610390000184-1-000100/2025 salvos/atualizados (4)
+[2025-10-02 16:49:13] 📦 Itens 01610390000184-1-000100/2025 salvos
+[2025-10-02 16:49:13] 💾 Processo 46482840000139-1-000677/2025 salvo/atualizado
+[2025-10-02 16:49:13] 💾 Itens do processo 46482840000139-1-000677/2025 salvos/atualizados (1)
+[2025-10-02 16:49:13] 📦 Itens 46482840000139-1-000677/2025 salvos
+[2025-10-02 16:49:13] 💾 Processo 46634044000174-1-000274/2025 salvo/atualizado
+[2025-10-02 16:49:13] 💾 Itens do processo 46634044000174-1-000274/2025 salvos/atualizados (10)
+[2025-10-02 16:49:13] 📦 Itens 46634044000174-1-000274/2025 salvos
+[2025-10-02 16:49:13] 💾 Processo 46634044000174-1-000275/2025 salvo/atualizado
+[2025-10-02 16:49:13] 💾 Itens do processo 46634044000174-1-000275/2025 salvos/atualizados (1)
+[2025-10-02 16:49:13] 📦 Itens 46634044000174-1-000275/2025 salvos
+[2025-10-02 16:49:13] 💾 Processo 46634044000174-1-000276/2025 salvo/atualizado
+[2025-10-02 16:49:14] 💾 Itens do processo 46634044000174-1-000276/2025 salvos/atualizados (6)
+[2025-10-02 16:49:14] 📦 Itens 46634044000174-1-000276/2025 salvos
+[2025-10-02 16:49:14] 💾 Processo 46634044000174-1-000277/2025 salvo/atualizado
+[2025-10-02 16:49:14] 💾 Itens do processo 46634044000174-1-000277/2025 salvos/atualizados (3)
+[2025-10-02 16:49:14] 📦 Itens 46634044000174-1-000277/2025 salvos
+[2025-10-02 16:49:14] 💾 Processo 46634044000174-1-000279/2025 salvo/atualizado
+[2025-10-02 16:49:14] 💾 Itens do processo 46634044000174-1-000279/2025 salvos/atualizados (1)
+[2025-10-02 16:49:14] 📦 Itens 46634044000174-1-000279/2025 salvos
+[2025-10-02 16:49:14] 💾 Processo 46634044000174-1-000282/2025 salvo/atualizado
+[2025-10-02 16:49:14] 💾 Itens do processo 46634044000174-1-000282/2025 salvos/atualizados (5)
+[2025-10-02 16:49:14] 📦 Itens 46634044000174-1-000282/2025 salvos
+[2025-10-02 16:49:14] 💾 Processo 01610390000184-1-000106/2025 salvo/atualizado
+[2025-10-02 16:49:14] 💾 Itens do processo 01610390000184-1-000106/2025 salvos/atualizados (7)
+[2025-10-02 16:49:14] 📦 Itens 01610390000184-1-000106/2025 salvos
+[2025-10-02 16:49:14] 💾 Processo 05002419000104-1-000011/2025 salvo/atualizado
+[2025-10-02 16:49:15] 💾 Itens do processo 05002419000104-1-000011/2025 salvos/atualizados (1)
+[2025-10-02 16:49:15] 📦 Itens 05002419000104-1-000011/2025 salvos
+[2025-10-02 16:49:15] 💾 Processo 01610390000184-1-000107/2025 salvo/atualizado
+[2025-10-02 16:49:15] 💾 Itens do processo 01610390000184-1-000107/2025 salvos/atualizados (1)
+[2025-10-02 16:49:15] 📦 Itens 01610390000184-1-000107/2025 salvos
+[2025-10-02 16:49:15] 💾 Processo 46634044000174-1-000292/2025 salvo/atualizado
+[2025-10-02 16:49:15] 💾 Itens do processo 46634044000174-1-000292/2025 salvos/atualizados (1)
+[2025-10-02 16:49:15] 📦 Itens 46634044000174-1-000292/2025 salvos
+[2025-10-02 16:49:15] 💾 Processo 46634044000174-1-000293/2025 salvo/atualizado
+[2025-10-02 16:49:15] 💾 Itens do processo 46634044000174-1-000293/2025 salvos/atualizados (1)
+[2025-10-02 16:49:15] 📦 Itens 46634044000174-1-000293/2025 salvos
+[2025-10-02 16:49:15] 💾 Processo 50320415000110-1-000012/2025 salvo/atualizado
+[2025-10-02 16:49:15] 💾 Itens do processo 50320415000110-1-000012/2025 salvos/atualizados (4)
+[2025-10-02 16:49:15] 📦 Itens 50320415000110-1-000012/2025 salvos
+[2025-10-02 16:49:15] 💾 Processo 01610390000184-1-000108/2025 salvo/atualizado
+[2025-10-02 16:49:15] 💾 Itens do processo 01610390000184-1-000108/2025 salvos/atualizados (1)
+[2025-10-02 16:49:15] 📦 Itens 01610390000184-1-000108/2025 salvos
+[2025-10-02 16:49:15] 💾 Processo 46634044000174-1-000299/2025 salvo/atualizado
+[2025-10-02 16:49:15] 💾 Itens do processo 46634044000174-1-000299/2025 salvos/atualizados (1)
+[2025-10-02 16:49:15] 📦 Itens 46634044000174-1-000299/2025 salvos
+[2025-10-02 16:49:15] 💾 Processo 46634044000174-1-000300/2025 salvo/atualizado
+[2025-10-02 16:49:17] 💾 Itens do processo 46634044000174-1-000300/2025 salvos/atualizados (4)
+[2025-10-02 16:49:17] 📦 Itens 46634044000174-1-000300/2025 salvos
+[2025-10-02 16:49:17] 💾 Processo 46634044000174-1-000301/2025 salvo/atualizado
+[2025-10-02 16:49:18] 💾 Itens do processo 46634044000174-1-000301/2025 salvos/atualizados (1)
+[2025-10-02 16:49:18] 📦 Itens 46634044000174-1-000301/2025 salvos
+[2025-10-02 16:49:18] 💾 Processo 46634044000174-1-000302/2025 salvo/atualizado
+[2025-10-02 16:49:19] 💾 Itens do processo 46634044000174-1-000302/2025 salvos/atualizados (3)
+[2025-10-02 16:49:19] 📦 Itens 46634044000174-1-000302/2025 salvos
+[2025-10-02 16:49:19] 💾 Processo 46634044000174-1-000304/2025 salvo/atualizado
+[2025-10-02 16:49:19] 💾 Itens do processo 46634044000174-1-000304/2025 salvos/atualizados (11)
+[2025-10-02 16:49:19] 📦 Itens 46634044000174-1-000304/2025 salvos
+[2025-10-02 16:49:19] 💾 Processo 46634044000174-1-000305/2025 salvo/atualizado
+[2025-10-02 16:49:19] 💾 Itens do processo 46634044000174-1-000305/2025 salvos/atualizados (7)
+[2025-10-02 16:49:19] 📦 Itens 46634044000174-1-000305/2025 salvos
+[2025-10-02 16:49:19] 💾 Processo 46634044000174-1-000306/2025 salvo/atualizado
+[2025-10-02 16:49:20] 💾 Itens do processo 46634044000174-1-000306/2025 salvos/atualizados (10)
+[2025-10-02 16:49:20] 📦 Itens 46634044000174-1-000306/2025 salvos
+[2025-10-02 16:49:20] 💾 Processo 46634044000174-1-000307/2025 salvo/atualizado
+[2025-10-02 16:49:20] 💾 Itens do processo 46634044000174-1-000307/2025 salvos/atualizados (4)
+[2025-10-02 16:49:20] 📦 Itens 46634044000174-1-000307/2025 salvos
+[2025-10-02 16:49:20] 💾 Processo 46634044000174-1-000308/2025 salvo/atualizado
+[2025-10-02 16:49:21] 💾 Itens do processo 46634044000174-1-000308/2025 salvos/atualizados (6)
+[2025-10-02 16:49:21] 📦 Itens 46634044000174-1-000308/2025 salvos
+[2025-10-02 16:49:21] 💾 Processo 46634044000174-1-000309/2025 salvo/atualizado
+[2025-10-02 16:49:21] 💾 Itens do processo 46634044000174-1-000309/2025 salvos/atualizados (9)
+[2025-10-02 16:49:21] 📦 Itens 46634044000174-1-000309/2025 salvos
+[2025-10-02 16:49:21] 💾 Processo 46634044000174-1-000311/2025 salvo/atualizado
+[2025-10-02 16:49:21] 💾 Itens do processo 46634044000174-1-000311/2025 salvos/atualizados (2)
+[2025-10-02 16:49:21] 📦 Itens 46634044000174-1-000311/2025 salvos
+[2025-10-02 16:49:21] 💾 Processo 01610390000184-1-000111/2025 salvo/atualizado
+[2025-10-02 16:49:21] 💾 Itens do processo 01610390000184-1-000111/2025 salvos/atualizados (1)
+[2025-10-02 16:49:21] 📦 Itens 01610390000184-1-000111/2025 salvos
+[2025-10-02 16:49:21] 💾 Processo 46341038000129-1-000626/2025 salvo/atualizado
+[2025-10-02 16:49:21] 💾 Itens do processo 46341038000129-1-000626/2025 salvos/atualizados (1)
+[2025-10-02 16:49:21] 📦 Itens 46341038000129-1-000626/2025 salvos
+[2025-10-02 16:49:21] 💾 Processo 01610390000184-1-000112/2025 salvo/atualizado
+[2025-10-02 16:49:21] 💾 Itens do processo 01610390000184-1-000112/2025 salvos/atualizados (2)
+[2025-10-02 16:49:21] 📦 Itens 01610390000184-1-000112/2025 salvos
+[2025-10-02 16:49:21] 🏁 Finalizado em 00h 01m 28s

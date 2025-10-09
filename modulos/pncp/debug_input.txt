@@ -1,0 +1,3 @@
+2025-09-26 13:37:27
+{"itens":[{"descricao":"ABACATE","quantidade":1,"valor_medio":12.43,"valor_total":12.43,"referencias":"46137451000176-1-000132/2025"},{"descricao":"ABACATE DE BOA QUALIDADE, PESO MEDIO DE 500G ABACATE DE BOA QUALIDADE, PESO MEDIO DE 500G PORUNIDADE, CASCA VERDE, SEMI MADURO, COM AUSENCIADE DEFEITOS GRAVES","quantidade":1,"valor_medio":8.16,"valor_total":8.16,"referencias":"44763928000101-1-000362/2025"}]}
+

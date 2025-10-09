@@ -28,12 +28,16 @@ logInicioExec("Sincronização FULL PNCP - Concurso");
 
 // Limpa registros antigos
 $limite = $inicio->format('Y-m-d');
-$delProc = $pdo->prepare("DELETE FROM cache_pncp_processos WHERE dataPublicacao < ?");
-$delItens = $pdo->prepare("DELETE FROM cache_pncp_itens WHERE numeroControlePNCP NOT IN (
-  SELECT numeroControlePNCP FROM cache_pncp_processos
+// Primeiro remove os itens "órfãos"
+$delItens = $pdo->prepare("DELETE FROM cache_pncp_itens WHERE numeroControlePNCP IN (
+  SELECT numeroControlePNCP FROM cache_pncp_processos WHERE dataPublicacao < ?
 )");
+$delItens->execute([$limite]);
+
+// Depois remove os processos antigos
+$delProc = $pdo->prepare("DELETE FROM cache_pncp_processos WHERE dataPublicacao < ?");
 $delProc->execute([$limite]);
-$delItens->execute();
+
 logar("🧹 Removidos processos/itens anteriores a $limite");
 
 // Loop por janelas
